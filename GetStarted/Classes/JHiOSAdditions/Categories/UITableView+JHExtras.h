@@ -11,6 +11,6 @@
 
 @interface UITableView (JHExtras)
 
-- (NSIndexPath *)jh_indexPathForRowContainingView:(UIView *)view;
+- (NSIndexPath *)indexPathForRowContainingView:(UIView *)view;
 
 @end

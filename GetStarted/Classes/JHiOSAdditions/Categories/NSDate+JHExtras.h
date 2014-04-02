@@ -10,7 +10,7 @@
 
 @interface NSDate (JHExtras)
 
-- (NSString *)jh_relativeTimeFromNow;
+- (NSString *)relativeTimeFromNow;
 + (NSDate *)dateFromMySqlString:(NSString *)dateString;
 + (NSDate *)dateFromTwitter:(NSString *)dateString;
 - (NSString *)dateFormatted:(NSString *)dateFormat;

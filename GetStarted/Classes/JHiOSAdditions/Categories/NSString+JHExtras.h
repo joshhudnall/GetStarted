@@ -11,12 +11,12 @@
 
 - (NSString *) stripWhitespace;
 
-- (NSString *)jh_truncateToLength:(NSUInteger)length;
-- (NSString *)jh_truncateToLength:(NSUInteger)length inMiddle:(BOOL)inMiddle;
-- (NSString *)jh_truncateToLength:(NSUInteger)length inMiddle:(BOOL)inMiddle withChar:(NSString *)withChar;
+- (NSString *)truncateToLength:(NSUInteger)length;
+- (NSString *)truncateToLength:(NSUInteger)length inMiddle:(BOOL)inMiddle;
+- (NSString *)truncateToLength:(NSUInteger)length inMiddle:(BOOL)inMiddle withChar:(NSString *)withChar;
 
-+ (NSString *)jh_singular:(NSString *)singular orPlural:(NSString *)plural forCount:(NSInteger)count;
-+ (NSString *)jh_zero:(NSString *)zero singular:(NSString *)singular orPlural:(NSString *)plural forCount:(NSInteger)count;
++ (NSString *)singular:(NSString *)singular orPlural:(NSString *)plural forCount:(NSInteger)count;
++ (NSString *)zero:(NSString *)zero singular:(NSString *)singular orPlural:(NSString *)plural forCount:(NSInteger)count;
 
 - (NSString *)stringByStrippingHTML;
 

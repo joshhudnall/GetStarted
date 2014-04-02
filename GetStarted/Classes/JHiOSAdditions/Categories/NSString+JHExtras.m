@@ -19,17 +19,17 @@
     return string;
 }
 
-- (NSString *)jh_truncateToLength:(NSUInteger)length {
-	return [self jh_truncateToLength:length inMiddle:NO];
+- (NSString *)truncateToLength:(NSUInteger)length {
+	return [self truncateToLength:length inMiddle:NO];
 }
 
-- (NSString *)jh_truncateToLength:(NSUInteger)length inMiddle:(BOOL)inMiddle {
+- (NSString *)truncateToLength:(NSUInteger)length inMiddle:(BOOL)inMiddle {
 	NSString *withChar = (inMiddle) ? @" ... " : @" ...";
 	
-	return [self jh_truncateToLength:length inMiddle:inMiddle withChar:withChar];
+	return [self truncateToLength:length inMiddle:inMiddle withChar:withChar];
 }
 
-- (NSString *)jh_truncateToLength:(NSUInteger)length inMiddle:(BOOL)inMiddle withChar:(NSString *)withChar {
+- (NSString *)truncateToLength:(NSUInteger)length inMiddle:(BOOL)inMiddle withChar:(NSString *)withChar {
 	NSString *inStr = self;
 	
 	// If the string is shorter than the length desired, just return it
@@ -58,11 +58,11 @@
 	return inStr;
 }
 
-+ (NSString *)jh_singular:(NSString *)singular orPlural:(NSString *)plural forCount:(NSInteger)count {
-	return [NSString jh_zero:plural singular:singular orPlural:plural forCount:count];
++ (NSString *)singular:(NSString *)singular orPlural:(NSString *)plural forCount:(NSInteger)count {
+	return [NSString zero:plural singular:singular orPlural:plural forCount:count];
 }
 
-+ (NSString *)jh_zero:(NSString *)zero singular:(NSString *)singular orPlural:(NSString *)plural forCount:(NSInteger)count {
++ (NSString *)zero:(NSString *)zero singular:(NSString *)singular orPlural:(NSString *)plural forCount:(NSInteger)count {
 	if (count == 0) {
 		return [NSString stringWithFormat:zero, count];
 	} else if (count == 1) {

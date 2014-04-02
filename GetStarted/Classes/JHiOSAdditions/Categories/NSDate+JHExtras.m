@@ -10,7 +10,7 @@
 
 @implementation NSDate (JHExtras)
 
-- (NSString *)jh_relativeTimeFromNow {
+- (NSString *)relativeTimeFromNow {
     NSDate *origDate = self;
     NSDate *todayDate = [NSDate date];
     double ti = [origDate timeIntervalSinceDate:todayDate];
