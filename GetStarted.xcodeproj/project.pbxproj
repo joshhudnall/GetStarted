@@ -62,6 +62,7 @@
 		BE161A7818EB81DB00964404 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7618EB81DB00964404 /* CoreData.framework */; };
 		BE161A7A18EB81DF00964404 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7918EB81DF00964404 /* libz.dylib */; };
 		BE161A7C18EB81ED00964404 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7B18EB81ED00964404 /* SystemConfiguration.framework */; };
+		BE161A7F18EBCB9200964404 /* CompressingLogFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A7E18EBCB9200964404 /* CompressingLogFileManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -182,6 +183,8 @@
 		BE161A7618EB81DB00964404 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BE161A7918EB81DF00964404 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		BE161A7B18EB81ED00964404 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BE161A7D18EBCB9200964404 /* CompressingLogFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompressingLogFileManager.h; sourceTree = "<group>"; };
+		BE161A7E18EBCB9200964404 /* CompressingLogFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompressingLogFileManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -317,6 +320,8 @@
 			children = (
 				BE1619F118EB7E1800964404 /* CCActionSheet.h */,
 				BE1619F218EB7E1800964404 /* CCActionSheet.m */,
+				BE161A7D18EBCB9200964404 /* CompressingLogFileManager.h */,
+				BE161A7E18EBCB9200964404 /* CompressingLogFileManager.m */,
 				BE1619F318EB7E1800964404 /* DDProgressView.h */,
 				BE1619F418EB7E1800964404 /* DDProgressView.m */,
 				BE1619F518EB7E1800964404 /* GoogleAnalytics */,
@@ -641,6 +646,7 @@
 				BE161A2818EB7E1800964404 /* MKAnnotationView+WebCache.m in Sources */,
 				BE161A2B18EB7E1800964404 /* SDWebImageCompat.m in Sources */,
 				BE161A6618EB7E2800964404 /* NSObject+JHExtras.m in Sources */,
+				BE161A7F18EBCB9200964404 /* CompressingLogFileManager.m in Sources */,
 				BE161A3818EB7E1800964404 /* UIView+Positioning.m in Sources */,
 				BE161A6F18EB7E2800964404 /* JHViewController.m in Sources */,
 				BE161A2318EB7E1800964404 /* CCActionSheet.m in Sources */,
@@ -771,7 +777,7 @@
 				INFOPLIST_FILE = "GetStarted/GetStarted-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/3rdParty/GoogleAnalytics",
+					"$(PROJECT_DIR)/GetStarted/3rdParty/GoogleAnalytics",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -789,7 +795,7 @@
 				INFOPLIST_FILE = "GetStarted/GetStarted-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/3rdParty/GoogleAnalytics",
+					"$(PROJECT_DIR)/GetStarted/3rdParty/GoogleAnalytics",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

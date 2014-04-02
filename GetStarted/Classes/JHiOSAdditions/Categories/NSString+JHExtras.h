@@ -20,4 +20,8 @@
 
 - (NSString *)stringByStrippingHTML;
 
+- (NSString *)slug;
+
+- (BOOL)isEmpty;
+
 @end

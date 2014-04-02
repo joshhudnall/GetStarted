@@ -17,20 +17,25 @@
 #define IS_IOS_6 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0)
 #define IS_IOS_7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
 
-// Logging
+
+// CocoaLumberjack
+
 extern int const ddLogLevel;
 
+// General
+
 extern NSString *const kAPIBaseUrl;
-extern NSString *const kTrackingId;
+extern NSString *const kTrackingID;
+extern NSString *const kHockeyAppID;
 
 
-#pragma mark - Defaults
-
-
-
-#pragma mark - Fonts
+// Defaults
 
 
 
-#pragma mark - Colors
+// Fonts
+
+
+
+// Colors
 

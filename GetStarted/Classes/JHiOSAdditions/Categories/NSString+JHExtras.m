@@ -80,4 +80,27 @@
     return s;
 }
 
+- (NSString *)slug {
+    NSMutableString *newStr = [[self lowercaseString] mutableCopy];
+    NSString *separator = @"-";
+    
+    // Strip accents and diacritics
+    CFStringTransform((__bridge CFMutableStringRef)(newStr), NULL, kCFStringTransformStripCombiningMarks, NO);
+    
+    // Convert nonvalid characters to `separator`s
+    NSString *validCharacters = @"abcdefghijklmnopqrstuvwxyz1234567890-_";
+    NSCharacterSet *invalidCharacters = [[NSCharacterSet characterSetWithCharactersInString:validCharacters] invertedSet];
+    newStr = [NSMutableString stringWithString:[[newStr componentsSeparatedByCharactersInSet:invalidCharacters] componentsJoinedByString:separator]];
+    
+    return [newStr mutableCopy];
+}
+
+- (BOOL)isEmpty {
+    return ! (self && self.length);
+}
+
 @end
+
+
+
+

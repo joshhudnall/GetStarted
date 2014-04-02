@@ -14,7 +14,11 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 
+    // CocoaLumberjack
     #import <DDLog.h>
+    #import <DDASLLogger.h>
+    #import <DDTTYLogger.h>
+
     #import <SVProgressHUD/SVProgressHUD.h>
     #import <AFNetworking/AFNetworking.h>
     #import "UIImageView+WebCache.h"

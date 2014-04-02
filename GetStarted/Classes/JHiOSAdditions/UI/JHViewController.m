@@ -25,7 +25,7 @@
 }
 
 - (void)setTitle:(NSString *)title {
-    NSString *fileName = [NSString stringWithFormat:@"header-%@", [title lowercaseString]];
+    NSString *fileName = [NSString stringWithFormat:@"header-%@", [title slug]];
     NSString *imagePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"png"];
     
     if (imagePath) {
@@ -35,6 +35,8 @@
     } else {
         [super setTitle:title];
     }
+    
+    self.screenName = title;
 }
 
 - (void)loadData {
@@ -93,10 +95,7 @@
     _messageLabel.text = message;
     
     [_messageLabel sizeToFit];
-    _messageLabel.frame = CGRectMake((self.view.frame.size.width - _messageLabel.frame.size.width) / 2,
-                                     (self.view.frame.size.height - _messageLabel.frame.size.height) / 2,
-                                     _messageLabel.frame.size.width,
-                                     _messageLabel.frame.size.height);
+    [_messageLabel centerToParent];
     
     _messageLabel.hidden = NO;
 }

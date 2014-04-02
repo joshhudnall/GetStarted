@@ -6,23 +6,32 @@
 
 #import "Constants.h"
 
+// CocoaLumberjack
+
 #ifdef DEBUG
 int const ddLogLevel = LOG_FLAG_DEBUG;
 #else
-int const ddLogLevel = LOG_LEVEL_ERROR;
+int const ddLogLevel = LOG_LEVEL_WARN;
 #endif
 
+// Define NSLog to use CocoaLumberjack
+#define NSLog DDLogInfo
+
+
+// General
+
 NSString *const kAPIBaseUrl = @"";
-NSString *const kTrackingId = @"";
+NSString *const kTrackingID = @"";
+NSString *const kHockeyAppID = @"";
 
 
-#pragma mark - Defaults
-
-
-
-#pragma mark - Fonts
+// Defaults
 
 
 
-#pragma mark - Colors
+// Fonts
+
+
+
+// Colors
 
