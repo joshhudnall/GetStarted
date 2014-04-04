@@ -8,11 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol JHSlideViewMenuDelegate;
+
 @interface JHSlideViewController : UIViewController <UINavigationControllerDelegate>
 
 @property (nonatomic, assign, getter = isMenuOpen) BOOL menuOpen;
 @property (nonatomic, readonly) UINavigationController *navController;
-@property (nonatomic, strong) UIViewController *menuViewController;
+@property (nonatomic, strong) UIViewController <JHSlideViewMenuDelegate> *menuViewController;
 
 - (id)initWithRootViewController:(UIViewController *)rootViewController;
 
@@ -22,6 +24,16 @@
 - (void)toggleMenu;
 
 @end
+
+
+#pragma mark - JHSlideViewMenuDelegate
+
+@protocol JHSlideViewMenuDelegate <NSObject>
+
+- (void)slideViewDidCloseMenu:(JHSlideViewController *)slideView;
+
+@end
+
 
 
 #pragma mark - UIViewController (JHSlideViewController)

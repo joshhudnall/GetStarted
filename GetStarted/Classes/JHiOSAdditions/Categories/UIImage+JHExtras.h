@@ -10,6 +10,7 @@
 @interface UIImage (JHExtras)
 
 + (UIImage *)imageWithColor:(UIColor *)color;
++ (UIImage *)imageWithColor:(UIColor *)color ofSize:(CGSize)size;
 
 - (UIImage *)spriteInRect:(CGRect)rect;
 

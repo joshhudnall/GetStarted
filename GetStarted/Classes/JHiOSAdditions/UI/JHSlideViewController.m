@@ -166,7 +166,7 @@
 	self._slideOffset = self.view.frame.size.width - self._openWidth;
 }
 
-- (void)setMenuViewController:(UIViewController *)menuViewController {
+- (void)setMenuViewController:(UIViewController <JHSlideViewMenuDelegate> *)menuViewController {
 	// Remove self from an outgoing _menuViewController
 	if (_menuViewController) {
 		[_menuViewController willMoveToParentViewController:nil];
@@ -287,6 +287,9 @@
                          _menuViewController.view.x = -50;
                      } completion:^(BOOL finished) {
                          [self setMenuButtonImage];
+                         if ([_menuViewController respondsToSelector:@selector(slideViewDidCloseMenu:)]) {
+                             [_menuViewController slideViewDidCloseMenu:self];
+                         }
                          
                          if (completion) {
                              completion();

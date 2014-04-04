@@ -11,7 +11,11 @@
 @implementation UIImage (JHExtras)
 
 + (UIImage *)imageWithColor:(UIColor *)color {
-    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    return [UIImage imageWithColor:color ofSize:CGSizeMake(1.f, 1.f)];
+}
+
++ (UIImage *)imageWithColor:(UIColor *)color ofSize:(CGSize)size {
+    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
     
