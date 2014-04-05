@@ -63,6 +63,7 @@
 		BE161A7A18EB81DF00964404 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7918EB81DF00964404 /* libz.dylib */; };
 		BE161A7C18EB81ED00964404 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7B18EB81ED00964404 /* SystemConfiguration.framework */; };
 		BE161A7F18EBCB9200964404 /* CompressingLogFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A7E18EBCB9200964404 /* CompressingLogFileManager.m */; };
+		BE74D54C18EF6D8F00CA6BFA /* JHMath.m in Sources */ = {isa = PBXBuildFile; fileRef = BE74D54B18EF6D8F00CA6BFA /* JHMath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -185,6 +186,8 @@
 		BE161A7B18EB81ED00964404 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BE161A7D18EBCB9200964404 /* CompressingLogFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompressingLogFileManager.h; sourceTree = "<group>"; };
 		BE161A7E18EBCB9200964404 /* CompressingLogFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompressingLogFileManager.m; sourceTree = "<group>"; };
+		BE74D54A18EF6D8F00CA6BFA /* JHMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMath.h; sourceTree = "<group>"; };
+		BE74D54B18EF6D8F00CA6BFA /* JHMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,6 +453,8 @@
 			children = (
 				BE161A4D18EB7E2800964404 /* SafeARC.h */,
 				BE161A4E18EB7E2800964404 /* SynthesizeSingleton.h */,
+				BE74D54A18EF6D8F00CA6BFA /* JHMath.h */,
+				BE74D54B18EF6D8F00CA6BFA /* JHMath.m */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -641,6 +646,7 @@
 				BE161A2C18EB7E1800964404 /* SDWebImageDecoder.m in Sources */,
 				BE1619F018EB7D0F00964404 /* Constants.m in Sources */,
 				BE161A6918EB7E2800964404 /* UIColor+JHExtras.m in Sources */,
+				BE74D54C18EF6D8F00CA6BFA /* JHMath.m in Sources */,
 				BE161A7418EB7E2800964404 /* JHBeSocial.m in Sources */,
 				BE161A7118EB7E2800964404 /* PRPNibBasedTableViewCell.m in Sources */,
 				BE161A2818EB7E1800964404 /* MKAnnotationView+WebCache.m in Sources */,
