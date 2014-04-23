@@ -10,8 +10,7 @@
 #import "JHExtras.h"
 
 // Helpers
-#import "SafeARC.h"
-#import "SynthesizeSingleton.h"
+#import "JHMath.h"
 
 // UI
 #import "JHAutosizingLabel.h"

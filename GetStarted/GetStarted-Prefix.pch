@@ -23,6 +23,7 @@
     #import <AFNetworking/AFNetworking.h>
     #import "UIImageView+WebCache.h"
     #import "UIView+Positioning.h"
+    #import "CompactConstraint.h"
 
     #import "Constants.h"
     #import "JHiOSAdditions.h"

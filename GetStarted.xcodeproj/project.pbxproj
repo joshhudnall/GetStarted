@@ -63,7 +63,10 @@
 		BE161A7A18EB81DF00964404 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7918EB81DF00964404 /* libz.dylib */; };
 		BE161A7C18EB81ED00964404 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7B18EB81ED00964404 /* SystemConfiguration.framework */; };
 		BE161A7F18EBCB9200964404 /* CompressingLogFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A7E18EBCB9200964404 /* CompressingLogFileManager.m */; };
+		BE34BF5618F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE34BF5318F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m */; };
+		BE34BF5718F3D7C0001AE3EF /* UIView+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE34BF5518F3D7C0001AE3EF /* UIView+CompactConstraint.m */; };
 		BE74D54C18EF6D8F00CA6BFA /* JHMath.m in Sources */ = {isa = PBXBuildFile; fileRef = BE74D54B18EF6D8F00CA6BFA /* JHMath.m */; };
+		BED723A51907A0E00022F10A /* JHSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A41907A0E00022F10A /* JHSingleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -161,8 +164,6 @@
 		BE161A4918EB7E2800964404 /* UIImage+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JHExtras.m"; sourceTree = "<group>"; };
 		BE161A4A18EB7E2800964404 /* UITableView+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+JHExtras.h"; sourceTree = "<group>"; };
 		BE161A4B18EB7E2800964404 /* UITableView+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JHExtras.m"; sourceTree = "<group>"; };
-		BE161A4D18EB7E2800964404 /* SafeARC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeARC.h; sourceTree = "<group>"; };
-		BE161A4E18EB7E2800964404 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		BE161A4F18EB7E2800964404 /* JHiOSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHiOSAdditions.h; sourceTree = "<group>"; };
 		BE161A5118EB7E2800964404 /* JHAutosizingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHAutosizingLabel.h; sourceTree = "<group>"; };
 		BE161A5218EB7E2800964404 /* JHAutosizingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHAutosizingLabel.m; sourceTree = "<group>"; };
@@ -186,8 +187,15 @@
 		BE161A7B18EB81ED00964404 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BE161A7D18EBCB9200964404 /* CompressingLogFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompressingLogFileManager.h; sourceTree = "<group>"; };
 		BE161A7E18EBCB9200964404 /* CompressingLogFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompressingLogFileManager.m; sourceTree = "<group>"; };
+		BE34BF5118F3D7C0001AE3EF /* CompactConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompactConstraint.h; sourceTree = "<group>"; };
+		BE34BF5218F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+CompactConstraint.h"; sourceTree = "<group>"; };
+		BE34BF5318F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+CompactConstraint.m"; sourceTree = "<group>"; };
+		BE34BF5418F3D7C0001AE3EF /* UIView+CompactConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CompactConstraint.h"; sourceTree = "<group>"; };
+		BE34BF5518F3D7C0001AE3EF /* UIView+CompactConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CompactConstraint.m"; sourceTree = "<group>"; };
 		BE74D54A18EF6D8F00CA6BFA /* JHMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMath.h; sourceTree = "<group>"; };
 		BE74D54B18EF6D8F00CA6BFA /* JHMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMath.m; sourceTree = "<group>"; };
+		BED723A31907A0E00022F10A /* JHSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSingleton.h; sourceTree = "<group>"; };
+		BED723A41907A0E00022F10A /* JHSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSingleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +331,7 @@
 			children = (
 				BE1619F118EB7E1800964404 /* CCActionSheet.h */,
 				BE1619F218EB7E1800964404 /* CCActionSheet.m */,
+				BE34BF5018F3D7C0001AE3EF /* CompactConstraint */,
 				BE161A7D18EBCB9200964404 /* CompressingLogFileManager.h */,
 				BE161A7E18EBCB9200964404 /* CompressingLogFileManager.m */,
 				BE1619F318EB7E1800964404 /* DDProgressView.h */,
@@ -451,8 +460,6 @@
 		BE161A4C18EB7E2800964404 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				BE161A4D18EB7E2800964404 /* SafeARC.h */,
-				BE161A4E18EB7E2800964404 /* SynthesizeSingleton.h */,
 				BE74D54A18EF6D8F00CA6BFA /* JHMath.h */,
 				BE74D54B18EF6D8F00CA6BFA /* JHMath.m */,
 			);
@@ -485,8 +492,22 @@
 			children = (
 				BE161A6218EB7E2800964404 /* JHBeSocial.h */,
 				BE161A6318EB7E2800964404 /* JHBeSocial.m */,
+				BED723A31907A0E00022F10A /* JHSingleton.h */,
+				BED723A41907A0E00022F10A /* JHSingleton.m */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		BE34BF5018F3D7C0001AE3EF /* CompactConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				BE34BF5118F3D7C0001AE3EF /* CompactConstraint.h */,
+				BE34BF5218F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.h */,
+				BE34BF5318F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m */,
+				BE34BF5418F3D7C0001AE3EF /* UIView+CompactConstraint.h */,
+				BE34BF5518F3D7C0001AE3EF /* UIView+CompactConstraint.m */,
+			);
+			path = CompactConstraint;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -632,11 +653,13 @@
 				BE161A6718EB7E2800964404 /* NSString+JHExtras.m in Sources */,
 				BE161A7318EB7E2800964404 /* PRPSmartTableViewCell.m in Sources */,
 				BE161A7018EB7E2800964404 /* PRPAlertView.m in Sources */,
+				BE34BF5618F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m in Sources */,
 				BE161A6A18EB7E2800964404 /* UIImage+JHExtras.m in Sources */,
 				BE161A6E18EB7E2800964404 /* JHTableViewController.m in Sources */,
 				BE1619C718EB762700964404 /* main.m in Sources */,
 				BE161A3018EB7E1800964404 /* SDWebImagePrefetcher.m in Sources */,
 				BE161A6D18EB7E2800964404 /* JHSlideViewController.m in Sources */,
+				BE34BF5718F3D7C0001AE3EF /* UIView+CompactConstraint.m in Sources */,
 				BE161A2D18EB7E1800964404 /* SDWebImageDownloader.m in Sources */,
 				BE161A6818EB7E2800964404 /* UIBarButtonItem+JHExtras.m in Sources */,
 				BE161A6B18EB7E2800964404 /* UITableView+JHExtras.m in Sources */,
@@ -657,6 +680,7 @@
 				BE161A6F18EB7E2800964404 /* JHViewController.m in Sources */,
 				BE161A2318EB7E1800964404 /* CCActionSheet.m in Sources */,
 				BE161A2418EB7E1800964404 /* DDProgressView.m in Sources */,
+				BED723A51907A0E00022F10A /* JHSingleton.m in Sources */,
 				BE161A3318EB7E1800964404 /* UIImage+MultiFormat.m in Sources */,
 				BE161A3218EB7E1800964404 /* UIImage+GIF.m in Sources */,
 			);
