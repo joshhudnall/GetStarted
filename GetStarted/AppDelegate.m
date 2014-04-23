@@ -28,38 +28,8 @@
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     return YES;
-}
-
-- (void)setupCocoaLumberjack {
-    // CocoaLumberjack
-    [DDLog addLogger:[DDASLLogger sharedInstance]];
-    [DDLog addLogger:[DDTTYLogger sharedInstance]];
-    
-    // CocoaLumberjack File Logging
-    _logFileManager = [[CompressingLogFileManager alloc] init];
-    DDFileLogger *fileLogger = [[DDFileLogger alloc] initWithLogFileManager:_logFileManager];
-    fileLogger.maximumFileSize  = 1024 * 1024 * 2;  // 2 MB
-    fileLogger.rollingFrequency =   60 * 60 * 24;  // 1 Day
-    fileLogger.logFileManager.maximumNumberOfLogFiles = 10;
-    [DDLog addLogger:fileLogger];
-    
-}
-
-- (void)setupHockeyApp {
-    if (kHockeyAppID && ! [kHockeyAppID isEmpty]) {
-        [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:kHockeyAppID];
-        [[BITHockeyManager sharedHockeyManager] startManager];
-        [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
-    }
-}
-
-- (void)setupGoogleAnalytics {
-    if (kTrackingID && ! [kTrackingID isEmpty]) {
-        [GAI sharedInstance].dispatchInterval = 120;
-        [GAI sharedInstance].trackUncaughtExceptions = YES;
-        _tracker = [[GAI sharedInstance] trackerWithTrackingId:kTrackingID];
-    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -87,6 +57,40 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)setupCocoaLumberjack {
+    // CocoaLumberjack
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
+    
+    // CocoaLumberjack File Logging
+    _logFileManager = [[CompressingLogFileManager alloc] init];
+    DDFileLogger *fileLogger = [[DDFileLogger alloc] initWithLogFileManager:_logFileManager];
+    fileLogger.maximumFileSize  = 1024 * 1024 * 2;  // 2 MB
+    fileLogger.rollingFrequency =   60 * 60 * 24;  // 1 Day
+    fileLogger.logFileManager.maximumNumberOfLogFiles = 10;
+    [DDLog addLogger:fileLogger];
+    
+}
+
+- (void)setupHockeyApp {
+    if (kHockeyAppID && ! [kHockeyAppID isEmpty]) {
+        [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:kHockeyAppID];
+        if ([[BITHockeyManager sharedHockeyManager].crashManager isDebuggerAttached]) {
+            [[BITHockeyManager sharedHockeyManager] setDisableCrashManager:YES];
+        }
+        [[BITHockeyManager sharedHockeyManager] startManager];
+        [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
+    }
+}
+
+- (void)setupGoogleAnalytics {
+    if (kTrackingID && ! [kTrackingID isEmpty]) {
+        [GAI sharedInstance].dispatchInterval = 120;
+        [GAI sharedInstance].trackUncaughtExceptions = YES;
+        _tracker = [[GAI sharedInstance] trackerWithTrackingId:kTrackingID];
+    }
 }
 
 @end
