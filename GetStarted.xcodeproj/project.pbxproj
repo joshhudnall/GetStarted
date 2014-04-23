@@ -67,6 +67,8 @@
 		BE34BF5718F3D7C0001AE3EF /* UIView+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE34BF5518F3D7C0001AE3EF /* UIView+CompactConstraint.m */; };
 		BE74D54C18EF6D8F00CA6BFA /* JHMath.m in Sources */ = {isa = PBXBuildFile; fileRef = BE74D54B18EF6D8F00CA6BFA /* JHMath.m */; };
 		BED723A51907A0E00022F10A /* JHSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A41907A0E00022F10A /* JHSingleton.m */; };
+		BED723A91907A76A0022F10A /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A81907A76A0022F10A /* UIColor+App.m */; };
+		BED723AC1907A80A0022F10A /* UIFont+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723AB1907A80A0022F10A /* UIFont+App.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +198,10 @@
 		BE74D54B18EF6D8F00CA6BFA /* JHMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMath.m; sourceTree = "<group>"; };
 		BED723A31907A0E00022F10A /* JHSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSingleton.h; sourceTree = "<group>"; };
 		BED723A41907A0E00022F10A /* JHSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSingleton.m; sourceTree = "<group>"; };
+		BED723A71907A76A0022F10A /* UIColor+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+App.h"; sourceTree = "<group>"; };
+		BED723A81907A76A0022F10A /* UIColor+App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+App.m"; sourceTree = "<group>"; };
+		BED723AA1907A80A0022F10A /* UIFont+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+App.h"; sourceTree = "<group>"; };
+		BED723AB1907A80A0022F10A /* UIFont+App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+App.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,8 +275,7 @@
 			children = (
 				BE1619C918EB762700964404 /* AppDelegate.h */,
 				BE1619CA18EB762700964404 /* AppDelegate.m */,
-				BE1619EE18EB7D0F00964404 /* Constants.h */,
-				BE1619EF18EB7D0F00964404 /* Constants.m */,
+				BED723A61907A7240022F10A /* Customization */,
 				BE1619E918EB7C9000964404 /* Views */,
 				BE1619EC18EB7CD600964404 /* DataSource */,
 				BE1619ED18EB7CE900964404 /* Models */,
@@ -510,6 +515,19 @@
 			path = CompactConstraint;
 			sourceTree = "<group>";
 		};
+		BED723A61907A7240022F10A /* Customization */ = {
+			isa = PBXGroup;
+			children = (
+				BE1619EE18EB7D0F00964404 /* Constants.h */,
+				BE1619EF18EB7D0F00964404 /* Constants.m */,
+				BED723A71907A76A0022F10A /* UIColor+App.h */,
+				BED723A81907A76A0022F10A /* UIColor+App.m */,
+				BED723AA1907A80A0022F10A /* UIFont+App.h */,
+				BED723AB1907A80A0022F10A /* UIFont+App.m */,
+			);
+			path = Customization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -651,6 +669,7 @@
 				BE161A3118EB7E1800964404 /* UIButton+WebCache.m in Sources */,
 				BE161A6518EB7E2800964404 /* NSMutableArray+JHExtras.m in Sources */,
 				BE161A6718EB7E2800964404 /* NSString+JHExtras.m in Sources */,
+				BED723AC1907A80A0022F10A /* UIFont+App.m in Sources */,
 				BE161A7318EB7E2800964404 /* PRPSmartTableViewCell.m in Sources */,
 				BE161A7018EB7E2800964404 /* PRPAlertView.m in Sources */,
 				BE34BF5618F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m in Sources */,
@@ -671,6 +690,7 @@
 				BE161A6918EB7E2800964404 /* UIColor+JHExtras.m in Sources */,
 				BE74D54C18EF6D8F00CA6BFA /* JHMath.m in Sources */,
 				BE161A7418EB7E2800964404 /* JHBeSocial.m in Sources */,
+				BED723A91907A76A0022F10A /* UIColor+App.m in Sources */,
 				BE161A7118EB7E2800964404 /* PRPNibBasedTableViewCell.m in Sources */,
 				BE161A2818EB7E1800964404 /* MKAnnotationView+WebCache.m in Sources */,
 				BE161A2B18EB7E1800964404 /* SDWebImageCompat.m in Sources */,

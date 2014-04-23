@@ -33,9 +33,3 @@ extern NSString *const kHockeyAppID;
 
 
 
-// Fonts
-
-
-
-// Colors
-

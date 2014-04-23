@@ -21,10 +21,21 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
+    // Basic libraries
+    [self setupCocoaLumberjack];
+    [self setupHockeyApp];
+    [self setupGoogleAnalytics];
+
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    return YES;
+}
+
+- (void)setupCocoaLumberjack {
     // CocoaLumberjack
     [DDLog addLogger:[DDASLLogger sharedInstance]];
     [DDLog addLogger:[DDTTYLogger sharedInstance]];
-
+    
     // CocoaLumberjack File Logging
     _logFileManager = [[CompressingLogFileManager alloc] init];
     DDFileLogger *fileLogger = [[DDFileLogger alloc] initWithLogFileManager:_logFileManager];
@@ -32,24 +43,23 @@
     fileLogger.rollingFrequency =   60 * 60 * 24;  // 1 Day
     fileLogger.logFileManager.maximumNumberOfLogFiles = 10;
     [DDLog addLogger:fileLogger];
+    
+}
 
-    // HockeyApp
-    if ( ! [kHockeyAppID isEmpty]) {
+- (void)setupHockeyApp {
+    if (kHockeyAppID && ! [kHockeyAppID isEmpty]) {
         [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:kHockeyAppID];
         [[BITHockeyManager sharedHockeyManager] startManager];
         [[BITHockeyManager sharedHockeyManager].authenticator authenticateInstallation];
     }
-    
-    // Google Analytics
-    if ( ! [kTrackingID isEmpty]) {
+}
+
+- (void)setupGoogleAnalytics {
+    if (kTrackingID && ! [kTrackingID isEmpty]) {
         [GAI sharedInstance].dispatchInterval = 120;
         [GAI sharedInstance].trackUncaughtExceptions = YES;
         _tracker = [[GAI sharedInstance] trackerWithTrackingId:kTrackingID];
     }
-
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

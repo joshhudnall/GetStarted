@@ -29,9 +29,4 @@ NSString *const kHockeyAppID = @"";
 
 
 
-// Fonts
-
-
-
-// Colors
 
