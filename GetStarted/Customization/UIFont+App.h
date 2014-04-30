@@ -10,6 +10,8 @@
 
 @interface UIFont (App)
 
++ (void)listFonts;
+
 + (UIFont *)helveticaAtSize:(CGFloat)size;
 
 @end
