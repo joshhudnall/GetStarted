@@ -26,13 +26,13 @@
 
 - (void)setTitle:(NSString *)title {
     NSString *fileName = [NSString stringWithFormat:@"header-%@", [title slug]];
-    NSString *imagePath = [[NSBundle mainBundle] pathForResource:fileName ofType:@"png"];
+    UIImage *headerImage = [UIImage imageNamed:fileName];
     
-    if (imagePath) {
-        UIImageView *headerImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:fileName]];
-        headerImageView.tag = 9001;
+    if (headerImage) {
+        UIImageView *headerImageView = [[UIImageView alloc] initWithImage:headerImage];
         self.navigationItem.titleView = headerImageView;
     } else {
+        self.navigationItem.titleView = nil;
         [super setTitle:title];
     }
     

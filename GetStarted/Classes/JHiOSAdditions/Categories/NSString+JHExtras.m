@@ -92,7 +92,9 @@
     NSCharacterSet *invalidCharacters = [[NSCharacterSet characterSetWithCharactersInString:validCharacters] invertedSet];
     newStr = [NSMutableString stringWithString:[[newStr componentsSeparatedByCharactersInSet:invalidCharacters] componentsJoinedByString:separator]];
     
-    return [newStr mutableCopy];
+    newStr = [NSMutableString stringWithString:[newStr stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"-"]]];
+    
+    return [(NSString *)newStr copy];
 }
 
 - (BOOL)isEmpty {
