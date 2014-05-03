@@ -65,6 +65,7 @@
 		BE161A7F18EBCB9200964404 /* CompressingLogFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A7E18EBCB9200964404 /* CompressingLogFileManager.m */; };
 		BE34BF5618F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE34BF5318F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m */; };
 		BE34BF5718F3D7C0001AE3EF /* UIView+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE34BF5518F3D7C0001AE3EF /* UIView+CompactConstraint.m */; };
+		BE5F8F3119155556001EEF1D /* JHDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F8F3019155556001EEF1D /* JHDataSource.m */; };
 		BE74D54C18EF6D8F00CA6BFA /* JHMath.m in Sources */ = {isa = PBXBuildFile; fileRef = BE74D54B18EF6D8F00CA6BFA /* JHMath.m */; };
 		BED723A51907A0E00022F10A /* JHSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A41907A0E00022F10A /* JHSingleton.m */; };
 		BED723A91907A76A0022F10A /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A81907A76A0022F10A /* UIColor+App.m */; };
@@ -194,6 +195,8 @@
 		BE34BF5318F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+CompactConstraint.m"; sourceTree = "<group>"; };
 		BE34BF5418F3D7C0001AE3EF /* UIView+CompactConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CompactConstraint.h"; sourceTree = "<group>"; };
 		BE34BF5518F3D7C0001AE3EF /* UIView+CompactConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CompactConstraint.m"; sourceTree = "<group>"; };
+		BE5F8F2F19155556001EEF1D /* JHDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDataSource.h; sourceTree = "<group>"; };
+		BE5F8F3019155556001EEF1D /* JHDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDataSource.m; sourceTree = "<group>"; };
 		BE74D54A18EF6D8F00CA6BFA /* JHMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMath.h; sourceTree = "<group>"; };
 		BE74D54B18EF6D8F00CA6BFA /* JHMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMath.m; sourceTree = "<group>"; };
 		BED723A31907A0E00022F10A /* JHSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSingleton.h; sourceTree = "<group>"; };
@@ -281,6 +284,7 @@
 				BE1619ED18EB7CE900964404 /* Models */,
 				BE1619EA18EB7CAC00964404 /* Classes */,
 				BE1619EB18EB7CC100964404 /* 3rdParty */,
+				BE6B812C19157BC6003FD600 /* Resources */,
 				BE1619CC18EB762700964404 /* Images.xcassets */,
 				BE1619C118EB762700964404 /* Supporting Files */,
 			);
@@ -353,6 +357,8 @@
 		BE1619EC18EB7CD600964404 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				BE5F8F2F19155556001EEF1D /* JHDataSource.h */,
+				BE5F8F3019155556001EEF1D /* JHDataSource.m */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -515,6 +521,13 @@
 			path = CompactConstraint;
 			sourceTree = "<group>";
 		};
+		BE6B812C19157BC6003FD600 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		BED723A61907A7240022F10A /* Customization */ = {
 			isa = PBXGroup;
 			children = (
@@ -664,6 +677,7 @@
 				BE161A3518EB7E1800964404 /* UIImageView+WebCache.m in Sources */,
 				BE161A6418EB7E2800964404 /* NSDate+JHExtras.m in Sources */,
 				BE161A2A18EB7E1800964404 /* SDImageCache.m in Sources */,
+				BE5F8F3119155556001EEF1D /* JHDataSource.m in Sources */,
 				BE161A2E18EB7E1800964404 /* SDWebImageDownloaderOperation.m in Sources */,
 				BE161A2718EB7E1800964404 /* NGAParallaxMotion.m in Sources */,
 				BE161A3118EB7E1800964404 /* UIButton+WebCache.m in Sources */,
