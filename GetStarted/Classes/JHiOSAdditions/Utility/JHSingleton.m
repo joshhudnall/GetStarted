@@ -8,15 +8,31 @@
 
 #import "JHSingleton.h"
 
+// This class is designed to be subclassed, this dict holds references to each shared instance
+static NSMutableDictionary *_sharedInstances = nil;
+
 @implementation JHSingleton
 
++ (void)initialize {
+	if (_sharedInstances == nil) {
+		_sharedInstances = [NSMutableDictionary dictionary];
+	}
+}
+
 + (instancetype)sharedInstance {
-    __strong static id _sharedObject = nil;
-    static dispatch_once_t onceToken = 0;
-    dispatch_once(&onceToken, ^{
-        _sharedObject = [[self alloc] init];
-    });
-    return _sharedObject;
+	id sharedInstance = nil;
+    
+	@synchronized(self) {
+		NSString *instanceClass = NSStringFromClass(self);
+        
+		sharedInstance = [_sharedInstances objectForKey:instanceClass];
+		if (sharedInstance == nil) {
+			sharedInstance = [[self alloc] init];
+			[_sharedInstances setObject:sharedInstance forKey:instanceClass];
+		}
+	}
+    
+	return sharedInstance;
 }
 
 #ifdef kForceSingleton
