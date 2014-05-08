@@ -26,6 +26,8 @@ extern int const ddLogLevel;
 
 extern NSString *const kAPIBaseUrl;
 extern NSString *const kTrackingID;
+extern NSString *const kSecondaryTrackingName;
+extern NSString *const kSecondaryTrackingID;
 extern NSString *const kHockeyAppID;
 
 

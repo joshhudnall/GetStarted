@@ -22,6 +22,8 @@ int const ddLogLevel = LOG_LEVEL_WARN;
 
 NSString *const kAPIBaseUrl = @"";
 NSString *const kTrackingID = @"";
+NSString *const kSecondaryTrackingName = @"secondaryTracker";
+NSString *const kSecondaryTrackingID = @"";
 NSString *const kHockeyAppID = @"";
 
 

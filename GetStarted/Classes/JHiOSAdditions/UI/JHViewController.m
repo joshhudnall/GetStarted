@@ -8,6 +8,9 @@
 
 #import "JHViewController.h"
 #import <AFNetworking/AFNetworking.h>
+#import "GAIFields.h"
+#import "GAITracker.h"
+#import "GAIDictionaryBuilder.h"
 
 
 @interface JHViewController ()
@@ -21,6 +24,18 @@
     
     if (_apiEndpoint) {
         [self loadData];
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    if (kSecondaryTrackingID && ! [kSecondaryTrackingID isEmpty] && self.title && ! [self.title isEmpty]) {
+        // Set and send screen
+        id <GAITracker> tracker = [[GAI sharedInstance] trackerWithName:kSecondaryTrackingName
+                                                             trackingId:kSecondaryTrackingID];
+        [tracker set:kGAIScreenName value:self.title];
+        [tracker send:[[GAIDictionaryBuilder createAppView] build]];
     }
 }
 
