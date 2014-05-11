@@ -263,7 +263,7 @@
 		BED723A81907A76A0022F10A /* UIColor+App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+App.m"; sourceTree = "<group>"; };
 		BED723AA1907A80A0022F10A /* UIFont+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+App.h"; sourceTree = "<group>"; };
 		BED723AB1907A80A0022F10A /* UIFont+App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+App.m"; sourceTree = "<group>"; };
-		BEED0A0C19201FCE00FA2193 /* GetStarted Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "GetStarted Dev.app"; path = GetStartedDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEED0A0C19201FCE00FA2193 /* GetStartedDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetStartedDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEED0A0D19201FCF00FA2193 /* App-Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "App-Dev-Info.plist"; path = "/Users/joshhudnall/Dropbox/MAUnshared/GetStarted/App-Dev-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -329,7 +329,7 @@
 			children = (
 				BE1619B718EB762700964404 /* GetStarted.app */,
 				BE1619D218EB762700964404 /* AppTests.xctest */,
-				BEED0A0C19201FCE00FA2193 /* GetStarted Dev.app */,
+				BEED0A0C19201FCE00FA2193 /* GetStartedDev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -675,7 +675,7 @@
 			);
 			name = GetStartedDev;
 			productName = GetStarted;
-			productReference = BEED0A0C19201FCE00FA2193 /* GetStarted Dev.app */;
+			productReference = BEED0A0C19201FCE00FA2193 /* GetStartedDev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1101,7 +1101,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 99382468C2D14A708BC65F21 /* Pods.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "App/App-Prefix.pch";
@@ -1119,7 +1119,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 99382468C2D14A708BC65F21 /* Pods.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconDev;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "App/App-Prefix.pch";
