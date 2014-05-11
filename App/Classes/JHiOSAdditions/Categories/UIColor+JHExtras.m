@@ -10,7 +10,7 @@
 
 @implementation UIColor (JHExtras)
 
-+ (BOOL)stringIsHexColor:(NSString *)string {
++ (BOOL)jh_stringIsHexColor:(NSString *)string {
     if ([[string substringToIndex:1] isEqualToString:@"#"]) {
         string = [string substringWithRange:NSMakeRange(1, [string length] - 1)];
     }
@@ -20,7 +20,7 @@
     return ([scanner scanHexInt:&hex]);
 }
 
-+ (UIColor *)colorWithHexString:(NSString *)string {
++ (UIColor *)jh_colorWithHexString:(NSString *)string {
     if ([[string substringToIndex:1] isEqualToString:@"#"]) {
         string = [string substringWithRange:NSMakeRange(1, [string length] - 1)];
     }
@@ -39,7 +39,7 @@
                            alpha:1.0f];
 }
 
-- (BOOL)isEqualToColor:(UIColor *)otherColor {
+- (BOOL)jh_isEqualToColor:(UIColor *)otherColor {
     CGColorSpaceRef colorSpaceRGB = CGColorSpaceCreateDeviceRGB();
     
     UIColor *(^convertColorToRGBSpace)(UIColor*) = ^(UIColor *color) {

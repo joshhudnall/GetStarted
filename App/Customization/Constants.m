@@ -6,7 +6,7 @@
 
 #import "Constants.h"
 
-// CocoaLumberjack
+#pragma mark - CocoaLumberjack
 
 #ifdef DEBUG
 int const ddLogLevel = LOG_FLAG_DEBUG;
@@ -18,16 +18,16 @@ int const ddLogLevel = LOG_LEVEL_INFO;
 #define NSLog DDLogInfo
 
 
-// General
+#pragma mark - General
 
 NSString *const kAPIBaseUrl = @"";
 NSString *const kTrackingID = @"";
-NSString *const kSecondaryTrackingName = @"secondaryTracker";
+NSString *const kSecondaryTrackingName = @"secondaryTracker"; // This likely never need change
 NSString *const kSecondaryTrackingID = @"";
 NSString *const kHockeyAppID = @"";
 
 
-// Defaults
+#pragma mark - Defaults Keys
 
 
 

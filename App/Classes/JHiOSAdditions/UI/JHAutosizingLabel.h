@@ -8,14 +8,21 @@
 #import <UIKit/UIKit.h>
 
 
-@interface JHAutosizingLabel : UILabel {
-	double minHeight;
-}
+@interface JHAutosizingLabel : UILabel
 
+/**
+ *  The minimum height the label should be.
+ */
 @property (nonatomic) double minHeight;
-@property (nonatomic) double maxHeight;
-@property (nonatomic) BOOL adjustsParent;
 
-- (void)calculateSize;
+/**
+ *  The maximum height the label should grow to
+ */
+@property (nonatomic) double maxHeight;
+
+/**
+ *  If true and the label's superview is a UIScrollView, will automatically adjust the scrollView's contentSize to fit
+ */
+@property (nonatomic) BOOL adjustsParent;
 
 @end

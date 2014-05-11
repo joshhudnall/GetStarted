@@ -30,7 +30,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    if (kSecondaryTrackingID && ! [kSecondaryTrackingID isEmpty] && self.title && ! [self.title isEmpty]) {
+    if (kSecondaryTrackingID && ! [kSecondaryTrackingID jh_isEmpty] && self.title && ! [self.title jh_isEmpty]) {
         // Set and send screen
         id <GAITracker> tracker = [[GAI sharedInstance] trackerWithName:kSecondaryTrackingName
                                                              trackingId:kSecondaryTrackingID];
@@ -40,7 +40,7 @@
 }
 
 - (void)setTitle:(NSString *)title {
-    NSString *fileName = [NSString stringWithFormat:@"header-%@", [title slug]];
+    NSString *fileName = [NSString stringWithFormat:@"header-%@", [title jh_slug]];
     UIImage *headerImage = [UIImage imageNamed:fileName];
     
     if (headerImage) {

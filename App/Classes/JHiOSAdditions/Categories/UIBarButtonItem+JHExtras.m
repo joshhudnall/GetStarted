@@ -10,7 +10,7 @@
 
 @implementation UIBarButtonItem (JHExtras)
 
-+ (UIBarButtonItem *)barButtonItemForTitle:(NSString *)title target:(id)target andSelector:(SEL)selector {
++ (UIBarButtonItem *)jh_barButtonItemForTitle:(NSString *)title target:(id)target andSelector:(SEL)selector {
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [backButton setTitle:title forState:UIControlStateNormal];
     [backButton addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
@@ -25,7 +25,7 @@
     return [[UIBarButtonItem alloc] initWithCustomView:backButton];
 }
 
-+ (UIBarButtonItem *)barButtonItemForImage:(UIImage *)image target:(id)target andSelector:(SEL)selector {
++ (UIBarButtonItem *)jh_barButtonItemForImage:(UIImage *)image target:(id)target andSelector:(SEL)selector {
     UIButton *backButton = [UIButton buttonWithType:UIButtonTypeCustom];
 	[backButton setBackgroundImage:nil forState:UIControlStateNormal];
 	[backButton setBackgroundImage:nil forState:UIControlStateHighlighted];

@@ -18,20 +18,43 @@
 #define IS_IOS_7 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
 
 
-// CocoaLumberjack
+#pragma mark - CocoaLumberjack
 
+/**
+ *  The CocoaLumberjack logging level
+ */
 extern int const ddLogLevel;
 
-// General
 
+#pragma mark - General
+
+/**
+ *  A base API URL to be used with JHViewController's apiEndpoint property
+ */
 extern NSString *const kAPIBaseUrl;
+
+/**
+ *  A Google Analytics property ID. If set, enables automatic GA screen tracking for all JHViewControllers with a title
+ */
 extern NSString *const kTrackingID;
+
+/**
+ *  A secondary Google Analytics tracker name. If set, enables automatic GA screen tracking for all JHViewControllers with a title
+ */
 extern NSString *const kSecondaryTrackingName;
+
+/**
+ *  A secondary Google Analytics property ID. If set, enables automatic GA screen tracking for all JHViewControllers with a title
+ */
 extern NSString *const kSecondaryTrackingID;
+
+/**
+ *  A HockeyApp SDK App ID. If set, enables Hockey SDK tracking and crash logs
+ */
 extern NSString *const kHockeyAppID;
 
 
-// Defaults
+#pragma mark - Defaults Keys
 
 
 

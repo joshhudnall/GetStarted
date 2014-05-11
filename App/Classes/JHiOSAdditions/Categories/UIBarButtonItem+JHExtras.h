@@ -10,7 +10,25 @@
 
 @interface UIBarButtonItem (JHExtras)
 
-+ (UIBarButtonItem *)barButtonItemForTitle:(NSString *)title target:(id)target andSelector:(SEL)selector;
-+ (UIBarButtonItem *)barButtonItemForImage:(UIImage *)image target:(id)target andSelector:(SEL)selector;
+/**
+ *  Creates a UIBarButtonItem with a UIButton as the custom view with a target and selector for the TouchUpInside event
+ *
+ *  @param title    The title of the UIButton
+ *  @param target   The target for the UIButton
+ *  @param selector The selector for the UIButton
+ *
+ *  @return A UIBarButtonItem
+ */
++ (UIBarButtonItem *)jh_barButtonItemForTitle:(NSString *)title target:(id)target andSelector:(SEL)selector;
+/**
+ *  Creates a UIBarButtonItem with a UIButton as the custom view with a target and selector for the TouchUpInside event
+ *
+ *  @param image    The image to use for the UIButton
+ *  @param target   The target for the UIButton
+ *  @param selector The selector for the UIButton
+ *
+ *  @return A UIBarButtonItem
+ */
++ (UIBarButtonItem *)jh_barButtonItemForImage:(UIImage *)image target:(id)target andSelector:(SEL)selector;
 
 @end

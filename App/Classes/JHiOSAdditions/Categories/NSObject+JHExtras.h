@@ -10,6 +10,12 @@
 
 @interface NSObject (JHExtras)
 
-- (void)performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay;
+/**
+ *  Performs a block after the specified delay using GCD
+ *
+ *  @param block The block to perform
+ *  @param delay Delay in seconds
+ */
+- (void)jh_performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay;
 
 @end

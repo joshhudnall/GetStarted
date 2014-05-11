@@ -10,11 +10,11 @@
 
 @implementation UIImage (JHExtras)
 
-+ (UIImage *)imageWithColor:(UIColor *)color {
-    return [UIImage imageWithColor:color ofSize:CGSizeMake(1.f, 1.f)];
++ (UIImage *)jh_imageWithColor:(UIColor *)color {
+    return [UIImage jh_imageWithColor:color ofSize:CGSizeMake(1.f, 1.f)];
 }
 
-+ (UIImage *)imageWithColor:(UIColor *)color ofSize:(CGSize)size {
++ (UIImage *)jh_imageWithColor:(UIColor *)color ofSize:(CGSize)size {
     CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
     UIGraphicsBeginImageContext(rect.size);
     CGContextRef context = UIGraphicsGetCurrentContext();
@@ -28,7 +28,7 @@
     return image;
 }
 
-- (UIImage *)spriteInRect:(CGRect)rect {
+- (UIImage *)jh_spriteInRect:(CGRect)rect {
     CGImageRef imageToSplit = self.CGImage;
     
     CGImageRef partOfImageAsCG = CGImageCreateWithImageInRect(imageToSplit, rect);

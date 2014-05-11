@@ -10,7 +10,7 @@
 
 @implementation NSString (JHExtras)
 
-- (NSString *)stripWhitespace {
+- (NSString *)jh_stripWhitespace {
     NSString *string = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
     string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     string = [string stringByReplacingOccurrencesOfString:@"  " withString:@""];
@@ -19,17 +19,17 @@
     return string;
 }
 
-- (NSString *)truncateToLength:(NSUInteger)length {
-	return [self truncateToLength:length inMiddle:NO];
+- (NSString *)jh_truncateToLength:(NSUInteger)length {
+	return [self jh_truncateToLength:length inMiddle:NO];
 }
 
-- (NSString *)truncateToLength:(NSUInteger)length inMiddle:(BOOL)inMiddle {
+- (NSString *)jh_truncateToLength:(NSUInteger)length inMiddle:(BOOL)inMiddle {
 	NSString *withChar = (inMiddle) ? @" ... " : @" ...";
 	
-	return [self truncateToLength:length inMiddle:inMiddle withChar:withChar];
+	return [self jh_truncateToLength:length inMiddle:inMiddle replaceWithString:withChar];
 }
 
-- (NSString *)truncateToLength:(NSUInteger)length inMiddle:(BOOL)inMiddle withChar:(NSString *)withChar {
+- (NSString *)jh_truncateToLength:(NSUInteger)length inMiddle:(BOOL)inMiddle replaceWithString:(NSString *)withChar {
 	NSString *inStr = self;
 	
 	// If the string is shorter than the length desired, just return it
@@ -53,26 +53,23 @@
 		
 		return [NSString stringWithFormat:@"%@%@%@", firstHalf, withChar, lastHalf];
 	}
-	
-	// We never reach this point, but we'll return to prevent a compiler warning
-	return inStr;
 }
 
-+ (NSString *)singular:(NSString *)singular orPlural:(NSString *)plural forCount:(NSInteger)count {
-	return [NSString zero:plural singular:singular orPlural:plural forCount:count];
++ (NSString *)jh_singular:(NSString *)singularFormat orPlural:(NSString *)pluralFormat forCount:(NSInteger)count {
+	return [NSString jh_zero:pluralFormat singular:singularFormat orPlural:pluralFormat forCount:count];
 }
 
-+ (NSString *)zero:(NSString *)zero singular:(NSString *)singular orPlural:(NSString *)plural forCount:(NSInteger)count {
++ (NSString *)jh_zero:(NSString *)zeroFormat singular:(NSString *)singularFormat orPlural:(NSString *)pluralFormat forCount:(NSInteger)count {
 	if (count == 0) {
-		return [NSString stringWithFormat:zero, count];
+		return [NSString stringWithFormat:zeroFormat, count];
 	} else if (count == 1) {
-		return [NSString stringWithFormat:singular, count];
+		return [NSString stringWithFormat:singularFormat, count];
 	} else {
-		return [NSString stringWithFormat:plural, count];
+		return [NSString stringWithFormat:pluralFormat, count];
 	}
 }
 
-- (NSString *)stringByStrippingHTML {
+- (NSString *)jh_stringByStrippingHTML {
     NSRange r;
     NSString *s = [self copy];
     while ( (r = [s rangeOfString:@"<[^>]+>" options:NSRegularExpressionSearch]).location != NSNotFound )
@@ -80,7 +77,7 @@
     return s;
 }
 
-- (NSString *)slug {
+- (NSString *)jh_slug {
     NSMutableString *newStr = [[self lowercaseString] mutableCopy];
     NSString *separator = @"-";
     
@@ -97,8 +94,12 @@
     return [(NSString *)newStr copy];
 }
 
-- (BOOL)isEmpty {
-    return ! (self && self.length);
+- (BOOL)jh_isEmpty {
+    return [self isEqualToString:@""];
+}
+
+- (BOOL)jh_isFull {
+    return ! [self isEqualToString:@""];
 }
 
 @end

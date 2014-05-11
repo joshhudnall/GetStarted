@@ -10,7 +10,7 @@
 
 @implementation NSDate (JHExtras)
 
-- (NSString *)relativeTimeFromNow {
+- (NSString *)jh_relativeTimeFromNow {
     NSDate *origDate = self;
     NSDate *todayDate = [NSDate date];
     double ti = [origDate timeIntervalSinceDate:todayDate];
@@ -37,24 +37,35 @@
     }
 }
 
-+ (NSDate *)dateFromMySqlString:(NSString *)dateString {
-    static NSDateFormatter *mysqlDateFormatter = nil;
-    if (mysqlDateFormatter == nil) {
-        mysqlDateFormatter = [[NSDateFormatter alloc] init];
-    }
-    
++ (NSDate *)jh_dateFromMySqlString:(NSString *)dateString {
+    NSDateFormatter *dateFormatter;
     if (dateString.length == 10) {
-        mysqlDateFormatter.dateFormat = @"yyyy-MM-dd";
+        static NSDateFormatter *mysqlDateFormatter = nil;
+        if (mysqlDateFormatter == nil) {
+            mysqlDateFormatter = [[NSDateFormatter alloc] init];
+            mysqlDateFormatter.dateFormat = @"yyyy-MM-dd";
+        }
+        dateFormatter = mysqlDateFormatter;
     } else if (dateString.length == 8) {
-        mysqlDateFormatter.dateFormat = @"HH:mm:ss";
+        static NSDateFormatter *mysqlTimeFormatter = nil;
+        if (mysqlTimeFormatter == nil) {
+            mysqlTimeFormatter = [[NSDateFormatter alloc] init];
+            mysqlTimeFormatter.dateFormat = @"HH:mm:ss";
+        }
+        dateFormatter = mysqlTimeFormatter;
     } else {
-        mysqlDateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+        static NSDateFormatter *mysqlDateTimeFormatter = nil;
+        if (mysqlDateTimeFormatter == nil) {
+            mysqlDateTimeFormatter = [[NSDateFormatter alloc] init];
+            mysqlDateTimeFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+        }
+        dateFormatter = mysqlDateTimeFormatter;
     }
     
-    return [mysqlDateFormatter dateFromString:dateString];
+    return [dateFormatter dateFromString:dateString];
 }
 
-+ (NSDate *)dateFromTwitter:(NSString *)dateString {
++ (NSDate *)jh_dateFromTwitter:(NSString *)dateString {
     static NSDateFormatter *twitterDateFormatter = nil;
     if (twitterDateFormatter == nil) {
         twitterDateFormatter = [[NSDateFormatter alloc] init];
@@ -69,11 +80,14 @@
     return [twitterDateFormatter dateFromString:dateString];
 }
 
-- (NSString *)dateFormatted:(NSString *)dateFormat {
+- (NSString *)jh_dateFormatted:(NSString *)dateFormat {
+    // Keep a static date formatter around
     static NSDateFormatter *dateFormatter = nil;
     if (dateFormatter == nil) {
         dateFormatter = [[NSDateFormatter alloc] init];
     }
+    
+    // Only update the format string if it's changed
     static NSString *savedDateFormat = nil;
     if (savedDateFormat == nil || ! [savedDateFormat isEqualToString:dateFormat]) {
         dateFormatter.dateFormat = dateFormat;
@@ -81,10 +95,6 @@
     }
     
     return [dateFormatter stringFromDate:self];
-}
-
-+ (NSString *)convertDateFromMySql:(NSString *)dateString toFormat:(NSString *)dateFormat {
-    return [[NSDate dateFromMySqlString:dateString] dateFormatted:dateFormat];
 }
 
 @end

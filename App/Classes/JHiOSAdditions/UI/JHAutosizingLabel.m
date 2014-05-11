@@ -5,8 +5,8 @@
 //  Copyright 2011 Josh Hudnall. All rights reserved.
 //
 
-#define MIN_HEIGHT 10.0f
-#define MAX_HEIGHT 0.0f
+#define kJHAutosizingLabelMinHeight 10.0f
+#define kJHAutosizingLabelMaxHeight CGFLOAT_MAX
 
 #import "JHAutosizingLabel.h"
 
@@ -17,10 +17,9 @@
 @synthesize maxHeight;
 @synthesize adjustsParent;
 
-- (id)init {
-	if ([super init]) {
-		self.minHeight = MIN_HEIGHT;
-		self.maxHeight = MAX_HEIGHT;
+- (id)initWithFrame:(CGRect)frame {
+	if ([super initWithFrame:frame]) {
+        [self setup];
 	}
 	
 	return self;
@@ -28,26 +27,32 @@
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
 	if ([super initWithCoder:aDecoder]) {
-		self.minHeight = MIN_HEIGHT;
-		self.maxHeight = MAX_HEIGHT;
+        [self setup];
 	}
 	
 	return self;
 }
 
+- (void)setup {
+    self.minHeight = kJHAutosizingLabelMinHeight;
+    self.maxHeight = kJHAutosizingLabelMaxHeight;
+}
+
 - (void)calculateSize {
 	CGSize constraint = CGSizeMake(self.frame.size.width, 20000.0f);
     
-    NSString *text = self.text;
-	CGSize size = [text sizeWithFont:self.font constrainedToSize:constraint lineBreakMode:NSLineBreakByWordWrapping];
+    NSAttributedString *attString = self.attributedText;
+	CGSize size = [attString boundingRectWithSize:constraint
+                                          options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin
+                                          context:nil].size;
 	
 	[self setLineBreakMode:NSLineBreakByWordWrapping];
 	[self setAdjustsFontSizeToFitWidth:NO];
 	[self setNumberOfLines:0];
 	
-	float height = MAX(size.height, minHeight);
+	float height = fmaxf(size.height, minHeight);
 	if (maxHeight) {
-		height = MIN(height, maxHeight);
+		height = fminf(height, maxHeight);
 	}
 	[super setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, height)];
 	
@@ -62,19 +67,21 @@
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
     
-    [self calculateSize];
+    [self setNeedsLayout];
 }
 
 - (void)setText:(NSString *)text {	
 	[super setText:text];
 	
-	[self calculateSize];
+	[self setNeedsLayout];
 }
 
 - (void)setFont:(UIFont *)font {
 	[super setFont:font];
+    
+    self.minHeight = font.pointSize;
 	
-	[self calculateSize];
+	[self setNeedsLayout];
 }
 
 - (void)layoutSubviews {

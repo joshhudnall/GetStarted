@@ -10,16 +10,11 @@
 
 @implementation NSObject (JHExtras)
 
-- (void)performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay
+- (void)jh_performBlock:(void (^)(void))block afterDelay:(NSTimeInterval)delay
 {
-    block = [block copy];
-    [self performSelector:@selector(fireBlockAfterDelay:)
-               withObject:block
-               afterDelay:delay];
+    dispatch_time_t time = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC));
+    dispatch_after(time, dispatch_get_main_queue(), block);
 }
 
-- (void)fireBlockAfterDelay:(void (^)(void))block {
-    block();
-}
 
 @end

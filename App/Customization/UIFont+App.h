@@ -15,6 +15,13 @@
  */
 + (void)listFonts;
 
+/**
+ *  Returns a UIFont at the specified size
+ *
+ *  @param size The desired size of the font
+ *
+ *  @return A UIFont at the specified size
+ */
 + (UIFont *)helveticaAtSize:(CGFloat)size;
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation NSMutableArray (JHExtras)
 
-- (void)addUniqueObjectsFromArray:(NSArray *)array usingComparator:(JHComparator)comparator {
+- (void)jh_addUniqueObjectsFromArray:(NSArray *)array usingComparator:(JHComparator)comparator {
     for (id obj in array) {
         if ( ! comparator(self, obj)) {
             [self addObject:obj];

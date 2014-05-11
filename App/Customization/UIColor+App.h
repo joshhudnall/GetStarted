@@ -10,6 +10,11 @@
 
 @interface UIColor (App)
 
+/**
+ *  Returns the primary brand color for the app
+ *
+ *  @return A UIColor representing the primary brand color
+ */
 + (UIColor *)brandPrimaryColor;
 
 @end

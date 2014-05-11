@@ -19,7 +19,6 @@
 @property (nonatomic, unsafe_unretained) int lastPageLoaded;
 @property (nonatomic, readonly) NSArray *objects;
 
-
 - (id)initWithStyle:(UITableViewStyle)style;
 
 @end
