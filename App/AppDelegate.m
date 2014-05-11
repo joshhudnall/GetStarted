@@ -12,6 +12,7 @@
 @interface AppDelegate ()
 
 @property (nonatomic, strong) id <GAITracker> tracker;
+@property (nonatomic, strong) id <GAITracker> secondaryTracker;
 
 @end
 
@@ -25,6 +26,11 @@
     [self setupCocoaLumberjack];
     [self setupHockeyApp];
     [self setupGoogleAnalytics];
+    
+    // Global Appearance
+    [self setupAppearance];
+    
+    // Create and set window's rootViewController
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -68,7 +74,7 @@
     _logFileManager = [[CompressingLogFileManager alloc] init];
     DDFileLogger *fileLogger = [[DDFileLogger alloc] initWithLogFileManager:_logFileManager];
     fileLogger.maximumFileSize  = 1024 * 1024 * 2;  // 2 MB
-    fileLogger.rollingFrequency =   60 * 60 * 24;  // 1 Day
+    fileLogger.rollingFrequency =   60 * 60 * 24 * 10;  // 10 Days
     fileLogger.logFileManager.maximumNumberOfLogFiles = 10;
     [DDLog addLogger:fileLogger];
     
@@ -91,6 +97,14 @@
         [GAI sharedInstance].trackUncaughtExceptions = YES;
         _tracker = [[GAI sharedInstance] trackerWithTrackingId:kTrackingID];
     }
+    if (kSecondaryTrackingID && ! [kSecondaryTrackingID isEmpty]) {
+        _secondaryTracker = [[GAI sharedInstance] trackerWithName:kSecondaryTrackingName
+                                                       trackingId:kSecondaryTrackingID];
+    }
+}
+
+- (void)setupAppearance {
+    // Setup any UIAppearance properties here
 }
 
 @end

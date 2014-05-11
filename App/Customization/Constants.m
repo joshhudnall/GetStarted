@@ -11,7 +11,7 @@
 #ifdef DEBUG
 int const ddLogLevel = LOG_FLAG_DEBUG;
 #else
-int const ddLogLevel = LOG_LEVEL_WARN;
+int const ddLogLevel = LOG_LEVEL_INFO;
 #endif
 
 // Define NSLog to use CocoaLumberjack

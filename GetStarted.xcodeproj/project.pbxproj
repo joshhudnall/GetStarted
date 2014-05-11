@@ -19,7 +19,7 @@
 		BE1619D518EB762700964404 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1619BA18EB762700964404 /* Foundation.framework */; };
 		BE1619D618EB762700964404 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1619BE18EB762700964404 /* UIKit.framework */; };
 		BE1619DE18EB762700964404 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE1619DC18EB762700964404 /* InfoPlist.strings */; };
-		BE1619E018EB762700964404 /* GetStartedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619DF18EB762700964404 /* GetStartedTests.m */; };
+		BE1619E018EB762700964404 /* AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619DF18EB762700964404 /* AppTests.m */; };
 		BE1619F018EB7D0F00964404 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619EF18EB7D0F00964404 /* Constants.m */; };
 		BE161A2318EB7E1800964404 /* CCActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619F218EB7E1800964404 /* CCActionSheet.m */; };
 		BE161A2418EB7E1800964404 /* DDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619F418EB7E1800964404 /* DDProgressView.m */; };
@@ -70,6 +70,64 @@
 		BED723A51907A0E00022F10A /* JHSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A41907A0E00022F10A /* JHSingleton.m */; };
 		BED723A91907A76A0022F10A /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A81907A76A0022F10A /* UIColor+App.m */; };
 		BED723AC1907A80A0022F10A /* UIFont+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723AB1907A80A0022F10A /* UIFont+App.m */; };
+		BEED09CC19201FCE00FA2193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619CA18EB762700964404 /* AppDelegate.m */; };
+		BEED09CD19201FCE00FA2193 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A1018EB7E1800964404 /* SDWebImageManager.m */; };
+		BEED09CE19201FCE00FA2193 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A1D18EB7E1800964404 /* UIImageView+WebCache.m */; };
+		BEED09CF19201FCE00FA2193 /* NSDate+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A3D18EB7E2800964404 /* NSDate+JHExtras.m */; };
+		BEED09D019201FCE00FA2193 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A0618EB7E1800964404 /* SDImageCache.m */; };
+		BEED09D119201FCE00FA2193 /* JHDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F8F3019155556001EEF1D /* JHDataSource.m */; };
+		BEED09D219201FCE00FA2193 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A0E18EB7E1800964404 /* SDWebImageDownloaderOperation.m */; };
+		BEED09D319201FCE00FA2193 /* NGAParallaxMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619FF18EB7E1800964404 /* NGAParallaxMotion.m */; };
+		BEED09D419201FCE00FA2193 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A1518EB7E1800964404 /* UIButton+WebCache.m */; };
+		BEED09D519201FCE00FA2193 /* NSMutableArray+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A3F18EB7E2800964404 /* NSMutableArray+JHExtras.m */; };
+		BEED09D619201FCE00FA2193 /* NSString+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4318EB7E2800964404 /* NSString+JHExtras.m */; };
+		BEED09D719201FCE00FA2193 /* UIFont+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723AB1907A80A0022F10A /* UIFont+App.m */; };
+		BEED09D819201FCE00FA2193 /* PRPSmartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A6018EB7E2800964404 /* PRPSmartTableViewCell.m */; };
+		BEED09D919201FCE00FA2193 /* PRPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5A18EB7E2800964404 /* PRPAlertView.m */; };
+		BEED09DA19201FCE00FA2193 /* NSLayoutConstraint+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE34BF5318F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m */; };
+		BEED09DB19201FCE00FA2193 /* UIImage+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4918EB7E2800964404 /* UIImage+JHExtras.m */; };
+		BEED09DC19201FCE00FA2193 /* JHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5618EB7E2800964404 /* JHTableViewController.m */; };
+		BEED09DD19201FCE00FA2193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619C618EB762700964404 /* main.m */; };
+		BEED09DE19201FCE00FA2193 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A1318EB7E1800964404 /* SDWebImagePrefetcher.m */; };
+		BEED09DF19201FCE00FA2193 /* JHSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5418EB7E2800964404 /* JHSlideViewController.m */; };
+		BEED09E019201FCE00FA2193 /* UIView+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE34BF5518F3D7C0001AE3EF /* UIView+CompactConstraint.m */; };
+		BEED09E119201FCE00FA2193 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A0C18EB7E1800964404 /* SDWebImageDownloader.m */; };
+		BEED09E219201FCE00FA2193 /* UIBarButtonItem+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4518EB7E2800964404 /* UIBarButtonItem+JHExtras.m */; };
+		BEED09E319201FCE00FA2193 /* UITableView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4B18EB7E2800964404 /* UITableView+JHExtras.m */; };
+		BEED09E419201FCE00FA2193 /* NSData+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A0418EB7E1800964404 /* NSData+GIF.m */; };
+		BEED09E519201FCE00FA2193 /* JHAutosizingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5218EB7E2800964404 /* JHAutosizingLabel.m */; };
+		BEED09E619201FCE00FA2193 /* UIImage+WebP.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A1B18EB7E1800964404 /* UIImage+WebP.m */; };
+		BEED09E719201FCE00FA2193 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A0A18EB7E1800964404 /* SDWebImageDecoder.m */; };
+		BEED09E819201FCE00FA2193 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619EF18EB7D0F00964404 /* Constants.m */; };
+		BEED09E919201FCE00FA2193 /* UIColor+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4718EB7E2800964404 /* UIColor+JHExtras.m */; };
+		BEED09EA19201FCE00FA2193 /* JHMath.m in Sources */ = {isa = PBXBuildFile; fileRef = BE74D54B18EF6D8F00CA6BFA /* JHMath.m */; };
+		BEED09EB19201FCE00FA2193 /* JHBeSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A6318EB7E2800964404 /* JHBeSocial.m */; };
+		BEED09EC19201FCE00FA2193 /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A81907A76A0022F10A /* UIColor+App.m */; };
+		BEED09ED19201FCE00FA2193 /* PRPNibBasedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5C18EB7E2800964404 /* PRPNibBasedTableViewCell.m */; };
+		BEED09EE19201FCE00FA2193 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A0218EB7E1800964404 /* MKAnnotationView+WebCache.m */; };
+		BEED09EF19201FCE00FA2193 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A0818EB7E1800964404 /* SDWebImageCompat.m */; };
+		BEED09F019201FCE00FA2193 /* NSObject+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4118EB7E2800964404 /* NSObject+JHExtras.m */; };
+		BEED09F119201FCE00FA2193 /* CompressingLogFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A7E18EBCB9200964404 /* CompressingLogFileManager.m */; };
+		BEED09F219201FCE00FA2193 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A2218EB7E1800964404 /* UIView+Positioning.m */; };
+		BEED09F319201FCE00FA2193 /* JHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5818EB7E2800964404 /* JHViewController.m */; };
+		BEED09F419201FCE00FA2193 /* CCActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619F218EB7E1800964404 /* CCActionSheet.m */; };
+		BEED09F519201FCE00FA2193 /* DDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619F418EB7E1800964404 /* DDProgressView.m */; };
+		BEED09F619201FCE00FA2193 /* JHSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A41907A0E00022F10A /* JHSingleton.m */; };
+		BEED09F719201FCE00FA2193 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A1918EB7E1800964404 /* UIImage+MultiFormat.m */; };
+		BEED09F819201FCE00FA2193 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A1718EB7E1800964404 /* UIImage+GIF.m */; };
+		BEED09FA19201FCE00FA2193 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7518EB81DB00964404 /* AdSupport.framework */; };
+		BEED09FB19201FCE00FA2193 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7618EB81DB00964404 /* CoreData.framework */; };
+		BEED09FC19201FCE00FA2193 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1619BC18EB762700964404 /* CoreGraphics.framework */; };
+		BEED09FD19201FCE00FA2193 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1619BA18EB762700964404 /* Foundation.framework */; };
+		BEED09FE19201FCE00FA2193 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1619FD18EB7E1800964404 /* libGoogleAnalyticsServices.a */; };
+		BEED09FF19201FCE00FA2193 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7918EB81DF00964404 /* libz.dylib */; };
+		BEED0A0019201FCE00FA2193 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7B18EB81ED00964404 /* SystemConfiguration.framework */; };
+		BEED0A0119201FCE00FA2193 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1619BE18EB762700964404 /* UIKit.framework */; };
+		BEED0A0219201FCE00FA2193 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 204E856D2B3B45B789BB0B2A /* libPods.a */; };
+		BEED0A0419201FCE00FA2193 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BE161A1F18EB7E1800964404 /* LICENSE */; };
+		BEED0A0519201FCE00FA2193 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE1619C318EB762700964404 /* InfoPlist.strings */; };
+		BEED0A0619201FCE00FA2193 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BE161A2018EB7E1800964404 /* README.md */; };
+		BEED0A0719201FCE00FA2193 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE1619CC18EB762700964404 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,18 +147,18 @@
 		BE1619BA18EB762700964404 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE1619BC18EB762700964404 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BE1619BE18EB762700964404 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		BE1619C218EB762700964404 /* GetStarted-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GetStarted-Info.plist"; sourceTree = "<group>"; };
+		BE1619C218EB762700964404 /* App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App-Info.plist"; sourceTree = "<group>"; };
 		BE1619C418EB762700964404 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BE1619C618EB762700964404 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BE1619C818EB762700964404 /* GetStarted-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GetStarted-Prefix.pch"; sourceTree = "<group>"; };
+		BE1619C818EB762700964404 /* App-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Prefix.pch"; sourceTree = "<group>"; };
 		BE1619C918EB762700964404 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE1619CA18EB762700964404 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BE1619CC18EB762700964404 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		BE1619D218EB762700964404 /* GetStartedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetStartedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1619D218EB762700964404 /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1619D318EB762700964404 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		BE1619DB18EB762700964404 /* GetStartedTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GetStartedTests-Info.plist"; sourceTree = "<group>"; };
+		BE1619DB18EB762700964404 /* AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AppTests-Info.plist"; sourceTree = "<group>"; };
 		BE1619DD18EB762700964404 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		BE1619DF18EB762700964404 /* GetStartedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetStartedTests.m; sourceTree = "<group>"; };
+		BE1619DF18EB762700964404 /* AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppTests.m; sourceTree = "<group>"; };
 		BE1619EE18EB7D0F00964404 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		BE1619EF18EB7D0F00964404 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		BE1619F118EB7E1800964404 /* CCActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCActionSheet.h; sourceTree = "<group>"; };
@@ -205,6 +263,8 @@
 		BED723A81907A76A0022F10A /* UIColor+App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+App.m"; sourceTree = "<group>"; };
 		BED723AA1907A80A0022F10A /* UIFont+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+App.h"; sourceTree = "<group>"; };
 		BED723AB1907A80A0022F10A /* UIFont+App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+App.m"; sourceTree = "<group>"; };
+		BEED0A0C19201FCE00FA2193 /* GetStarted Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "GetStarted Dev.app"; path = GetStartedDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEED0A0D19201FCF00FA2193 /* App-Dev-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "App-Dev-Info.plist"; path = "/Users/joshhudnall/Dropbox/MAUnshared/GetStarted/App-Dev-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,14 +294,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BEED09F919201FCE00FA2193 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEED09FA19201FCE00FA2193 /* AdSupport.framework in Frameworks */,
+				BEED09FB19201FCE00FA2193 /* CoreData.framework in Frameworks */,
+				BEED09FC19201FCE00FA2193 /* CoreGraphics.framework in Frameworks */,
+				BEED09FD19201FCE00FA2193 /* Foundation.framework in Frameworks */,
+				BEED09FE19201FCE00FA2193 /* libGoogleAnalyticsServices.a in Frameworks */,
+				BEED09FF19201FCE00FA2193 /* libz.dylib in Frameworks */,
+				BEED0A0019201FCE00FA2193 /* SystemConfiguration.framework in Frameworks */,
+				BEED0A0119201FCE00FA2193 /* UIKit.framework in Frameworks */,
+				BEED0A0219201FCE00FA2193 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BE1619AE18EB762700964404 = {
 			isa = PBXGroup;
 			children = (
-				BE1619C018EB762700964404 /* GetStarted */,
-				BE1619D918EB762700964404 /* GetStartedTests */,
+				BE1619C018EB762700964404 /* App */,
+				BE1619D918EB762700964404 /* AppTests */,
 				BE1619B918EB762700964404 /* Frameworks */,
 				BE1619B818EB762700964404 /* Products */,
 				99382468C2D14A708BC65F21 /* Pods.xcconfig */,
@@ -252,7 +328,8 @@
 			isa = PBXGroup;
 			children = (
 				BE1619B718EB762700964404 /* GetStarted.app */,
-				BE1619D218EB762700964404 /* GetStartedTests.xctest */,
+				BE1619D218EB762700964404 /* AppTests.xctest */,
+				BEED0A0C19201FCE00FA2193 /* GetStarted Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,7 +350,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BE1619C018EB762700964404 /* GetStarted */ = {
+		BE1619C018EB762700964404 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				BE1619C918EB762700964404 /* AppDelegate.h */,
@@ -288,33 +365,34 @@
 				BE1619CC18EB762700964404 /* Images.xcassets */,
 				BE1619C118EB762700964404 /* Supporting Files */,
 			);
-			path = GetStarted;
+			path = App;
 			sourceTree = "<group>";
 		};
 		BE1619C118EB762700964404 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BE1619C218EB762700964404 /* GetStarted-Info.plist */,
+				BE1619C218EB762700964404 /* App-Info.plist */,
+				BEED0A0D19201FCF00FA2193 /* App-Dev-Info.plist */,
+				BE1619C818EB762700964404 /* App-Prefix.pch */,
 				BE1619C318EB762700964404 /* InfoPlist.strings */,
 				BE1619C618EB762700964404 /* main.m */,
-				BE1619C818EB762700964404 /* GetStarted-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BE1619D918EB762700964404 /* GetStartedTests */ = {
+		BE1619D918EB762700964404 /* AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				BE1619DF18EB762700964404 /* GetStartedTests.m */,
+				BE1619DF18EB762700964404 /* AppTests.m */,
 				BE1619DA18EB762700964404 /* Supporting Files */,
 			);
-			path = GetStartedTests;
+			path = AppTests;
 			sourceTree = "<group>";
 		};
 		BE1619DA18EB762700964404 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BE1619DB18EB762700964404 /* GetStartedTests-Info.plist */,
+				BE1619DB18EB762700964404 /* AppTests-Info.plist */,
 				BE1619DC18EB762700964404 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -563,9 +641,9 @@
 			productReference = BE1619B718EB762700964404 /* GetStarted.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BE1619D118EB762700964404 /* GetStartedTests */ = {
+		BE1619D118EB762700964404 /* AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BE1619E618EB762700964404 /* Build configuration list for PBXNativeTarget "GetStartedTests" */;
+			buildConfigurationList = BE1619E618EB762700964404 /* Build configuration list for PBXNativeTarget "AppTests" */;
 			buildPhases = (
 				BE1619CE18EB762700964404 /* Sources */,
 				BE1619CF18EB762700964404 /* Frameworks */,
@@ -576,10 +654,29 @@
 			dependencies = (
 				BE1619D818EB762700964404 /* PBXTargetDependency */,
 			);
-			name = GetStartedTests;
+			name = AppTests;
 			productName = GetStartedTests;
-			productReference = BE1619D218EB762700964404 /* GetStartedTests.xctest */;
+			productReference = BE1619D218EB762700964404 /* AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEED09C919201FCE00FA2193 /* GetStartedDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEED0A0919201FCE00FA2193 /* Build configuration list for PBXNativeTarget "GetStartedDev" */;
+			buildPhases = (
+				BEED09CA19201FCE00FA2193 /* Check Pods Manifest.lock */,
+				BEED09CB19201FCE00FA2193 /* Sources */,
+				BEED09F919201FCE00FA2193 /* Frameworks */,
+				BEED0A0319201FCE00FA2193 /* Resources */,
+				BEED0A0819201FCE00FA2193 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GetStartedDev;
+			productName = GetStarted;
+			productReference = BEED0A0C19201FCE00FA2193 /* GetStarted Dev.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -607,7 +704,8 @@
 			projectRoot = "";
 			targets = (
 				BE1619B618EB762700964404 /* GetStarted */,
-				BE1619D118EB762700964404 /* GetStartedTests */,
+				BEED09C919201FCE00FA2193 /* GetStartedDev */,
+				BE1619D118EB762700964404 /* AppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -632,6 +730,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BEED0A0319201FCE00FA2193 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEED0A0419201FCE00FA2193 /* LICENSE in Resources */,
+				BEED0A0519201FCE00FA2193 /* InfoPlist.strings in Resources */,
+				BEED0A0619201FCE00FA2193 /* README.md in Resources */,
+				BEED0A0719201FCE00FA2193 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -651,6 +760,36 @@
 			showEnvVarsInLog = 0;
 		};
 		7B783FEF85164C6BA8852F49 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEED09CA19201FCE00FA2193 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BEED0A0819201FCE00FA2193 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -724,7 +863,59 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE1619E018EB762700964404 /* GetStartedTests.m in Sources */,
+				BE1619E018EB762700964404 /* AppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEED09CB19201FCE00FA2193 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEED09CC19201FCE00FA2193 /* AppDelegate.m in Sources */,
+				BEED09CD19201FCE00FA2193 /* SDWebImageManager.m in Sources */,
+				BEED09CE19201FCE00FA2193 /* UIImageView+WebCache.m in Sources */,
+				BEED09CF19201FCE00FA2193 /* NSDate+JHExtras.m in Sources */,
+				BEED09D019201FCE00FA2193 /* SDImageCache.m in Sources */,
+				BEED09D119201FCE00FA2193 /* JHDataSource.m in Sources */,
+				BEED09D219201FCE00FA2193 /* SDWebImageDownloaderOperation.m in Sources */,
+				BEED09D319201FCE00FA2193 /* NGAParallaxMotion.m in Sources */,
+				BEED09D419201FCE00FA2193 /* UIButton+WebCache.m in Sources */,
+				BEED09D519201FCE00FA2193 /* NSMutableArray+JHExtras.m in Sources */,
+				BEED09D619201FCE00FA2193 /* NSString+JHExtras.m in Sources */,
+				BEED09D719201FCE00FA2193 /* UIFont+App.m in Sources */,
+				BEED09D819201FCE00FA2193 /* PRPSmartTableViewCell.m in Sources */,
+				BEED09D919201FCE00FA2193 /* PRPAlertView.m in Sources */,
+				BEED09DA19201FCE00FA2193 /* NSLayoutConstraint+CompactConstraint.m in Sources */,
+				BEED09DB19201FCE00FA2193 /* UIImage+JHExtras.m in Sources */,
+				BEED09DC19201FCE00FA2193 /* JHTableViewController.m in Sources */,
+				BEED09DD19201FCE00FA2193 /* main.m in Sources */,
+				BEED09DE19201FCE00FA2193 /* SDWebImagePrefetcher.m in Sources */,
+				BEED09DF19201FCE00FA2193 /* JHSlideViewController.m in Sources */,
+				BEED09E019201FCE00FA2193 /* UIView+CompactConstraint.m in Sources */,
+				BEED09E119201FCE00FA2193 /* SDWebImageDownloader.m in Sources */,
+				BEED09E219201FCE00FA2193 /* UIBarButtonItem+JHExtras.m in Sources */,
+				BEED09E319201FCE00FA2193 /* UITableView+JHExtras.m in Sources */,
+				BEED09E419201FCE00FA2193 /* NSData+GIF.m in Sources */,
+				BEED09E519201FCE00FA2193 /* JHAutosizingLabel.m in Sources */,
+				BEED09E619201FCE00FA2193 /* UIImage+WebP.m in Sources */,
+				BEED09E719201FCE00FA2193 /* SDWebImageDecoder.m in Sources */,
+				BEED09E819201FCE00FA2193 /* Constants.m in Sources */,
+				BEED09E919201FCE00FA2193 /* UIColor+JHExtras.m in Sources */,
+				BEED09EA19201FCE00FA2193 /* JHMath.m in Sources */,
+				BEED09EB19201FCE00FA2193 /* JHBeSocial.m in Sources */,
+				BEED09EC19201FCE00FA2193 /* UIColor+App.m in Sources */,
+				BEED09ED19201FCE00FA2193 /* PRPNibBasedTableViewCell.m in Sources */,
+				BEED09EE19201FCE00FA2193 /* MKAnnotationView+WebCache.m in Sources */,
+				BEED09EF19201FCE00FA2193 /* SDWebImageCompat.m in Sources */,
+				BEED09F019201FCE00FA2193 /* NSObject+JHExtras.m in Sources */,
+				BEED09F119201FCE00FA2193 /* CompressingLogFileManager.m in Sources */,
+				BEED09F219201FCE00FA2193 /* UIView+Positioning.m in Sources */,
+				BEED09F319201FCE00FA2193 /* JHViewController.m in Sources */,
+				BEED09F419201FCE00FA2193 /* CCActionSheet.m in Sources */,
+				BEED09F519201FCE00FA2193 /* DDProgressView.m in Sources */,
+				BEED09F619201FCE00FA2193 /* JHSingleton.m in Sources */,
+				BEED09F719201FCE00FA2193 /* UIImage+MultiFormat.m in Sources */,
+				BEED09F819201FCE00FA2193 /* UIImage+GIF.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -837,11 +1028,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GetStarted/GetStarted-Prefix.pch";
-				INFOPLIST_FILE = "GetStarted/GetStarted-Info.plist";
+				GCC_PREFIX_HEADER = "App/App-Prefix.pch";
+				INFOPLIST_FILE = "App/App-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/GetStarted/3rdParty/GoogleAnalytics",
+					"$(PROJECT_DIR)/App/3rdParty/GoogleAnalytics",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -855,11 +1046,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GetStarted/GetStarted-Prefix.pch";
-				INFOPLIST_FILE = "GetStarted/GetStarted-Info.plist";
+				GCC_PREFIX_HEADER = "App/App-Prefix.pch";
+				INFOPLIST_FILE = "App/App-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/GetStarted/3rdParty/GoogleAnalytics",
+					"$(PROJECT_DIR)/App/3rdParty/GoogleAnalytics",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -876,12 +1067,12 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GetStarted/GetStarted-Prefix.pch";
+				GCC_PREFIX_HEADER = "App/App-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "GetStartedTests/GetStartedTests-Info.plist";
+				INFOPLIST_FILE = "AppTests/AppTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -898,11 +1089,47 @@
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GetStarted/GetStarted-Prefix.pch";
-				INFOPLIST_FILE = "GetStartedTests/GetStartedTests-Info.plist";
+				GCC_PREFIX_HEADER = "App/App-Prefix.pch";
+				INFOPLIST_FILE = "AppTests/AppTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		BEED0A0A19201FCE00FA2193 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99382468C2D14A708BC65F21 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "App/App-Prefix.pch";
+				INFOPLIST_FILE = "App-Dev-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/App/3rdParty/GoogleAnalytics",
+				);
+				PRODUCT_NAME = "${TARGET_NAME}";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BEED0A0B19201FCE00FA2193 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99382468C2D14A708BC65F21 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "App/App-Prefix.pch";
+				INFOPLIST_FILE = "App-Dev-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/App/3rdParty/GoogleAnalytics",
+				);
+				PRODUCT_NAME = "${TARGET_NAME}";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -927,11 +1154,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BE1619E618EB762700964404 /* Build configuration list for PBXNativeTarget "GetStartedTests" */ = {
+		BE1619E618EB762700964404 /* Build configuration list for PBXNativeTarget "AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE1619E718EB762700964404 /* Debug */,
 				BE1619E818EB762700964404 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEED0A0919201FCE00FA2193 /* Build configuration list for PBXNativeTarget "GetStartedDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEED0A0A19201FCE00FA2193 /* Debug */,
+				BEED0A0B19201FCE00FA2193 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

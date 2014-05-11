@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface GetStartedTests : XCTestCase
+@interface AppTests : XCTestCase
 
 @end
 
-@implementation GetStartedTests
+@implementation AppTests
 
 - (void)setUp
 {
