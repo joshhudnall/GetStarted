@@ -34,7 +34,7 @@
         // Set and send screen
         id <GAITracker> tracker = [[GAI sharedInstance] trackerWithName:kSecondaryTrackingName
                                                              trackingId:kSecondaryTrackingID];
-        [tracker set:kGAIScreenName value:self.title];
+        [tracker set:kGAIScreenName value:self.screenName];
         [tracker send:[[GAIDictionaryBuilder createAppView] build]];
     }
 }

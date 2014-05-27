@@ -23,7 +23,6 @@
 		BE1619F018EB7D0F00964404 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619EF18EB7D0F00964404 /* Constants.m */; };
 		BE161A2318EB7E1800964404 /* CCActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619F218EB7E1800964404 /* CCActionSheet.m */; };
 		BE161A2418EB7E1800964404 /* DDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619F418EB7E1800964404 /* DDProgressView.m */; };
-		BE161A2618EB7E1800964404 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1619FD18EB7E1800964404 /* libGoogleAnalyticsServices.a */; };
 		BE161A2718EB7E1800964404 /* NGAParallaxMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619FF18EB7E1800964404 /* NGAParallaxMotion.m */; };
 		BE161A2818EB7E1800964404 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A0218EB7E1800964404 /* MKAnnotationView+WebCache.m */; };
 		BE161A2918EB7E1800964404 /* NSData+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A0418EB7E1800964404 /* NSData+GIF.m */; };
@@ -67,6 +66,16 @@
 		BE34BF5718F3D7C0001AE3EF /* UIView+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE34BF5518F3D7C0001AE3EF /* UIView+CompactConstraint.m */; };
 		BE5F8F3119155556001EEF1D /* JHDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F8F3019155556001EEF1D /* JHDataSource.m */; };
 		BE74D54C18EF6D8F00CA6BFA /* JHMath.m in Sources */ = {isa = PBXBuildFile; fileRef = BE74D54B18EF6D8F00CA6BFA /* JHMath.m */; };
+		BE79FFCE19353A6C00B306E9 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE79FFCD19353A6C00B306E9 /* libGoogleAnalyticsServices.a */; };
+		BE79FFCF19353A6C00B306E9 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE79FFCD19353A6C00B306E9 /* libGoogleAnalyticsServices.a */; };
+		BE79FFD219353ABE00B306E9 /* GAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFD119353ABE00B306E9 /* GAHelper.m */; };
+		BE79FFD319353ABE00B306E9 /* GAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFD119353ABE00B306E9 /* GAHelper.m */; };
+		BE79FFD519353B1100B306E9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE79FFD419353B1100B306E9 /* libsqlite3.dylib */; };
+		BE79FFD619353B1700B306E9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE79FFD419353B1100B306E9 /* libsqlite3.dylib */; };
+		BE79FFD919353B4F00B306E9 /* NSUserDefaults+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */; };
+		BE79FFDA19353B4F00B306E9 /* NSUserDefaults+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */; };
+		BE79FFDD19353D0800B306E9 /* JHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */; };
+		BE79FFDE19353D0800B306E9 /* JHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */; };
 		BED723A51907A0E00022F10A /* JHSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A41907A0E00022F10A /* JHSingleton.m */; };
 		BED723A91907A76A0022F10A /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A81907A76A0022F10A /* UIColor+App.m */; };
 		BED723AC1907A80A0022F10A /* UIFont+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723AB1907A80A0022F10A /* UIFont+App.m */; };
@@ -119,7 +128,6 @@
 		BEED09FB19201FCE00FA2193 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7618EB81DB00964404 /* CoreData.framework */; };
 		BEED09FC19201FCE00FA2193 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1619BC18EB762700964404 /* CoreGraphics.framework */; };
 		BEED09FD19201FCE00FA2193 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1619BA18EB762700964404 /* Foundation.framework */; };
-		BEED09FE19201FCE00FA2193 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1619FD18EB7E1800964404 /* libGoogleAnalyticsServices.a */; };
 		BEED09FF19201FCE00FA2193 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7918EB81DF00964404 /* libz.dylib */; };
 		BEED0A0019201FCE00FA2193 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7B18EB81ED00964404 /* SystemConfiguration.framework */; };
 		BEED0A0119201FCE00FA2193 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1619BE18EB762700964404 /* UIKit.framework */; };
@@ -165,14 +173,6 @@
 		BE1619F218EB7E1800964404 /* CCActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCActionSheet.m; sourceTree = "<group>"; };
 		BE1619F318EB7E1800964404 /* DDProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDProgressView.h; sourceTree = "<group>"; };
 		BE1619F418EB7E1800964404 /* DDProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDProgressView.m; sourceTree = "<group>"; };
-		BE1619F618EB7E1800964404 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
-		BE1619F718EB7E1800964404 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		BE1619F818EB7E1800964404 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
-		BE1619F918EB7E1800964404 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
-		BE1619FA18EB7E1800964404 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
-		BE1619FB18EB7E1800964404 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
-		BE1619FC18EB7E1800964404 /* libGoogleAnalytics_debug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalytics_debug.a; sourceTree = "<group>"; };
-		BE1619FD18EB7E1800964404 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		BE1619FE18EB7E1800964404 /* NGAParallaxMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGAParallaxMotion.h; sourceTree = "<group>"; };
 		BE1619FF18EB7E1800964404 /* NGAParallaxMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NGAParallaxMotion.m; sourceTree = "<group>"; };
 		BE161A0118EB7E1800964404 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
@@ -257,6 +257,20 @@
 		BE5F8F3019155556001EEF1D /* JHDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDataSource.m; sourceTree = "<group>"; };
 		BE74D54A18EF6D8F00CA6BFA /* JHMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMath.h; sourceTree = "<group>"; };
 		BE74D54B18EF6D8F00CA6BFA /* JHMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMath.m; sourceTree = "<group>"; };
+		BE79FFC719353A6C00B306E9 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		BE79FFC819353A6C00B306E9 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		BE79FFC919353A6C00B306E9 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		BE79FFCA19353A6C00B306E9 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		BE79FFCB19353A6C00B306E9 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		BE79FFCC19353A6C00B306E9 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		BE79FFCD19353A6C00B306E9 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		BE79FFD019353ABE00B306E9 /* GAHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAHelper.h; sourceTree = "<group>"; };
+		BE79FFD119353ABE00B306E9 /* GAHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAHelper.m; sourceTree = "<group>"; };
+		BE79FFD419353B1100B306E9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		BE79FFD719353B4F00B306E9 /* NSUserDefaults+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+JHExtras.h"; sourceTree = "<group>"; };
+		BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+JHExtras.m"; sourceTree = "<group>"; };
+		BE79FFDB19353D0800B306E9 /* JHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCollectionViewController.h; sourceTree = "<group>"; };
+		BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCollectionViewController.m; sourceTree = "<group>"; };
 		BED723A31907A0E00022F10A /* JHSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSingleton.h; sourceTree = "<group>"; };
 		BED723A41907A0E00022F10A /* JHSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSingleton.m; sourceTree = "<group>"; };
 		BED723A71907A76A0022F10A /* UIColor+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+App.h"; sourceTree = "<group>"; };
@@ -272,11 +286,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE79FFD519353B1100B306E9 /* libsqlite3.dylib in Frameworks */,
 				BE161A7718EB81DB00964404 /* AdSupport.framework in Frameworks */,
 				BE161A7818EB81DB00964404 /* CoreData.framework in Frameworks */,
+				BE79FFCE19353A6C00B306E9 /* libGoogleAnalyticsServices.a in Frameworks */,
 				BE1619BD18EB762700964404 /* CoreGraphics.framework in Frameworks */,
 				BE1619BB18EB762700964404 /* Foundation.framework in Frameworks */,
-				BE161A2618EB7E1800964404 /* libGoogleAnalyticsServices.a in Frameworks */,
 				BE161A7A18EB81DF00964404 /* libz.dylib in Frameworks */,
 				BE161A7C18EB81ED00964404 /* SystemConfiguration.framework in Frameworks */,
 				BE1619BF18EB762700964404 /* UIKit.framework in Frameworks */,
@@ -298,11 +313,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE79FFD619353B1700B306E9 /* libsqlite3.dylib in Frameworks */,
 				BEED09FA19201FCE00FA2193 /* AdSupport.framework in Frameworks */,
 				BEED09FB19201FCE00FA2193 /* CoreData.framework in Frameworks */,
+				BE79FFCF19353A6C00B306E9 /* libGoogleAnalyticsServices.a in Frameworks */,
 				BEED09FC19201FCE00FA2193 /* CoreGraphics.framework in Frameworks */,
 				BEED09FD19201FCE00FA2193 /* Foundation.framework in Frameworks */,
-				BEED09FE19201FCE00FA2193 /* libGoogleAnalyticsServices.a in Frameworks */,
 				BEED09FF19201FCE00FA2193 /* libz.dylib in Frameworks */,
 				BEED0A0019201FCE00FA2193 /* SystemConfiguration.framework in Frameworks */,
 				BEED0A0119201FCE00FA2193 /* UIKit.framework in Frameworks */,
@@ -337,6 +353,7 @@
 		BE1619B918EB762700964404 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE79FFD419353B1100B306E9 /* libsqlite3.dylib */,
 				BE161A7B18EB81ED00964404 /* SystemConfiguration.framework */,
 				BE161A7918EB81DF00964404 /* libz.dylib */,
 				BE161A7518EB81DB00964404 /* AdSupport.framework */,
@@ -408,6 +425,8 @@
 		BE1619EA18EB7CAC00964404 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				BE79FFD019353ABE00B306E9 /* GAHelper.h */,
+				BE79FFD119353ABE00B306E9 /* GAHelper.m */,
 				BE161A3918EB7E2800964404 /* JHiOSAdditions */,
 			);
 			path = Classes;
@@ -423,7 +442,7 @@
 				BE161A7E18EBCB9200964404 /* CompressingLogFileManager.m */,
 				BE1619F318EB7E1800964404 /* DDProgressView.h */,
 				BE1619F418EB7E1800964404 /* DDProgressView.m */,
-				BE1619F518EB7E1800964404 /* GoogleAnalytics */,
+				BE79FFC619353A6C00B306E9 /* GA */,
 				BE1619FE18EB7E1800964404 /* NGAParallaxMotion.h */,
 				BE1619FF18EB7E1800964404 /* NGAParallaxMotion.m */,
 				BE161A0018EB7E1800964404 /* SDWebImage */,
@@ -446,21 +465,6 @@
 			children = (
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		BE1619F518EB7E1800964404 /* GoogleAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				BE1619F618EB7E1800964404 /* GAI.h */,
-				BE1619F718EB7E1800964404 /* GAIDictionaryBuilder.h */,
-				BE1619F818EB7E1800964404 /* GAIFields.h */,
-				BE1619F918EB7E1800964404 /* GAILogger.h */,
-				BE1619FA18EB7E1800964404 /* GAITrackedViewController.h */,
-				BE1619FB18EB7E1800964404 /* GAITracker.h */,
-				BE1619FC18EB7E1800964404 /* libGoogleAnalytics_debug.a */,
-				BE1619FD18EB7E1800964404 /* libGoogleAnalyticsServices.a */,
-			);
-			path = GoogleAnalytics;
 			sourceTree = "<group>";
 		};
 		BE161A0018EB7E1800964404 /* SDWebImage */ = {
@@ -534,6 +538,8 @@
 				BE161A4118EB7E2800964404 /* NSObject+JHExtras.m */,
 				BE161A4218EB7E2800964404 /* NSString+JHExtras.h */,
 				BE161A4318EB7E2800964404 /* NSString+JHExtras.m */,
+				BE79FFD719353B4F00B306E9 /* NSUserDefaults+JHExtras.h */,
+				BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */,
 				BE161A4418EB7E2800964404 /* UIBarButtonItem+JHExtras.h */,
 				BE161A4518EB7E2800964404 /* UIBarButtonItem+JHExtras.m */,
 				BE161A4618EB7E2800964404 /* UIColor+JHExtras.h */,
@@ -562,6 +568,8 @@
 				BE161A5218EB7E2800964404 /* JHAutosizingLabel.m */,
 				BE161A5318EB7E2800964404 /* JHSlideViewController.h */,
 				BE161A5418EB7E2800964404 /* JHSlideViewController.m */,
+				BE79FFDB19353D0800B306E9 /* JHCollectionViewController.h */,
+				BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */,
 				BE161A5518EB7E2800964404 /* JHTableViewController.h */,
 				BE161A5618EB7E2800964404 /* JHTableViewController.m */,
 				BE161A5718EB7E2800964404 /* JHViewController.h */,
@@ -604,6 +612,20 @@
 			children = (
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE79FFC619353A6C00B306E9 /* GA */ = {
+			isa = PBXGroup;
+			children = (
+				BE79FFC719353A6C00B306E9 /* GAI.h */,
+				BE79FFC819353A6C00B306E9 /* GAIDictionaryBuilder.h */,
+				BE79FFC919353A6C00B306E9 /* GAIFields.h */,
+				BE79FFCA19353A6C00B306E9 /* GAILogger.h */,
+				BE79FFCB19353A6C00B306E9 /* GAITrackedViewController.h */,
+				BE79FFCC19353A6C00B306E9 /* GAITracker.h */,
+				BE79FFCD19353A6C00B306E9 /* libGoogleAnalyticsServices.a */,
+			);
+			path = GA;
 			sourceTree = "<group>";
 		};
 		BED723A61907A7240022F10A /* Customization */ = {
@@ -838,12 +860,14 @@
 				BE161A6718EB7E2800964404 /* NSString+JHExtras.m in Sources */,
 				BED723AC1907A80A0022F10A /* UIFont+App.m in Sources */,
 				BE161A7318EB7E2800964404 /* PRPSmartTableViewCell.m in Sources */,
+				BE79FFD219353ABE00B306E9 /* GAHelper.m in Sources */,
 				BE161A7018EB7E2800964404 /* PRPAlertView.m in Sources */,
 				BE34BF5618F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m in Sources */,
 				BE161A6A18EB7E2800964404 /* UIImage+JHExtras.m in Sources */,
 				BE161A6E18EB7E2800964404 /* JHTableViewController.m in Sources */,
 				BE1619C718EB762700964404 /* main.m in Sources */,
 				BE161A3018EB7E1800964404 /* SDWebImagePrefetcher.m in Sources */,
+				BE79FFDD19353D0800B306E9 /* JHCollectionViewController.m in Sources */,
 				BE161A6D18EB7E2800964404 /* JHSlideViewController.m in Sources */,
 				BE34BF5718F3D7C0001AE3EF /* UIView+CompactConstraint.m in Sources */,
 				BE161A2D18EB7E1800964404 /* SDWebImageDownloader.m in Sources */,
@@ -855,6 +879,7 @@
 				BE161A2C18EB7E1800964404 /* SDWebImageDecoder.m in Sources */,
 				BE1619F018EB7D0F00964404 /* Constants.m in Sources */,
 				BE161A6918EB7E2800964404 /* UIColor+JHExtras.m in Sources */,
+				BE79FFD919353B4F00B306E9 /* NSUserDefaults+JHExtras.m in Sources */,
 				BE74D54C18EF6D8F00CA6BFA /* JHMath.m in Sources */,
 				BE161A7418EB7E2800964404 /* JHBeSocial.m in Sources */,
 				BED723A91907A76A0022F10A /* UIColor+App.m in Sources */,
@@ -898,12 +923,14 @@
 				BEED09D619201FCE00FA2193 /* NSString+JHExtras.m in Sources */,
 				BEED09D719201FCE00FA2193 /* UIFont+App.m in Sources */,
 				BEED09D819201FCE00FA2193 /* PRPSmartTableViewCell.m in Sources */,
+				BE79FFD319353ABE00B306E9 /* GAHelper.m in Sources */,
 				BEED09D919201FCE00FA2193 /* PRPAlertView.m in Sources */,
 				BEED09DA19201FCE00FA2193 /* NSLayoutConstraint+CompactConstraint.m in Sources */,
 				BEED09DB19201FCE00FA2193 /* UIImage+JHExtras.m in Sources */,
 				BEED09DC19201FCE00FA2193 /* JHTableViewController.m in Sources */,
 				BEED09DD19201FCE00FA2193 /* main.m in Sources */,
 				BEED09DE19201FCE00FA2193 /* SDWebImagePrefetcher.m in Sources */,
+				BE79FFDE19353D0800B306E9 /* JHCollectionViewController.m in Sources */,
 				BEED09DF19201FCE00FA2193 /* JHSlideViewController.m in Sources */,
 				BEED09E019201FCE00FA2193 /* UIView+CompactConstraint.m in Sources */,
 				BEED09E119201FCE00FA2193 /* SDWebImageDownloader.m in Sources */,
@@ -915,6 +942,7 @@
 				BEED09E719201FCE00FA2193 /* SDWebImageDecoder.m in Sources */,
 				BEED09E819201FCE00FA2193 /* Constants.m in Sources */,
 				BEED09E919201FCE00FA2193 /* UIColor+JHExtras.m in Sources */,
+				BE79FFDA19353B4F00B306E9 /* NSUserDefaults+JHExtras.m in Sources */,
 				BEED09EA19201FCE00FA2193 /* JHMath.m in Sources */,
 				BEED09EB19201FCE00FA2193 /* JHBeSocial.m in Sources */,
 				BEED09EC19201FCE00FA2193 /* UIColor+App.m in Sources */,
@@ -1047,6 +1075,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/App/3rdParty/GoogleAnalytics",
+					"$(PROJECT_DIR)/App/3rdParty/GA",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1065,6 +1094,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/App/3rdParty/GoogleAnalytics",
+					"$(PROJECT_DIR)/App/3rdParty/GA",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1123,6 +1153,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/App/3rdParty/GoogleAnalytics",
+					"$(PROJECT_DIR)/App/3rdParty/GA",
 				);
 				PRODUCT_NAME = "${TARGET_NAME}";
 				WRAPPER_EXTENSION = app;
@@ -1141,6 +1172,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/App/3rdParty/GoogleAnalytics",
+					"$(PROJECT_DIR)/App/3rdParty/GA",
 				);
 				PRODUCT_NAME = "${TARGET_NAME}";
 				WRAPPER_EXTENSION = app;

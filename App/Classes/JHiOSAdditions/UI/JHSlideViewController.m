@@ -62,20 +62,22 @@
 }
 
 - (void)setup {
-    [self.view setTranslatesAutoresizingMaskIntoConstraints:NO];
-
 	_navController = [[UINavigationController alloc] init];
 	_navController.delegate = self;
 	_navController.view.clipsToBounds = YES;
+    _navController.view.backgroundColor = [UIColor whiteColor];
+    _navController.navigationBar.translucent = NO;
     [_navController.view setTranslatesAutoresizingMaskIntoConstraints:NO];
     
 	self._openWidth = (IS_IPAD) ? 320 : 272;
     
+#if __IPHONE_OS_VERSION_MAX_ALLOWED <= 70000
 	if (IS_IOS_7) {
         
 	} else {
 		self.wantsFullScreenLayout = YES;
 	}
+#endif
     
     if ( ! IS_IPAD || ! UIInterfaceOrientationIsLandscape(self.interfaceOrientation)) {
         [self.view addGestureRecognizer:self._panRecognizer];
@@ -193,28 +195,24 @@
 }
 
 - (void)switchToViewController:(UIViewController *)viewController withCompletion:(void (^)() )completion {
-	if (! _navController.viewControllers.count || viewController != [_navController.viewControllers objectAtIndex:0]) {
+	if ( ! _navController.viewControllers.count || viewController != [_navController.viewControllers objectAtIndex:0]) {
+        _navController.toolbarHidden = YES;
+        _navController.navigationBarHidden = NO; // Some view controllers may override this, but if not we want to default to NO
+        viewController.navigationItem.leftBarButtonItem = [self menuButton];
+        viewController.slideViewController = self;
+        
+        [_navController setViewControllers:@[viewController]];
+        
 		if ([self isMenuOpen]) {
-			[UIView animateWithDuration:0.15
-                                  delay:0
-                                options:UIViewAnimationOptionCurveEaseOut
-                             animations:^{
-                                 [self moveHorizontallyToLocation:self.horizontalSize];
-                             } completion:^(BOOL finished) {
-                                 viewController.navigationItem.leftBarButtonItem = [self menuButton];
-                                 [_navController setViewControllers:@ [viewController]];
-                                 
-                                 [self closeMenuWithCompletion:completion];
-                             }];
+            [self closeMenuWithCompletion:completion];
 		} else {
-			viewController.navigationItem.leftBarButtonItem = [self menuButton];
-			[_navController setViewControllers:@ [viewController]];
-            
 			if (completion) {
 				completion();
 			}
 		}
-	}
+	} else {
+        [self closeMenuWithCompletion:completion];
+    }
 }
 
 - (UIBarButtonItem *)menuButton {
@@ -234,18 +232,18 @@
 - (void)setMenuButtonImage {
     UIImage *buttonImage;
     if (self.isMenuOpen) {
-        buttonImage = [UIImage imageNamed:@"menu-button-on"];
+        buttonImage = [UIImage imageNamed:@"menu-button"];
     } else {
-        buttonImage = [UIImage imageNamed:@"menu-button-off"];
+        buttonImage = [UIImage imageNamed:@"menu-button"];
     }
     
-	[self._menuButton setImage:[UIImage imageNamed:@"menu-button-off"] forState:UIControlStateNormal];
-	[self._menuButton setImage:[UIImage imageNamed:@"menu-button-on"] forState:UIControlStateHighlighted];
-	[self._menuButton setImage:[UIImage imageNamed:@"menu-button-on"] forState:UIControlStateSelected];
-	[self._menuButton setImage:[UIImage imageNamed:@"menu-button-on"] forState:UIControlStateHighlighted | UIControlStateSelected];
+	[self._menuButton setImage:[UIImage imageNamed:@"menu-button"] forState:UIControlStateNormal];
+	[self._menuButton setImage:[UIImage imageNamed:@"menu-button"] forState:UIControlStateHighlighted];
+	[self._menuButton setImage:[UIImage imageNamed:@"menu-button"] forState:UIControlStateSelected];
+	[self._menuButton setImage:[UIImage imageNamed:@"menu-button"] forState:UIControlStateHighlighted | UIControlStateSelected];
 	
     CGRect frame = self._menuButton.frame;
-	frame.size = [UIImage imageNamed:@"menu-button-on"].size;
+	frame.size = [UIImage imageNamed:@"menu-button"].size;
 	self._menuButton.frame = frame;
 }
 
@@ -266,6 +264,7 @@
                          _menuViewController.view.x = 0;
                      } completion:^(BOOL finished) {
                          [self setMenuButtonImage];
+                         _navController.visibleViewController.view.userInteractionEnabled = NO;
                          
                          if (completion) {
                              completion();
@@ -287,6 +286,7 @@
                          _menuViewController.view.x = -50;
                      } completion:^(BOOL finished) {
                          [self setMenuButtonImage];
+                         _navController.visibleViewController.view.userInteractionEnabled = YES;
                          if ([_menuViewController respondsToSelector:@selector(slideViewDidCloseMenu:)]) {
                              [_menuViewController slideViewDidCloseMenu:self];
                          }
@@ -412,7 +412,7 @@
 	CGRect rect = _navController.view.frame;
 	rect.origin.x = location;
 	_navController.view.frame = rect;
-
+    
     // x = C + (y - A) * (D - C) / (B - A)  ::  A - B (range 1) normalized to C - D (range 2)
     CGFloat a = 0; CGFloat b = self._openWidth;
     CGFloat c = -50; CGFloat d = 0;

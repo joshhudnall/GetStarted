@@ -10,6 +10,12 @@
 
 #import "JHAutosizingLabel.h"
 
+@interface JHAutosizingLabel ()
+
+@property (nonatomic, assign) BOOL useAttributedText;
+
+@end
+
 @implementation JHAutosizingLabel
 
 // Public
@@ -39,21 +45,25 @@
 }
 
 - (void)calculateSize {
-	CGSize constraint = CGSizeMake(self.frame.size.width, 20000.0f);
+	CGSize constraint = CGSizeMake(self.frame.size.width, maxHeight);
     
-    NSAttributedString *attString = self.attributedText;
-	CGSize size = [attString boundingRectWithSize:constraint
-                                          options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin
-                                          context:nil].size;
+    CGSize size;
+    if (_useAttributedText) {
+        size = [self.attributedText boundingRectWithSize:constraint
+                                                 options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin
+                                                 context:nil].size;
+    } else {
+        size = [self.text boundingRectWithSize:constraint
+                                       options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin
+                                    attributes:@{NSFontAttributeName: self.font}
+                                       context:nil].size;
+    }
 	
 	[self setLineBreakMode:NSLineBreakByWordWrapping];
 	[self setAdjustsFontSizeToFitWidth:NO];
 	[self setNumberOfLines:0];
 	
-	float height = fmaxf(size.height, minHeight);
-	if (maxHeight) {
-		height = fminf(height, maxHeight);
-	}
+	float height = fmaxf(ceilf(size.height), minHeight);
 	[super setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, height)];
 	
 	// If the parent is a scrollview, set it to the right size
@@ -67,13 +77,21 @@
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
     
-    [self setNeedsLayout];
+    [self calculateSize];
 }
 
-- (void)setText:(NSString *)text {	
+- (void)setText:(NSString *)text {
 	[super setText:text];
 	
-	[self setNeedsLayout];
+    _useAttributedText = NO;
+	[self calculateSize];
+}
+
+- (void)setAttributedText:(NSAttributedString *)attributedText {
+	[super setAttributedText:attributedText];
+	
+    _useAttributedText = YES;
+	[self calculateSize];
 }
 
 - (void)setFont:(UIFont *)font {
@@ -81,7 +99,7 @@
     
     self.minHeight = font.pointSize;
 	
-	[self setNeedsLayout];
+	[self calculateSize];
 }
 
 - (void)layoutSubviews {
