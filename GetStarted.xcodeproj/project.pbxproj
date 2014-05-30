@@ -54,8 +54,6 @@
 		BE161A6E18EB7E2800964404 /* JHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5618EB7E2800964404 /* JHTableViewController.m */; };
 		BE161A6F18EB7E2800964404 /* JHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5818EB7E2800964404 /* JHViewController.m */; };
 		BE161A7018EB7E2800964404 /* PRPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5A18EB7E2800964404 /* PRPAlertView.m */; };
-		BE161A7118EB7E2800964404 /* PRPNibBasedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5C18EB7E2800964404 /* PRPNibBasedTableViewCell.m */; };
-		BE161A7318EB7E2800964404 /* PRPSmartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A6018EB7E2800964404 /* PRPSmartTableViewCell.m */; };
 		BE161A7418EB7E2800964404 /* JHBeSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A6318EB7E2800964404 /* JHBeSocial.m */; };
 		BE161A7718EB81DB00964404 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7518EB81DB00964404 /* AdSupport.framework */; };
 		BE161A7818EB81DB00964404 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7618EB81DB00964404 /* CoreData.framework */; };
@@ -76,6 +74,20 @@
 		BE79FFDA19353B4F00B306E9 /* NSUserDefaults+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */; };
 		BE79FFDD19353D0800B306E9 /* JHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */; };
 		BE79FFDE19353D0800B306E9 /* JHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */; };
+		BEC85D4C1937D89F004EBB32 /* JHFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D4B1937D89F004EBB32 /* JHFormViewController.m */; };
+		BEC85D4F1937D8B1004EBB32 /* JHSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D4E1937D8B1004EBB32 /* JHSwitchCell.m */; };
+		BEC85D501937D8B1004EBB32 /* JHSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D4E1937D8B1004EBB32 /* JHSwitchCell.m */; };
+		BEC85D511937D8B4004EBB32 /* JHFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D4B1937D89F004EBB32 /* JHFormViewController.m */; };
+		BEC85D541937D93A004EBB32 /* JHTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D531937D93A004EBB32 /* JHTextCell.m */; };
+		BEC85D551937D93A004EBB32 /* JHTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D531937D93A004EBB32 /* JHTextCell.m */; };
+		BEC85D601937DB35004EBB32 /* JHOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D5F1937DB35004EBB32 /* JHOptionsCell.m */; };
+		BEC85D611937DB35004EBB32 /* JHOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D5F1937DB35004EBB32 /* JHOptionsCell.m */; };
+		BEC85D641937E16A004EBB32 /* JHFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D631937E16A004EBB32 /* JHFormCell.m */; };
+		BEC85D651937E16A004EBB32 /* JHFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D631937E16A004EBB32 /* JHFormCell.m */; };
+		BEC85D751937F146004EBB32 /* JHDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D741937F146004EBB32 /* JHDateCell.m */; };
+		BEC85D761937F146004EBB32 /* JHDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D741937F146004EBB32 /* JHDateCell.m */; };
+		BEC85D79193821BD004EBB32 /* JHFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D78193821BD004EBB32 /* JHFormField.m */; };
+		BEC85D7A193821BD004EBB32 /* JHFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D78193821BD004EBB32 /* JHFormField.m */; };
 		BED723A51907A0E00022F10A /* JHSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A41907A0E00022F10A /* JHSingleton.m */; };
 		BED723A91907A76A0022F10A /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A81907A76A0022F10A /* UIColor+App.m */; };
 		BED723AC1907A80A0022F10A /* UIFont+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723AB1907A80A0022F10A /* UIFont+App.m */; };
@@ -91,7 +103,6 @@
 		BEED09D519201FCE00FA2193 /* NSMutableArray+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A3F18EB7E2800964404 /* NSMutableArray+JHExtras.m */; };
 		BEED09D619201FCE00FA2193 /* NSString+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4318EB7E2800964404 /* NSString+JHExtras.m */; };
 		BEED09D719201FCE00FA2193 /* UIFont+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723AB1907A80A0022F10A /* UIFont+App.m */; };
-		BEED09D819201FCE00FA2193 /* PRPSmartTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A6018EB7E2800964404 /* PRPSmartTableViewCell.m */; };
 		BEED09D919201FCE00FA2193 /* PRPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5A18EB7E2800964404 /* PRPAlertView.m */; };
 		BEED09DA19201FCE00FA2193 /* NSLayoutConstraint+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE34BF5318F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m */; };
 		BEED09DB19201FCE00FA2193 /* UIImage+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4918EB7E2800964404 /* UIImage+JHExtras.m */; };
@@ -112,7 +123,6 @@
 		BEED09EA19201FCE00FA2193 /* JHMath.m in Sources */ = {isa = PBXBuildFile; fileRef = BE74D54B18EF6D8F00CA6BFA /* JHMath.m */; };
 		BEED09EB19201FCE00FA2193 /* JHBeSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A6318EB7E2800964404 /* JHBeSocial.m */; };
 		BEED09EC19201FCE00FA2193 /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A81907A76A0022F10A /* UIColor+App.m */; };
-		BEED09ED19201FCE00FA2193 /* PRPNibBasedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5C18EB7E2800964404 /* PRPNibBasedTableViewCell.m */; };
 		BEED09EE19201FCE00FA2193 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A0218EB7E1800964404 /* MKAnnotationView+WebCache.m */; };
 		BEED09EF19201FCE00FA2193 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A0818EB7E1800964404 /* SDWebImageCompat.m */; };
 		BEED09F019201FCE00FA2193 /* NSObject+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4118EB7E2800964404 /* NSObject+JHExtras.m */; };
@@ -236,10 +246,6 @@
 		BE161A5818EB7E2800964404 /* JHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHViewController.m; sourceTree = "<group>"; };
 		BE161A5918EB7E2800964404 /* PRPAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPAlertView.h; sourceTree = "<group>"; };
 		BE161A5A18EB7E2800964404 /* PRPAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPAlertView.m; sourceTree = "<group>"; };
-		BE161A5B18EB7E2800964404 /* PRPNibBasedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPNibBasedTableViewCell.h; sourceTree = "<group>"; };
-		BE161A5C18EB7E2800964404 /* PRPNibBasedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPNibBasedTableViewCell.m; sourceTree = "<group>"; };
-		BE161A5F18EB7E2800964404 /* PRPSmartTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPSmartTableViewCell.h; sourceTree = "<group>"; };
-		BE161A6018EB7E2800964404 /* PRPSmartTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPSmartTableViewCell.m; sourceTree = "<group>"; };
 		BE161A6218EB7E2800964404 /* JHBeSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBeSocial.h; sourceTree = "<group>"; };
 		BE161A6318EB7E2800964404 /* JHBeSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBeSocial.m; sourceTree = "<group>"; };
 		BE161A7518EB81DB00964404 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -271,6 +277,20 @@
 		BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+JHExtras.m"; sourceTree = "<group>"; };
 		BE79FFDB19353D0800B306E9 /* JHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCollectionViewController.h; sourceTree = "<group>"; };
 		BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCollectionViewController.m; sourceTree = "<group>"; };
+		BEC85D4A1937D89F004EBB32 /* JHFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormViewController.h; sourceTree = "<group>"; };
+		BEC85D4B1937D89F004EBB32 /* JHFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormViewController.m; sourceTree = "<group>"; };
+		BEC85D4D1937D8B1004EBB32 /* JHSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSwitchCell.h; sourceTree = "<group>"; };
+		BEC85D4E1937D8B1004EBB32 /* JHSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSwitchCell.m; sourceTree = "<group>"; };
+		BEC85D521937D93A004EBB32 /* JHTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTextCell.h; sourceTree = "<group>"; };
+		BEC85D531937D93A004EBB32 /* JHTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTextCell.m; sourceTree = "<group>"; };
+		BEC85D5E1937DB35004EBB32 /* JHOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHOptionsCell.h; sourceTree = "<group>"; };
+		BEC85D5F1937DB35004EBB32 /* JHOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHOptionsCell.m; sourceTree = "<group>"; };
+		BEC85D621937E16A004EBB32 /* JHFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormCell.h; sourceTree = "<group>"; };
+		BEC85D631937E16A004EBB32 /* JHFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormCell.m; sourceTree = "<group>"; };
+		BEC85D731937F146004EBB32 /* JHDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDateCell.h; sourceTree = "<group>"; };
+		BEC85D741937F146004EBB32 /* JHDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDateCell.m; sourceTree = "<group>"; };
+		BEC85D77193821BD004EBB32 /* JHFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormField.h; sourceTree = "<group>"; };
+		BEC85D78193821BD004EBB32 /* JHFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormField.m; sourceTree = "<group>"; };
 		BED723A31907A0E00022F10A /* JHSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSingleton.h; sourceTree = "<group>"; };
 		BED723A41907A0E00022F10A /* JHSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSingleton.m; sourceTree = "<group>"; };
 		BED723A71907A76A0022F10A /* UIColor+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+App.h"; sourceTree = "<group>"; };
@@ -517,6 +537,7 @@
 		BE161A3918EB7E2800964404 /* JHiOSAdditions */ = {
 			isa = PBXGroup;
 			children = (
+				BEC85D491937D868004EBB32 /* Forms */,
 				BE161A3A18EB7E2800964404 /* Categories */,
 				BE161A4C18EB7E2800964404 /* Helpers */,
 				BE161A4F18EB7E2800964404 /* JHiOSAdditions.h */,
@@ -576,10 +597,6 @@
 				BE161A5818EB7E2800964404 /* JHViewController.m */,
 				BE161A5918EB7E2800964404 /* PRPAlertView.h */,
 				BE161A5A18EB7E2800964404 /* PRPAlertView.m */,
-				BE161A5B18EB7E2800964404 /* PRPNibBasedTableViewCell.h */,
-				BE161A5C18EB7E2800964404 /* PRPNibBasedTableViewCell.m */,
-				BE161A5F18EB7E2800964404 /* PRPSmartTableViewCell.h */,
-				BE161A6018EB7E2800964404 /* PRPSmartTableViewCell.m */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -626,6 +643,27 @@
 				BE79FFCD19353A6C00B306E9 /* libGoogleAnalyticsServices.a */,
 			);
 			path = GA;
+			sourceTree = "<group>";
+		};
+		BEC85D491937D868004EBB32 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				BEC85D4A1937D89F004EBB32 /* JHFormViewController.h */,
+				BEC85D4B1937D89F004EBB32 /* JHFormViewController.m */,
+				BEC85D77193821BD004EBB32 /* JHFormField.h */,
+				BEC85D78193821BD004EBB32 /* JHFormField.m */,
+				BEC85D621937E16A004EBB32 /* JHFormCell.h */,
+				BEC85D631937E16A004EBB32 /* JHFormCell.m */,
+				BEC85D521937D93A004EBB32 /* JHTextCell.h */,
+				BEC85D531937D93A004EBB32 /* JHTextCell.m */,
+				BEC85D4D1937D8B1004EBB32 /* JHSwitchCell.h */,
+				BEC85D4E1937D8B1004EBB32 /* JHSwitchCell.m */,
+				BEC85D5E1937DB35004EBB32 /* JHOptionsCell.h */,
+				BEC85D5F1937DB35004EBB32 /* JHOptionsCell.m */,
+				BEC85D731937F146004EBB32 /* JHDateCell.h */,
+				BEC85D741937F146004EBB32 /* JHDateCell.m */,
+			);
+			path = Forms;
 			sourceTree = "<group>";
 		};
 		BED723A61907A7240022F10A /* Customization */ = {
@@ -859,10 +897,10 @@
 				BE161A6518EB7E2800964404 /* NSMutableArray+JHExtras.m in Sources */,
 				BE161A6718EB7E2800964404 /* NSString+JHExtras.m in Sources */,
 				BED723AC1907A80A0022F10A /* UIFont+App.m in Sources */,
-				BE161A7318EB7E2800964404 /* PRPSmartTableViewCell.m in Sources */,
 				BE79FFD219353ABE00B306E9 /* GAHelper.m in Sources */,
 				BE161A7018EB7E2800964404 /* PRPAlertView.m in Sources */,
 				BE34BF5618F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m in Sources */,
+				BEC85D79193821BD004EBB32 /* JHFormField.m in Sources */,
 				BE161A6A18EB7E2800964404 /* UIImage+JHExtras.m in Sources */,
 				BE161A6E18EB7E2800964404 /* JHTableViewController.m in Sources */,
 				BE1619C718EB762700964404 /* main.m in Sources */,
@@ -870,6 +908,9 @@
 				BE79FFDD19353D0800B306E9 /* JHCollectionViewController.m in Sources */,
 				BE161A6D18EB7E2800964404 /* JHSlideViewController.m in Sources */,
 				BE34BF5718F3D7C0001AE3EF /* UIView+CompactConstraint.m in Sources */,
+				BEC85D601937DB35004EBB32 /* JHOptionsCell.m in Sources */,
+				BEC85D751937F146004EBB32 /* JHDateCell.m in Sources */,
+				BEC85D4C1937D89F004EBB32 /* JHFormViewController.m in Sources */,
 				BE161A2D18EB7E1800964404 /* SDWebImageDownloader.m in Sources */,
 				BE161A6818EB7E2800964404 /* UIBarButtonItem+JHExtras.m in Sources */,
 				BE161A6B18EB7E2800964404 /* UITableView+JHExtras.m in Sources */,
@@ -878,13 +919,15 @@
 				BE161A3418EB7E1800964404 /* UIImage+WebP.m in Sources */,
 				BE161A2C18EB7E1800964404 /* SDWebImageDecoder.m in Sources */,
 				BE1619F018EB7D0F00964404 /* Constants.m in Sources */,
+				BEC85D641937E16A004EBB32 /* JHFormCell.m in Sources */,
+				BEC85D541937D93A004EBB32 /* JHTextCell.m in Sources */,
 				BE161A6918EB7E2800964404 /* UIColor+JHExtras.m in Sources */,
 				BE79FFD919353B4F00B306E9 /* NSUserDefaults+JHExtras.m in Sources */,
 				BE74D54C18EF6D8F00CA6BFA /* JHMath.m in Sources */,
 				BE161A7418EB7E2800964404 /* JHBeSocial.m in Sources */,
 				BED723A91907A76A0022F10A /* UIColor+App.m in Sources */,
-				BE161A7118EB7E2800964404 /* PRPNibBasedTableViewCell.m in Sources */,
 				BE161A2818EB7E1800964404 /* MKAnnotationView+WebCache.m in Sources */,
+				BEC85D4F1937D8B1004EBB32 /* JHSwitchCell.m in Sources */,
 				BE161A2B18EB7E1800964404 /* SDWebImageCompat.m in Sources */,
 				BE161A6618EB7E2800964404 /* NSObject+JHExtras.m in Sources */,
 				BE161A7F18EBCB9200964404 /* CompressingLogFileManager.m in Sources */,
@@ -922,10 +965,10 @@
 				BEED09D519201FCE00FA2193 /* NSMutableArray+JHExtras.m in Sources */,
 				BEED09D619201FCE00FA2193 /* NSString+JHExtras.m in Sources */,
 				BEED09D719201FCE00FA2193 /* UIFont+App.m in Sources */,
-				BEED09D819201FCE00FA2193 /* PRPSmartTableViewCell.m in Sources */,
 				BE79FFD319353ABE00B306E9 /* GAHelper.m in Sources */,
 				BEED09D919201FCE00FA2193 /* PRPAlertView.m in Sources */,
 				BEED09DA19201FCE00FA2193 /* NSLayoutConstraint+CompactConstraint.m in Sources */,
+				BEC85D7A193821BD004EBB32 /* JHFormField.m in Sources */,
 				BEED09DB19201FCE00FA2193 /* UIImage+JHExtras.m in Sources */,
 				BEED09DC19201FCE00FA2193 /* JHTableViewController.m in Sources */,
 				BEED09DD19201FCE00FA2193 /* main.m in Sources */,
@@ -933,6 +976,8 @@
 				BE79FFDE19353D0800B306E9 /* JHCollectionViewController.m in Sources */,
 				BEED09DF19201FCE00FA2193 /* JHSlideViewController.m in Sources */,
 				BEED09E019201FCE00FA2193 /* UIView+CompactConstraint.m in Sources */,
+				BEC85D611937DB35004EBB32 /* JHOptionsCell.m in Sources */,
+				BEC85D761937F146004EBB32 /* JHDateCell.m in Sources */,
 				BEED09E119201FCE00FA2193 /* SDWebImageDownloader.m in Sources */,
 				BEED09E219201FCE00FA2193 /* UIBarButtonItem+JHExtras.m in Sources */,
 				BEED09E319201FCE00FA2193 /* UITableView+JHExtras.m in Sources */,
@@ -942,11 +987,13 @@
 				BEED09E719201FCE00FA2193 /* SDWebImageDecoder.m in Sources */,
 				BEED09E819201FCE00FA2193 /* Constants.m in Sources */,
 				BEED09E919201FCE00FA2193 /* UIColor+JHExtras.m in Sources */,
+				BEC85D651937E16A004EBB32 /* JHFormCell.m in Sources */,
+				BEC85D551937D93A004EBB32 /* JHTextCell.m in Sources */,
 				BE79FFDA19353B4F00B306E9 /* NSUserDefaults+JHExtras.m in Sources */,
 				BEED09EA19201FCE00FA2193 /* JHMath.m in Sources */,
+				BEC85D511937D8B4004EBB32 /* JHFormViewController.m in Sources */,
 				BEED09EB19201FCE00FA2193 /* JHBeSocial.m in Sources */,
 				BEED09EC19201FCE00FA2193 /* UIColor+App.m in Sources */,
-				BEED09ED19201FCE00FA2193 /* PRPNibBasedTableViewCell.m in Sources */,
 				BEED09EE19201FCE00FA2193 /* MKAnnotationView+WebCache.m in Sources */,
 				BEED09EF19201FCE00FA2193 /* SDWebImageCompat.m in Sources */,
 				BEED09F019201FCE00FA2193 /* NSObject+JHExtras.m in Sources */,
@@ -955,6 +1002,7 @@
 				BEED09F319201FCE00FA2193 /* JHViewController.m in Sources */,
 				BEED09F419201FCE00FA2193 /* CCActionSheet.m in Sources */,
 				BEED09F519201FCE00FA2193 /* DDProgressView.m in Sources */,
+				BEC85D501937D8B1004EBB32 /* JHSwitchCell.m in Sources */,
 				BEED09F619201FCE00FA2193 /* JHSingleton.m in Sources */,
 				BEED09F719201FCE00FA2193 /* UIImage+MultiFormat.m in Sources */,
 				BEED09F819201FCE00FA2193 /* UIImage+GIF.m in Sources */,

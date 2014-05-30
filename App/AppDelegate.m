@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "HockeySDK.h"
 
+#import "JHFormViewController.h"
+
+
 @interface AppDelegate ()
 
 @property (nonatomic, strong) id <GAITracker> tracker;
@@ -26,11 +29,13 @@
     [self setupCocoaLumberjack];
     [self setupHockeyApp];
     [self setupGoogleAnalytics];
+    [self setupNSURLCache];
     
     // Global Appearance
     [self setupAppearance];
     
     // Create and set window's rootViewController
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[JHFormViewController new]];
 
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
@@ -101,6 +106,13 @@
         _secondaryTracker = [[GAI sharedInstance] trackerWithName:kSecondaryTrackingName
                                                        trackingId:kSecondaryTrackingID];
     }
+}
+
+- (void)setupNSURLCache {
+    NSURLCache *URLCache = [[NSURLCache alloc] initWithMemoryCapacity:4 * 1024 * 1024
+                                                         diskCapacity:50 * 1024 * 1024
+                                                             diskPath:nil];
+    [NSURLCache setSharedURLCache:URLCache];
 }
 
 - (void)setupAppearance {

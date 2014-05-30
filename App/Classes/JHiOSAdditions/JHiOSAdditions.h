@@ -17,8 +17,6 @@
 #import "JHSlideViewController.h"
 #import "JHTableViewController.h" // Imports JHViewController.h
 #import "PRPAlertView.h"
-#import "PRPNibBasedTableViewCell.h"
-#import "PRPSmartTableViewCell.h"
 
 // Utility
 #import "JHBeSocial.h"
