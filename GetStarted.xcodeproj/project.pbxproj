@@ -74,6 +74,8 @@
 		BE79FFDA19353B4F00B306E9 /* NSUserDefaults+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */; };
 		BE79FFDD19353D0800B306E9 /* JHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */; };
 		BE79FFDE19353D0800B306E9 /* JHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */; };
+		BEB6FEE81990207500663C87 /* UITableViewCell+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB6FEE71990207500663C87 /* UITableViewCell+JHExtras.m */; };
+		BEB6FEEB199020C900663C87 /* UICollectionViewCell+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB6FEEA199020C900663C87 /* UICollectionViewCell+JHExtras.m */; };
 		BEC85D4C1937D89F004EBB32 /* JHFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D4B1937D89F004EBB32 /* JHFormViewController.m */; };
 		BEC85D4F1937D8B1004EBB32 /* JHSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D4E1937D8B1004EBB32 /* JHSwitchCell.m */; };
 		BEC85D501937D8B1004EBB32 /* JHSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC85D4E1937D8B1004EBB32 /* JHSwitchCell.m */; };
@@ -277,6 +279,10 @@
 		BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+JHExtras.m"; sourceTree = "<group>"; };
 		BE79FFDB19353D0800B306E9 /* JHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCollectionViewController.h; sourceTree = "<group>"; };
 		BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCollectionViewController.m; sourceTree = "<group>"; };
+		BEB6FEE61990207500663C87 /* UITableViewCell+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+JHExtras.h"; sourceTree = "<group>"; };
+		BEB6FEE71990207500663C87 /* UITableViewCell+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+JHExtras.m"; sourceTree = "<group>"; };
+		BEB6FEE9199020C900663C87 /* UICollectionViewCell+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+JHExtras.h"; sourceTree = "<group>"; };
+		BEB6FEEA199020C900663C87 /* UICollectionViewCell+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+JHExtras.m"; sourceTree = "<group>"; };
 		BEC85D4A1937D89F004EBB32 /* JHFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormViewController.h; sourceTree = "<group>"; };
 		BEC85D4B1937D89F004EBB32 /* JHFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormViewController.m; sourceTree = "<group>"; };
 		BEC85D4D1937D8B1004EBB32 /* JHSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSwitchCell.h; sourceTree = "<group>"; };
@@ -563,12 +569,16 @@
 				BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */,
 				BE161A4418EB7E2800964404 /* UIBarButtonItem+JHExtras.h */,
 				BE161A4518EB7E2800964404 /* UIBarButtonItem+JHExtras.m */,
+				BEB6FEE9199020C900663C87 /* UICollectionViewCell+JHExtras.h */,
+				BEB6FEEA199020C900663C87 /* UICollectionViewCell+JHExtras.m */,
 				BE161A4618EB7E2800964404 /* UIColor+JHExtras.h */,
 				BE161A4718EB7E2800964404 /* UIColor+JHExtras.m */,
 				BE161A4818EB7E2800964404 /* UIImage+JHExtras.h */,
 				BE161A4918EB7E2800964404 /* UIImage+JHExtras.m */,
 				BE161A4A18EB7E2800964404 /* UITableView+JHExtras.h */,
 				BE161A4B18EB7E2800964404 /* UITableView+JHExtras.m */,
+				BEB6FEE61990207500663C87 /* UITableViewCell+JHExtras.h */,
+				BEB6FEE71990207500663C87 /* UITableViewCell+JHExtras.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -885,6 +895,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEB6FEEB199020C900663C87 /* UICollectionViewCell+JHExtras.m in Sources */,
 				BE1619CB18EB762700964404 /* AppDelegate.m in Sources */,
 				BE161A2F18EB7E1800964404 /* SDWebImageManager.m in Sources */,
 				BE161A3518EB7E1800964404 /* UIImageView+WebCache.m in Sources */,
@@ -907,6 +918,7 @@
 				BE161A3018EB7E1800964404 /* SDWebImagePrefetcher.m in Sources */,
 				BE79FFDD19353D0800B306E9 /* JHCollectionViewController.m in Sources */,
 				BE161A6D18EB7E2800964404 /* JHSlideViewController.m in Sources */,
+				BEB6FEE81990207500663C87 /* UITableViewCell+JHExtras.m in Sources */,
 				BE34BF5718F3D7C0001AE3EF /* UIView+CompactConstraint.m in Sources */,
 				BEC85D601937DB35004EBB32 /* JHOptionsCell.m in Sources */,
 				BEC85D751937F146004EBB32 /* JHDateCell.m in Sources */,

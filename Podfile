@@ -5,7 +5,7 @@ pod 'SVProgressHUD'
 pod 'Facebook-iOS-SDK'
 pod 'TMCache'
 pod 'HockeySDK', '~> 3.5.4'
-pod 'UIView+AutoLayout'
+pod 'PureLayout'
 
 post_install do |installer|
   # Remove 64-bit build architecture from Pods targets

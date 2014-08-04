@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>54C75574-4AD5-4A04-9402-DB2F06233CD2</string>
+	<string>BE7DA081-7800-4092-A303-9D317C850AAC</string>
 	<key>IDESourceControlProjectName</key>
 	<string>GetStarted</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>8C9F3069-A5D0-4258-B4B3-15097C58BE60</key>
+		<key>C4EAD1E4-4FC0-47FA-9387-723C258C71D3</key>
 		<string>ssh://github.com/joshhudnall/GetStarted.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>GetStarted.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>8C9F3069-A5D0-4258-B4B3-15097C58BE60</key>
+		<key>C4EAD1E4-4FC0-47FA-9387-723C258C71D3</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>8C9F3069-A5D0-4258-B4B3-15097C58BE60</string>
+	<string>C4EAD1E4-4FC0-47FA-9387-723C258C71D3</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>8C9F3069-A5D0-4258-B4B3-15097C58BE60</string>
+			<string>C4EAD1E4-4FC0-47FA-9387-723C258C71D3</string>
 			<key>IDESourceControlWCCName</key>
 			<string>GetStarted</string>
 		</dict>
