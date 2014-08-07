@@ -1,5 +1,9 @@
 platform :ios, '6.0'
-pod 'AFNetworking', '~> 2.0'
+
+# Custom AFNetworking Podspec to remove its UIImageView category
+pod 'AFNetworking+JHMods', :path => 'AFNetworking+JHMods'
+pod 'AFNetworking', :podspec => 'AFNetworking.podspec'
+
 pod 'CocoaLumberjack'
 pod 'SVProgressHUD'
 pod 'Facebook-iOS-SDK'
@@ -13,10 +17,5 @@ post_install do |installer|
     target.build_configurations.each do |configuration|
       target.build_settings(configuration.name)['ARCHS'] = '$(ARCHS_STANDARD_32_BIT)'
     end
-  end
-
-  # Remove AFNetworking UIImageView Category in favor of SDWebImage
-  installer.pods.each do |pod|
-    pod.source_files.grep(/AFNetworking\/UIImageView/) { |element| File.open(element, 'w').write("/* Removed due to conflicting method names */") } 
   end
 end

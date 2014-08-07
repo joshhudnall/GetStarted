@@ -86,7 +86,7 @@
 }
 
 - (void)setupHockeyApp {
-    if (kHockeyAppID && ! [kHockeyAppID jh_isEmpty]) {
+    if ([kHockeyAppID jh_isFull]) {
         [[BITHockeyManager sharedHockeyManager] configureWithIdentifier:kHockeyAppID];
         if ([[BITHockeyManager sharedHockeyManager].crashManager isDebuggerAttached]) {
             [[BITHockeyManager sharedHockeyManager] setDisableCrashManager:YES];
@@ -97,12 +97,12 @@
 }
 
 - (void)setupGoogleAnalytics {
-    if (kTrackingID && ! [kTrackingID jh_isEmpty]) {
+    if ([kTrackingID jh_isFull]) {
         [GAI sharedInstance].dispatchInterval = 120;
         [GAI sharedInstance].trackUncaughtExceptions = YES;
         _tracker = [[GAI sharedInstance] trackerWithTrackingId:kTrackingID];
     }
-    if (kSecondaryTrackingID && ! [kSecondaryTrackingID jh_isEmpty]) {
+    if ([kSecondaryTrackingID jh_isFull]) {
         _secondaryTracker = [[GAI sharedInstance] trackerWithName:kSecondaryTrackingName
                                                        trackingId:kSecondaryTrackingID];
     }

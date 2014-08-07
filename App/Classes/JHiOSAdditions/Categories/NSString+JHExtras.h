@@ -84,6 +84,8 @@
 /**
  *  Returns whether the receiver is empty or not, convenience method for isEqualToString:\@""
  *
+ *  Use of jh_isFull is preferred to this method as it returns an accurate result for nil objects.
+ *
  *  @return YES if the string is empty, NO otherwise
  */
 - (BOOL)jh_isEmpty;
