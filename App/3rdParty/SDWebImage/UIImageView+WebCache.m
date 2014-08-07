@@ -64,13 +64,13 @@ static char operationKey;
             DDProgressView *progressView = (DDProgressView *)[wself viewWithTag:kProgressTag];
             if ( ! progressView) {
                 progressView = [[DDProgressView alloc] init];
-                progressView.outerColor = [UIColor lightGrayColor];
-                progressView.innerColor = [UIColor lightGrayColor];
+                progressView.outerColor = [UIColor brandPrimaryColor];
+                progressView.innerColor = [UIColor brandPrimaryColor];
                 progressView.emptyColor = [UIColor clearColor];
                 progressView.tag = kProgressTag;
                 CGRect frame = progressView.frame;
-                frame.origin.x = 20;
-                frame.size.width = wself.frame.size.width - 40;
+                frame.origin.x = 10;
+                frame.size.width = wself.frame.size.width - 20;
                 frame.origin.y = (wself.frame.size.height - frame.size.height) / 2;
                 progressView.frame = frame;
                 [wself addSubview:progressView];
