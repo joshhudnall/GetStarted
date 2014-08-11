@@ -10,6 +10,17 @@
 
 @implementation NSUserDefaults (JHExtras)
 
+- (BOOL)shouldPerformOnceForKey:(NSString *)defaultName {
+    BOOL hasPerformed = [self boolForKey:defaultName defaultValue:NO];
+    
+    if ( ! hasPerformed) {
+        [[NSUserDefaults standardUserDefaults] setBool:YES forKey:defaultName];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
+    return ! hasPerformed;
+}
+
 - (BOOL)boolForKey:(NSString *)defaultName defaultValue:(BOOL)defaultValue {
     if ([self objectForKey:defaultName]) {
         return [self boolForKey:defaultName];
