@@ -1,6 +1,5 @@
 //
 //  SwitchCell.h
-//  Air1Mobile
 //
 //  Created by Josh Hudnall on 7/27/12.
 //

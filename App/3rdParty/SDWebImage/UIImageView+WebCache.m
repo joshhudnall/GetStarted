@@ -58,10 +58,9 @@ static char operationKey;
     
     if (url)
     {
-        __weak UIImageView *wself = self;
-        
-        progressBlock = (progressBlock) ? progressBlock : ^(NSUInteger receivedSize, long long expectedSize) {
-            DDProgressView *progressView = (DDProgressView *)[wself viewWithTag:kProgressTag];
+        __weak typeof(self) weakSelf = self;
+        progressBlock = (progressBlock) ?: ^(NSUInteger receivedSize, long long expectedSize) {
+            DDProgressView *progressView = (DDProgressView *)[weakSelf viewWithTag:kProgressTag];
             if ( ! progressView) {
                 progressView = [[DDProgressView alloc] init];
                 progressView.outerColor = [UIColor brandPrimaryColor];
@@ -70,10 +69,10 @@ static char operationKey;
                 progressView.tag = kProgressTag;
                 CGRect frame = progressView.frame;
                 frame.origin.x = 10;
-                frame.size.width = wself.frame.size.width - 20;
-                frame.origin.y = (wself.frame.size.height - frame.size.height) / 2;
+                frame.size.width = weakSelf.frame.size.width - 20;
+                frame.origin.y = (weakSelf.frame.size.height - frame.size.height) / 2;
                 progressView.frame = frame;
-                [wself addSubview:progressView];
+                [weakSelf addSubview:progressView];
             }
             CGFloat progress = (float)receivedSize / (float)expectedSize;
             [progressView setProgress:fabs(progress)];
@@ -81,29 +80,29 @@ static char operationKey;
         
         id<SDWebImageOperation> operation = [SDWebImageManager.sharedManager downloadWithURL:url options:options progress:progressBlock completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished)
         {
-            if (!wself) return;
+            if ( ! weakSelf) return;
             void (^block)(void) = ^
             {
-                __strong UIImageView *sself = wself;
-                if (!sself) return;
+                __strong UIImageView *strongSelf = weakSelf;
+                if ( ! strongSelf) return;
                 if (image)
                 {
-                    sself.image = image;
+                    strongSelf.image = image;
                     
-                    DDProgressView *progressView = (DDProgressView *)[wself viewWithTag:kProgressTag];
+                    DDProgressView *progressView = (DDProgressView *)[weakSelf viewWithTag:kProgressTag];
                     if (progressView) {
                         [progressView removeFromSuperview];
                     }
                     
                     if ( ! placeholder && cacheType == SDImageCacheTypeNone) {
-                        sself.layer.opacity = 0;
+                        strongSelf.layer.opacity = 0;
                     }
                     
-                    [sself setNeedsLayout];
+                    [strongSelf setNeedsLayout];
                     
                     if ( ! placeholder && cacheType == SDImageCacheTypeNone) {
                         [UIView animateWithDuration:0.3 animations:^{
-                            sself.layer.opacity = 1;
+                            strongSelf.layer.opacity = 1;
                         }];
                     }
                 }

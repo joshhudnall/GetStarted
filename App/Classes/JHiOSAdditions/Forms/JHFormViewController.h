@@ -1,6 +1,5 @@
 //
 //  JHFormViewController.h
-//  GetStarted
 //
 //  Created by Josh Hudnall on 5/29/14.
 //

@@ -1,6 +1,5 @@
 //
 //  UIBarButtonItem+JHExtras.h
-//  WAY-FMMobile
 //
 //  Created by Josh Hudnall on 9/4/12.
 //  Copyright (c) 2012 Josh Hudnall. All rights reserved.
@@ -19,6 +18,7 @@
  *
  *  @return A UIBarButtonItem
  */
+
 + (UIBarButtonItem *)jh_barButtonItemForTitle:(NSString *)title target:(id)target andSelector:(SEL)selector;
 /**
  *  Creates a UIBarButtonItem with a UIButton as the custom view with a target and selector for the TouchUpInside event

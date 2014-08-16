@@ -1,6 +1,5 @@
 //
 //  JHDataSource.h
-//  GetStarted
 //
 //  Created by Josh Hudnall on 5/3/14.
 //

@@ -1,9 +1,8 @@
 //
 //  JHCollectionViewController.h
-//  TheLifeYouWantTour
 //
 //  Created by Josh Hudnall on 5/13/14.
-//  Copyright (c) 2014 fastPXL. All rights reserved.
+//  Copyright (c) 2014 Josh Hudnall. All rights reserved.
 //
 
 #import "JHViewController.h"

@@ -1,6 +1,5 @@
 //
 //  UIColor+Customization.h
-//  GetStarted
 //
 //  Created by Josh Hudnall on 4/23/14.
 //

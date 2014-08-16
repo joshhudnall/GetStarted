@@ -1,6 +1,5 @@
 //
 //  UICollectionViewCell+JHExtras.m
-//  GetStarted
 //
 //  Created by Josh Hudnall on 8/4/14.
 //

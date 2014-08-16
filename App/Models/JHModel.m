@@ -3,14 +3,14 @@
 //  TheLifeYouWantTour
 //
 //  Created by Josh Hudnall.
-//  Copyright (c) 2014 fastPXL. All rights reserved.
+//  Copyright (c) 2014 Josh Hudnall. All rights reserved.
 //
-
-#import <objc/runtime.h>
 
 #import "JHModel.h"
 
 @implementation JHModel
+
+#pragma mark - JSON to Object
 
 + (NSArray *)objectsWithJSONArray:(NSArray *)jsonArray {
     NSMutableArray *objects = [NSMutableArray arrayWithCapacity:jsonArray.count];
@@ -18,7 +18,7 @@
         [objects addObject:[[self class] objectWithJSONDictionary:item]];
     }
     
-    return [objects mutableCopy];
+    return [objects copy];
 }
 
 + (instancetype)objectWithJSONDictionary:(NSDictionary *)jsonDict {
@@ -26,11 +26,21 @@
 }
 
 - (id)initWithJSONDictionary:(NSDictionary *)jsonDict {
-    if ( ( self = [super init]) ) {
-        
-    }
-    return self;
+    return nil;
 }
+
+
+#pragma mark - Object to JSON
+
++ (NSArray *)jsonArrayWithObjects:(NSArray *)objects {
+    return @[];
+}
+
+- (NSDictionary *)jsonDictionary {
+    return @{};
+}
+
+#pragma mark - Utility
 
 + (NSString *)jsonArrayKey {
     // You'll probably need to override this in subclasses

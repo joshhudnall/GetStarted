@@ -1,9 +1,8 @@
 //
 //  UITableView+JHExtras.m
-//  CellSubviewLocation
 //
-//  Created by Matt Drance on 9/9/10.
-//  Copyright 2010 Bookhouse Software, LLC. All rights reserved.
+//  Created by Josh Hudnall on 9/9/10.
+//  Copyright 2010 Josh Hudnall. All rights reserved.
 //
 
 #import "UITableView+JHExtras.h"

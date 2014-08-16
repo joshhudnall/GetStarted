@@ -1,6 +1,5 @@
 //
 //  UIBarButtonItem+JHExtras.m
-//  WAY-FMMobile
 //
 //  Created by Josh Hudnall on 9/4/12.
 //  Copyright (c) 2012 Josh Hudnall. All rights reserved.

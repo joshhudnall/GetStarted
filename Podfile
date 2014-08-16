@@ -1,6 +1,6 @@
 platform :ios, '6.0'
 
-link_with 'Air1', 'Air1Dev', 'AppTests'
+link_with 'GetStarted', 'GetStartedDev', 'AppTests'
 
 # Custom AFNetworking Podspec to remove its UIImageView category
 pod 'AFNetworking+JHMods', :path => 'AFNetworking+JHMods'

@@ -1,9 +1,8 @@
 //
 //  UIColor+JHExtras.h
-//  Connoshoer
 //
 //  Created by Josh Hudnall on 12/13/12.
-//  Copyright (c) 2012 Connoshoer. All rights reserved.
+//  Copyright (c) 2012 Josh Hudnall. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -17,6 +16,7 @@
  *
  *  @return YES if valid, NO if not
  */
+
 + (BOOL)jh_stringIsHexColor:(NSString *)string;
 /**
  *  Returns a UIColor from a hex color string
@@ -25,6 +25,7 @@
  *
  *  @return A UIColor as described in the hex string
  */
+
 + (UIColor *)jh_colorWithHexString:(NSString *)string;
 
 /**

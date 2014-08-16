@@ -1,6 +1,5 @@
 //
 //  AppDelegate.m
-//  GetStarted
 //
 //  Created by Josh Hudnall on 4/1/14.
 //

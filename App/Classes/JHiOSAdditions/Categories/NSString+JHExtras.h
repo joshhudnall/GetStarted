@@ -2,7 +2,7 @@
 //  NSString+JHExtras.h
 //
 //  Created by Josh Hudnall on 6/6/12.
-//  Copyright (c) 2012 Method Apps. All rights reserved.
+//  Copyright (c) 2012 Josh Hudnall. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

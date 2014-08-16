@@ -1,9 +1,8 @@
 //
 //  UIColor+JHExtras.m
-//  Connoshoer
 //
 //  Created by Josh Hudnall on 12/13/12.
-//  Copyright (c) 2012 Connoshoer. All rights reserved.
+//  Copyright (c) 2012 Josh Hudnall. All rights reserved.
 //
 
 #import "UIColor+JHExtras.h"

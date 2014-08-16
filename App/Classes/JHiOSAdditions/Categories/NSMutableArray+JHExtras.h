@@ -1,9 +1,8 @@
 //
 //  NSMutableArray+JHExtras.h
-//  Connoshoer
 //
 //  Created by Josh Hudnall on 1/1/13.
-//  Copyright (c) 2013 Connoshoer. All rights reserved.
+//  Copyright (c) 2013 Josh Hudnall. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

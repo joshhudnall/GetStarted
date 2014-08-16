@@ -1,6 +1,5 @@
 //
 //  JHMath.h
-//  GetStarted
 //
 //  Created by Josh Hudnall on 4/4/14.
 //

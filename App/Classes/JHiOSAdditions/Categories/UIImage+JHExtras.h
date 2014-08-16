@@ -16,6 +16,7 @@
  *
  *  @return An image
  */
+
 + (UIImage *)jh_imageWithColor:(UIColor *)color;
 /**
  *  Creates an image of a solid color
@@ -25,6 +26,7 @@
  *
  *  @return An image
  */
+
 + (UIImage *)jh_imageWithColor:(UIColor *)color ofSize:(CGSize)size;
 
 /**

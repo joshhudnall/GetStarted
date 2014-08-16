@@ -1,6 +1,5 @@
 //
 //  NSUserDefaults+JHExtras.h
-//  Air1 Photo Booth
 //
 //  Created by Josh Hudnall on 5/18/14.
 //  Copyright (c) 2014 Josh Hudnall. All rights reserved.
