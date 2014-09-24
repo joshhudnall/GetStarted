@@ -1,12 +1,9 @@
 //
-//  JHBeSocial.m
+//  JHAppActions.m
 //
 //  Created by Josh Hudnall on 3/25/14.
 //
 //
-
-#import "JHBeSocial.h"
-#import "PRPAlertView.h"
 
 typedef NS_ENUM(NSUInteger, TwitterApp) {
     TwitterAppTweetbot,
@@ -14,7 +11,11 @@ typedef NS_ENUM(NSUInteger, TwitterApp) {
     TwitterAppSafari,
 };
 
+#import "JHBeSocial.h"
+
 @implementation JHBeSocial
+
+#pragma mark - Twitter
 
 + (void)openTwitterProfile:(NSString *)username {
     if ([self hasTweetbot]) {
@@ -70,6 +71,18 @@ typedef NS_ENUM(NSUInteger, TwitterApp) {
                      otherBlock:^(UIAlertView *alertView) {
                          [[UIApplication sharedApplication] openURL:url];
                      }];
+}
+
+
+#pragma mark - Facebook
+
++ (void)openFacebookPageWithID:(NSString *)pageID {
+    NSString *fbAppString = [NSString stringWithFormat:@"fb://profile/%@", pageID];
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:fbAppString]]) {
+        [[UIApplication sharedApplication] askToOpenURLString:fbAppString];
+    } else {
+        [[UIApplication sharedApplication] askToOpenURLString:[NSString stringWithFormat:@"http://facebook.com/%@", pageID]];
+    }
 }
 
 @end

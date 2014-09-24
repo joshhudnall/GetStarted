@@ -1,5 +1,6 @@
 //
-//  JHBeSocial.h
+//  JHAppActions.h
+//  PeopleInSpace
 //
 //  Created by Josh Hudnall on 3/25/14.
 //
@@ -23,5 +24,12 @@
  *  @param tweetID  The numeric ID of the tweet
  */
 + (void)openTwitterStatus:(NSString *)username tweet:(unsigned long long)tweetID;
+
+/**
+ *  Attempts to open a Facebook page in the native app, falling back to Safari
+ *
+ *  @param pageID The ID of the page to open
+ */
++ (void)openFacebookPageWithID:(NSString *)pageID;
 
 @end

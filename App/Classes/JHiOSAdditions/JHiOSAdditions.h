@@ -13,7 +13,6 @@
 #import "JHMath.h"
 
 // UI
-#import "JHAutosizingLabel.h"
 #import "JHSlideViewController.h"
 #import "JHTableViewController.h" // Imports JHViewController.h
 #import "PRPAlertView.h"

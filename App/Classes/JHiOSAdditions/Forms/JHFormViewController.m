@@ -1,5 +1,6 @@
 //
 //  JHFormViewController.m
+//  GetStarted
 //
 //  Created by Josh Hudnall on 5/29/14.
 //
@@ -30,10 +31,10 @@ static NSString *const JHFormCellTypeDateTime = @"datetime";
 #import "JHFormViewController.h"
 
 // Form Cells
-#import "JHSwitchCell.h"
-#import "JHTextCell.h"
-#import "JHOptionsCell.h"
-#import "JHDateCell.h"
+#import "JHFormSwitchCell.h"
+#import "JHFormTextCell.h"
+#import "JHFormOptionsCell.h"
+#import "JHFormDateCell.h"
 
 @interface JHFormViewController ()
 
@@ -186,12 +187,12 @@ static NSString *const JHFormCellTypeDateTime = @"datetime";
 
 - (NSDictionary *)classesForDefaultFieldTypes {
     return @{@(JHFieldTypeInfo): [JHFormCell class],
-             @(JHFieldTypeText): [JHTextCell class],
-             @(JHFieldTypeDate): [JHDateCell class],
-             @(JHFieldTypeTime): [JHDateCell class],
-             @(JHFieldTypeDateTime): [JHDateCell class],
-             @(JHFieldTypeOptions): [JHOptionsCell class],
-             @(JHFieldTypeSwitch): [JHSwitchCell class],
+             @(JHFieldTypeText): [JHFormTextCell class],
+             @(JHFieldTypeDate): [JHFormDateCell class],
+             @(JHFieldTypeTime): [JHFormDateCell class],
+             @(JHFieldTypeDateTime): [JHFormDateCell class],
+             @(JHFieldTypeOptions): [JHFormOptionsCell class],
+             @(JHFieldTypeSwitch): [JHFormSwitchCell class],
              };
     
 }

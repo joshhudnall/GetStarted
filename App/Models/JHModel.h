@@ -8,6 +8,22 @@
 #import <Foundation/Foundation.h>
 #import "AutoCoding.h"
 
+/**
+ *  Safely pull info from dict[nodeName] and place in iVar
+ *
+ *  @param dict     The JSON dictionary
+ *  @param nodeName The JSON node to use
+ *  @param iVar     The iVar to populate
+ *
+ *  @return Safe procedure
+ */
+#define JHGetStringNode(dict, nodeName, iVar) if (dict[nodeName]) iVar = [dict[nodeName] copy]
+#define JHGetURLNode(dict, nodeName, iVar) if (dict[nodeName] && ! [dict[nodeName] isEqualToString:@""]) iVar = [NSURL URLWithString:dict[nodeName]]
+#define JHGetMySQLDateNode(dict, nodeName, iVar) if ([jsonDict objectForKey:nodeName]) iVar = [NSDate jh_dateFromMySqlString:[jsonDict objectForKey:nodeName]]
+#define JHGetBOOLNode(dict, nodeName, iVar) if (dict[nodeName]) iVar = [dict[nodeName] boolValue]
+#define JHGetIntegerNode(dict, nodeName, iVar) if (dict[nodeName]) iVar = [dict[nodeName] integerValue]
+#define JHGetFloatNode(dict, nodeName, iVar) if (dict[nodeName]) iVar = [dict[nodeName] floatValue]
+
 @interface JHModel : NSObject
 
 /**
