@@ -1,5 +1,9 @@
 #import "TMMemoryCache.h"
 
+#if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_4_0
+#import <UIKit/UIKit.h>
+#endif
+
 NSString * const TMMemoryCachePrefix = @"com.tumblr.TMMemoryCache";
 
 @interface TMMemoryCache ()
@@ -66,15 +70,6 @@ NSString * const TMMemoryCachePrefix = @"com.tumblr.TMMemoryCache";
 
         _removeAllObjectsOnMemoryWarning = YES;
         _removeAllObjectsOnEnteringBackground = YES;
-
-        #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_4_0
-        for (NSString *name in @[UIApplicationDidReceiveMemoryWarningNotification, UIApplicationDidEnterBackgroundNotification]) {
-            [[NSNotificationCenter defaultCenter] addObserver:self
-                                                     selector:@selector(didObserveApocalypticNotification:)
-                                                         name:name
-                                                       object:[UIApplication sharedApplication]];
-        }
-        #endif
     }
     return self;
 }
@@ -93,39 +88,42 @@ NSString * const TMMemoryCachePrefix = @"com.tumblr.TMMemoryCache";
 
 #pragma mark - Private Methods -
 
-- (void)didObserveApocalypticNotification:(NSNotification *)notification
-{
+- (void)handleMemoryWarning {
     #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_4_0
 
-    if ([[notification name] isEqualToString:UIApplicationDidReceiveMemoryWarningNotification]) {
-        if (self.removeAllObjectsOnMemoryWarning)
-            [self removeAllObjects:nil];
+    if (self.removeAllObjectsOnMemoryWarning)
+        [self removeAllObjects:nil];
+    
+    __weak TMMemoryCache *weakSelf = self;
+    
+    dispatch_async(_queue, ^{
+        TMMemoryCache *strongSelf = weakSelf;
+        if (!strongSelf)
+            return;
+        
+        if (strongSelf->_didReceiveMemoryWarningBlock)
+            strongSelf->_didReceiveMemoryWarningBlock(strongSelf);
+    });
+    
+    #endif
+}
 
-        __weak TMMemoryCache *weakSelf = self;
-
-        dispatch_async(_queue, ^{
-            TMMemoryCache *strongSelf = weakSelf;
-            if (!strongSelf)
-                return;
-
-            if (strongSelf->_didReceiveMemoryWarningBlock)
-                strongSelf->_didReceiveMemoryWarningBlock(strongSelf);
-        });
-    } else if ([[notification name] isEqualToString:UIApplicationDidEnterBackgroundNotification]) {
-        if (self.removeAllObjectsOnEnteringBackground)
-            [self removeAllObjects:nil];
-
-        __weak TMMemoryCache *weakSelf = self;
-
-        dispatch_async(_queue, ^{
-            TMMemoryCache *strongSelf = weakSelf;
-            if (!strongSelf)
-                return;
-
-            if (strongSelf->_didEnterBackgroundBlock)
-                strongSelf->_didEnterBackgroundBlock(strongSelf);
-        });
-    }
+- (void)handleApplicationBackgrounding {
+    #if __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_4_0
+    
+    if (self.removeAllObjectsOnEnteringBackground)
+        [self removeAllObjects:nil];
+    
+    __weak TMMemoryCache *weakSelf = self;
+    
+    dispatch_async(_queue, ^{
+        TMMemoryCache *strongSelf = weakSelf;
+        if (!strongSelf)
+            return;
+        
+        if (strongSelf->_didEnterBackgroundBlock)
+            strongSelf->_didEnterBackgroundBlock(strongSelf);
+    });
     
     #endif
 }
