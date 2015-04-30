@@ -21,7 +21,11 @@ JHValueRange JHValueRangeMake(CGFloat first, CGFloat last) {
     // x = C + (y - A) * (D - C) / (B - A)  ::  A - B (range 1) normalized to C - D (range 2)
     
     CGFloat newVal = toRange.first + (value - fromRange.first) * (toRange.last - toRange.first) / (fromRange.last - fromRange.first);
-    return fmaxf(toRange.first, fminf(toRange.last, newVal));
+    
+    CGFloat minVal = toRange.first <= toRange.last ? toRange.first : toRange.last;
+    CGFloat maxVal = toRange.first > toRange.last ? toRange.first : toRange.last;
+    
+    return fmaxf(minVal, fminf(maxVal, newVal));
 }
 
 @end
