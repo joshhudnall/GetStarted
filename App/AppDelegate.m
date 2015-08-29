@@ -8,13 +8,10 @@
 #import "AppDelegate.h"
 #import "HockeySDK.h"
 
-#import "JHFormViewController.h"
+#import <JHStandardLib/JHFormViewController.h>
 
 
 @interface AppDelegate ()
-
-@property (nonatomic, strong) id <GAITracker> tracker;
-@property (nonatomic, strong) id <GAITracker> secondaryTracker;
 
 @end
 
@@ -99,11 +96,11 @@
     if ([kTrackingID jh_isFull]) {
         [GAI sharedInstance].dispatchInterval = 120;
         [GAI sharedInstance].trackUncaughtExceptions = YES;
-        _tracker = [[GAI sharedInstance] trackerWithTrackingId:kTrackingID];
+        [[GAI sharedInstance] trackerWithTrackingId:kTrackingID];
     }
     if ([kSecondaryTrackingID jh_isFull]) {
-        _secondaryTracker = [[GAI sharedInstance] trackerWithName:kSecondaryTrackingName
-                                                       trackingId:kSecondaryTrackingID];
+        [[GAI sharedInstance] trackerWithName:kSecondaryTrackingName
+                                   trackingId:kSecondaryTrackingID];
     }
 }
 

@@ -28,19 +28,6 @@
 		BE161A3618EB7E1800964404 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BE161A1F18EB7E1800964404 /* LICENSE */; };
 		BE161A3718EB7E1800964404 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BE161A2018EB7E1800964404 /* README.md */; };
 		BE161A3818EB7E1800964404 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A2218EB7E1800964404 /* UIView+Positioning.m */; };
-		BE161A6418EB7E2800964404 /* NSDate+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A3D18EB7E2800964404 /* NSDate+JHExtras.m */; };
-		BE161A6518EB7E2800964404 /* NSMutableArray+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A3F18EB7E2800964404 /* NSMutableArray+JHExtras.m */; };
-		BE161A6618EB7E2800964404 /* NSObject+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4118EB7E2800964404 /* NSObject+JHExtras.m */; };
-		BE161A6718EB7E2800964404 /* NSString+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4318EB7E2800964404 /* NSString+JHExtras.m */; };
-		BE161A6818EB7E2800964404 /* UIBarButtonItem+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4518EB7E2800964404 /* UIBarButtonItem+JHExtras.m */; };
-		BE161A6918EB7E2800964404 /* UIColor+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4718EB7E2800964404 /* UIColor+JHExtras.m */; };
-		BE161A6A18EB7E2800964404 /* UIImage+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4918EB7E2800964404 /* UIImage+JHExtras.m */; };
-		BE161A6B18EB7E2800964404 /* UITableView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4B18EB7E2800964404 /* UITableView+JHExtras.m */; };
-		BE161A6D18EB7E2800964404 /* JHSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5418EB7E2800964404 /* JHSlideViewController.m */; };
-		BE161A6E18EB7E2800964404 /* JHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5618EB7E2800964404 /* JHTableViewController.m */; };
-		BE161A6F18EB7E2800964404 /* JHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5818EB7E2800964404 /* JHViewController.m */; };
-		BE161A7018EB7E2800964404 /* PRPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5A18EB7E2800964404 /* PRPAlertView.m */; };
-		BE161A7418EB7E2800964404 /* JHBeSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A6318EB7E2800964404 /* JHBeSocial.m */; };
 		BE161A7718EB81DB00964404 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7518EB81DB00964404 /* AdSupport.framework */; };
 		BE161A7818EB81DB00964404 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7618EB81DB00964404 /* CoreData.framework */; };
 		BE161A7A18EB81DF00964404 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7918EB81DF00964404 /* libz.dylib */; };
@@ -56,70 +43,26 @@
 		BE469ADE199F029D0001800D /* AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BE469ADC199F029D0001800D /* AutoCoding.m */; };
 		BE469ADF199F029D0001800D /* AutoCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = BE469ADC199F029D0001800D /* AutoCoding.m */; };
 		BE5F8F3119155556001EEF1D /* JHDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F8F3019155556001EEF1D /* JHDataSource.m */; };
-		BE66AF5B19D33FDD00D84484 /* JHFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF4E19D33FDD00D84484 /* JHFormCell.m */; };
-		BE66AF5C19D33FDD00D84484 /* JHFormCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF4E19D33FDD00D84484 /* JHFormCell.m */; };
-		BE66AF5D19D33FDD00D84484 /* JHFormDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF5019D33FDD00D84484 /* JHFormDateCell.m */; };
-		BE66AF5E19D33FDD00D84484 /* JHFormDateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF5019D33FDD00D84484 /* JHFormDateCell.m */; };
-		BE66AF5F19D33FDD00D84484 /* JHFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF5219D33FDD00D84484 /* JHFormField.m */; };
-		BE66AF6019D33FDD00D84484 /* JHFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF5219D33FDD00D84484 /* JHFormField.m */; };
-		BE66AF6119D33FDD00D84484 /* JHFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF5419D33FDD00D84484 /* JHFormOptionsCell.m */; };
-		BE66AF6219D33FDD00D84484 /* JHFormOptionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF5419D33FDD00D84484 /* JHFormOptionsCell.m */; };
-		BE66AF6319D33FDD00D84484 /* JHFormSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF5619D33FDD00D84484 /* JHFormSwitchCell.m */; };
-		BE66AF6419D33FDD00D84484 /* JHFormSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF5619D33FDD00D84484 /* JHFormSwitchCell.m */; };
-		BE66AF6519D33FDD00D84484 /* JHFormTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF5819D33FDD00D84484 /* JHFormTextCell.m */; };
-		BE66AF6619D33FDD00D84484 /* JHFormTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF5819D33FDD00D84484 /* JHFormTextCell.m */; };
-		BE66AF6719D33FDD00D84484 /* JHFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF5A19D33FDD00D84484 /* JHFormViewController.m */; };
-		BE66AF6819D33FDD00D84484 /* JHFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF5A19D33FDD00D84484 /* JHFormViewController.m */; };
-		BE66AF6B19D3400D00D84484 /* UIApplication+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF6A19D3400D00D84484 /* UIApplication+JHExtras.m */; };
-		BE66AF6C19D3400D00D84484 /* UIApplication+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF6A19D3400D00D84484 /* UIApplication+JHExtras.m */; };
-		BE66AF6F19D3402800D84484 /* UICollectionView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF6E19D3402800D84484 /* UICollectionView+JHExtras.m */; };
-		BE66AF7019D3402800D84484 /* UICollectionView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF6E19D3402800D84484 /* UICollectionView+JHExtras.m */; };
-		BE66AF7319D3403E00D84484 /* UIView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF7219D3403E00D84484 /* UIView+JHExtras.m */; };
-		BE66AF7419D3403E00D84484 /* UIView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF7219D3403E00D84484 /* UIView+JHExtras.m */; };
-		BE66AF7819D3405D00D84484 /* JHSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF7719D3405D00D84484 /* JHSwitchCell.m */; };
-		BE66AF7919D3405D00D84484 /* JHSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF7719D3405D00D84484 /* JHSwitchCell.m */; };
 		BE66AF7C19D340AC00D84484 /* UIImageView+JHExtras-SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF7B19D340AC00D84484 /* UIImageView+JHExtras-SDWebImage.m */; };
 		BE66AF7D19D340AC00D84484 /* UIImageView+JHExtras-SDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = BE66AF7B19D340AC00D84484 /* UIImageView+JHExtras-SDWebImage.m */; };
-		BE74D54C18EF6D8F00CA6BFA /* JHMath.m in Sources */ = {isa = PBXBuildFile; fileRef = BE74D54B18EF6D8F00CA6BFA /* JHMath.m */; };
-		BE79FFD219353ABE00B306E9 /* GAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFD119353ABE00B306E9 /* GAHelper.m */; };
-		BE79FFD319353ABE00B306E9 /* GAHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFD119353ABE00B306E9 /* GAHelper.m */; };
 		BE79FFD519353B1100B306E9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE79FFD419353B1100B306E9 /* libsqlite3.dylib */; };
 		BE79FFD619353B1700B306E9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE79FFD419353B1100B306E9 /* libsqlite3.dylib */; };
-		BE79FFD919353B4F00B306E9 /* NSUserDefaults+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */; };
-		BE79FFDA19353B4F00B306E9 /* NSUserDefaults+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */; };
-		BE79FFDD19353D0800B306E9 /* JHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */; };
-		BE79FFDE19353D0800B306E9 /* JHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */; };
-		BEA190321AF153F10063E3ED /* UICollectionViewCell+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB6FEEA199020C900663C87 /* UICollectionViewCell+JHExtras.m */; };
-		BEA190331AF153F50063E3ED /* UITableViewCell+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB6FEE71990207500663C87 /* UITableViewCell+JHExtras.m */; };
-		BEB6FEE81990207500663C87 /* UITableViewCell+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB6FEE71990207500663C87 /* UITableViewCell+JHExtras.m */; };
-		BEB6FEEB199020C900663C87 /* UICollectionViewCell+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB6FEEA199020C900663C87 /* UICollectionViewCell+JHExtras.m */; };
+		BE8ED85C1B914F3A005D349D /* libJHStandardLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8ED85B1B914F3A005D349D /* libJHStandardLib.a */; };
+		BE8ED85E1B914F3F005D349D /* libJHStandardLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8ED85D1B914F3F005D349D /* libJHStandardLib.a */; };
+		BE8ED8601B914F43005D349D /* libJHStandardLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8ED85F1B914F43005D349D /* libJHStandardLib.a */; };
 		BED723A91907A76A0022F10A /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A81907A76A0022F10A /* UIColor+App.m */; };
 		BED723AC1907A80A0022F10A /* UIFont+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723AB1907A80A0022F10A /* UIFont+App.m */; };
 		BEED09CC19201FCE00FA2193 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619CA18EB762700964404 /* AppDelegate.m */; };
-		BEED09CF19201FCE00FA2193 /* NSDate+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A3D18EB7E2800964404 /* NSDate+JHExtras.m */; };
 		BEED09D119201FCE00FA2193 /* JHDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5F8F3019155556001EEF1D /* JHDataSource.m */; };
 		BEED09D319201FCE00FA2193 /* NGAParallaxMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619FF18EB7E1800964404 /* NGAParallaxMotion.m */; };
-		BEED09D519201FCE00FA2193 /* NSMutableArray+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A3F18EB7E2800964404 /* NSMutableArray+JHExtras.m */; };
-		BEED09D619201FCE00FA2193 /* NSString+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4318EB7E2800964404 /* NSString+JHExtras.m */; };
 		BEED09D719201FCE00FA2193 /* UIFont+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723AB1907A80A0022F10A /* UIFont+App.m */; };
-		BEED09D919201FCE00FA2193 /* PRPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5A18EB7E2800964404 /* PRPAlertView.m */; };
 		BEED09DA19201FCE00FA2193 /* NSLayoutConstraint+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE34BF5318F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m */; };
-		BEED09DB19201FCE00FA2193 /* UIImage+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4918EB7E2800964404 /* UIImage+JHExtras.m */; };
-		BEED09DC19201FCE00FA2193 /* JHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5618EB7E2800964404 /* JHTableViewController.m */; };
 		BEED09DD19201FCE00FA2193 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619C618EB762700964404 /* main.m */; };
-		BEED09DF19201FCE00FA2193 /* JHSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5418EB7E2800964404 /* JHSlideViewController.m */; };
 		BEED09E019201FCE00FA2193 /* UIView+CompactConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = BE34BF5518F3D7C0001AE3EF /* UIView+CompactConstraint.m */; };
-		BEED09E219201FCE00FA2193 /* UIBarButtonItem+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4518EB7E2800964404 /* UIBarButtonItem+JHExtras.m */; };
-		BEED09E319201FCE00FA2193 /* UITableView+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4B18EB7E2800964404 /* UITableView+JHExtras.m */; };
 		BEED09E819201FCE00FA2193 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619EF18EB7D0F00964404 /* Constants.m */; };
-		BEED09E919201FCE00FA2193 /* UIColor+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4718EB7E2800964404 /* UIColor+JHExtras.m */; };
-		BEED09EA19201FCE00FA2193 /* JHMath.m in Sources */ = {isa = PBXBuildFile; fileRef = BE74D54B18EF6D8F00CA6BFA /* JHMath.m */; };
-		BEED09EB19201FCE00FA2193 /* JHBeSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A6318EB7E2800964404 /* JHBeSocial.m */; };
 		BEED09EC19201FCE00FA2193 /* UIColor+App.m in Sources */ = {isa = PBXBuildFile; fileRef = BED723A81907A76A0022F10A /* UIColor+App.m */; };
-		BEED09F019201FCE00FA2193 /* NSObject+JHExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A4118EB7E2800964404 /* NSObject+JHExtras.m */; };
 		BEED09F119201FCE00FA2193 /* CompressingLogFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A7E18EBCB9200964404 /* CompressingLogFileManager.m */; };
 		BEED09F219201FCE00FA2193 /* UIView+Positioning.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A2218EB7E1800964404 /* UIView+Positioning.m */; };
-		BEED09F319201FCE00FA2193 /* JHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE161A5818EB7E2800964404 /* JHViewController.m */; };
 		BEED09F419201FCE00FA2193 /* CCActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619F218EB7E1800964404 /* CCActionSheet.m */; };
 		BEED09F519201FCE00FA2193 /* DDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1619F418EB7E1800964404 /* DDProgressView.m */; };
 		BEED09FA19201FCE00FA2193 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE161A7518EB81DB00964404 /* AdSupport.framework */; };
@@ -178,34 +121,6 @@
 		BE161A2018EB7E1800964404 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		BE161A2118EB7E1800964404 /* UIView+Positioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Positioning.h"; sourceTree = "<group>"; };
 		BE161A2218EB7E1800964404 /* UIView+Positioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Positioning.m"; sourceTree = "<group>"; };
-		BE161A3B18EB7E2800964404 /* JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHExtras.h; sourceTree = "<group>"; };
-		BE161A3C18EB7E2800964404 /* NSDate+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+JHExtras.h"; sourceTree = "<group>"; };
-		BE161A3D18EB7E2800964404 /* NSDate+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JHExtras.m"; sourceTree = "<group>"; };
-		BE161A3E18EB7E2800964404 /* NSMutableArray+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+JHExtras.h"; sourceTree = "<group>"; };
-		BE161A3F18EB7E2800964404 /* NSMutableArray+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JHExtras.m"; sourceTree = "<group>"; };
-		BE161A4018EB7E2800964404 /* NSObject+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+JHExtras.h"; sourceTree = "<group>"; };
-		BE161A4118EB7E2800964404 /* NSObject+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JHExtras.m"; sourceTree = "<group>"; };
-		BE161A4218EB7E2800964404 /* NSString+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JHExtras.h"; sourceTree = "<group>"; };
-		BE161A4318EB7E2800964404 /* NSString+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JHExtras.m"; sourceTree = "<group>"; };
-		BE161A4418EB7E2800964404 /* UIBarButtonItem+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JHExtras.h"; sourceTree = "<group>"; };
-		BE161A4518EB7E2800964404 /* UIBarButtonItem+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JHExtras.m"; sourceTree = "<group>"; };
-		BE161A4618EB7E2800964404 /* UIColor+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JHExtras.h"; sourceTree = "<group>"; };
-		BE161A4718EB7E2800964404 /* UIColor+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JHExtras.m"; sourceTree = "<group>"; };
-		BE161A4818EB7E2800964404 /* UIImage+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JHExtras.h"; sourceTree = "<group>"; };
-		BE161A4918EB7E2800964404 /* UIImage+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JHExtras.m"; sourceTree = "<group>"; };
-		BE161A4A18EB7E2800964404 /* UITableView+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+JHExtras.h"; sourceTree = "<group>"; };
-		BE161A4B18EB7E2800964404 /* UITableView+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+JHExtras.m"; sourceTree = "<group>"; };
-		BE161A4F18EB7E2800964404 /* JHiOSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHiOSAdditions.h; sourceTree = "<group>"; };
-		BE161A5318EB7E2800964404 /* JHSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSlideViewController.h; sourceTree = "<group>"; };
-		BE161A5418EB7E2800964404 /* JHSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSlideViewController.m; sourceTree = "<group>"; };
-		BE161A5518EB7E2800964404 /* JHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHTableViewController.h; sourceTree = "<group>"; };
-		BE161A5618EB7E2800964404 /* JHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHTableViewController.m; sourceTree = "<group>"; };
-		BE161A5718EB7E2800964404 /* JHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHViewController.h; sourceTree = "<group>"; };
-		BE161A5818EB7E2800964404 /* JHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHViewController.m; sourceTree = "<group>"; };
-		BE161A5918EB7E2800964404 /* PRPAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRPAlertView.h; sourceTree = "<group>"; };
-		BE161A5A18EB7E2800964404 /* PRPAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRPAlertView.m; sourceTree = "<group>"; };
-		BE161A6218EB7E2800964404 /* JHBeSocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHBeSocial.h; sourceTree = "<group>"; };
-		BE161A6318EB7E2800964404 /* JHBeSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHBeSocial.m; sourceTree = "<group>"; };
 		BE161A7518EB81DB00964404 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		BE161A7618EB81DB00964404 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		BE161A7918EB81DF00964404 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -224,43 +139,12 @@
 		BE469ADC199F029D0001800D /* AutoCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoCoding.m; sourceTree = "<group>"; };
 		BE5F8F2F19155556001EEF1D /* JHDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDataSource.h; sourceTree = "<group>"; };
 		BE5F8F3019155556001EEF1D /* JHDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDataSource.m; sourceTree = "<group>"; };
-		BE66AF4D19D33FDD00D84484 /* JHFormCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormCell.h; sourceTree = "<group>"; };
-		BE66AF4E19D33FDD00D84484 /* JHFormCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormCell.m; sourceTree = "<group>"; };
-		BE66AF4F19D33FDD00D84484 /* JHFormDateCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormDateCell.h; sourceTree = "<group>"; };
-		BE66AF5019D33FDD00D84484 /* JHFormDateCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormDateCell.m; sourceTree = "<group>"; };
-		BE66AF5119D33FDD00D84484 /* JHFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormField.h; sourceTree = "<group>"; };
-		BE66AF5219D33FDD00D84484 /* JHFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormField.m; sourceTree = "<group>"; };
-		BE66AF5319D33FDD00D84484 /* JHFormOptionsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormOptionsCell.h; sourceTree = "<group>"; };
-		BE66AF5419D33FDD00D84484 /* JHFormOptionsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormOptionsCell.m; sourceTree = "<group>"; };
-		BE66AF5519D33FDD00D84484 /* JHFormSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormSwitchCell.h; sourceTree = "<group>"; };
-		BE66AF5619D33FDD00D84484 /* JHFormSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormSwitchCell.m; sourceTree = "<group>"; };
-		BE66AF5719D33FDD00D84484 /* JHFormTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormTextCell.h; sourceTree = "<group>"; };
-		BE66AF5819D33FDD00D84484 /* JHFormTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormTextCell.m; sourceTree = "<group>"; };
-		BE66AF5919D33FDD00D84484 /* JHFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHFormViewController.h; sourceTree = "<group>"; };
-		BE66AF5A19D33FDD00D84484 /* JHFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHFormViewController.m; sourceTree = "<group>"; };
-		BE66AF6919D3400D00D84484 /* UIApplication+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JHExtras.h"; sourceTree = "<group>"; };
-		BE66AF6A19D3400D00D84484 /* UIApplication+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JHExtras.m"; sourceTree = "<group>"; };
-		BE66AF6D19D3402800D84484 /* UICollectionView+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+JHExtras.h"; sourceTree = "<group>"; };
-		BE66AF6E19D3402800D84484 /* UICollectionView+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+JHExtras.m"; sourceTree = "<group>"; };
-		BE66AF7119D3403E00D84484 /* UIView+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JHExtras.h"; sourceTree = "<group>"; };
-		BE66AF7219D3403E00D84484 /* UIView+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JHExtras.m"; sourceTree = "<group>"; };
-		BE66AF7619D3405D00D84484 /* JHSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHSwitchCell.h; sourceTree = "<group>"; };
-		BE66AF7719D3405D00D84484 /* JHSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHSwitchCell.m; sourceTree = "<group>"; };
 		BE66AF7A19D340AC00D84484 /* UIImageView+JHExtras-SDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JHExtras-SDWebImage.h"; sourceTree = "<group>"; };
 		BE66AF7B19D340AC00D84484 /* UIImageView+JHExtras-SDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JHExtras-SDWebImage.m"; sourceTree = "<group>"; };
-		BE74D54A18EF6D8F00CA6BFA /* JHMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHMath.h; sourceTree = "<group>"; };
-		BE74D54B18EF6D8F00CA6BFA /* JHMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHMath.m; sourceTree = "<group>"; };
-		BE79FFD019353ABE00B306E9 /* GAHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAHelper.h; sourceTree = "<group>"; };
-		BE79FFD119353ABE00B306E9 /* GAHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GAHelper.m; sourceTree = "<group>"; };
 		BE79FFD419353B1100B306E9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		BE79FFD719353B4F00B306E9 /* NSUserDefaults+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+JHExtras.h"; sourceTree = "<group>"; };
-		BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+JHExtras.m"; sourceTree = "<group>"; };
-		BE79FFDB19353D0800B306E9 /* JHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHCollectionViewController.h; sourceTree = "<group>"; };
-		BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHCollectionViewController.m; sourceTree = "<group>"; };
-		BEB6FEE61990207500663C87 /* UITableViewCell+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+JHExtras.h"; sourceTree = "<group>"; };
-		BEB6FEE71990207500663C87 /* UITableViewCell+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+JHExtras.m"; sourceTree = "<group>"; };
-		BEB6FEE9199020C900663C87 /* UICollectionViewCell+JHExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewCell+JHExtras.h"; sourceTree = "<group>"; };
-		BEB6FEEA199020C900663C87 /* UICollectionViewCell+JHExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewCell+JHExtras.m"; sourceTree = "<group>"; };
+		BE8ED85B1B914F3A005D349D /* libJHStandardLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJHStandardLib.a; path = "../../Documents/JHStandardLib/build/Debug-iphoneos/libJHStandardLib.a"; sourceTree = "<group>"; };
+		BE8ED85D1B914F3F005D349D /* libJHStandardLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJHStandardLib.a; path = "../../Documents/JHStandardLib/build/Debug-iphoneos/libJHStandardLib.a"; sourceTree = "<group>"; };
+		BE8ED85F1B914F43005D349D /* libJHStandardLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJHStandardLib.a; path = "../../Documents/JHStandardLib/build/Debug-iphoneos/libJHStandardLib.a"; sourceTree = "<group>"; };
 		BED723A71907A76A0022F10A /* UIColor+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+App.h"; sourceTree = "<group>"; };
 		BED723A81907A76A0022F10A /* UIColor+App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+App.m"; sourceTree = "<group>"; };
 		BED723AA1907A80A0022F10A /* UIFont+App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+App.h"; sourceTree = "<group>"; };
@@ -274,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8ED85C1B914F3A005D349D /* libJHStandardLib.a in Frameworks */,
 				BE79FFD519353B1100B306E9 /* libsqlite3.dylib in Frameworks */,
 				BE161A7718EB81DB00964404 /* AdSupport.framework in Frameworks */,
 				BE161A7818EB81DB00964404 /* CoreData.framework in Frameworks */,
@@ -290,6 +175,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8ED8601B914F43005D349D /* libJHStandardLib.a in Frameworks */,
 				BE1619D418EB762700964404 /* XCTest.framework in Frameworks */,
 				BE1619D618EB762700964404 /* UIKit.framework in Frameworks */,
 				BE1619D518EB762700964404 /* Foundation.framework in Frameworks */,
@@ -301,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8ED85E1B914F3F005D349D /* libJHStandardLib.a in Frameworks */,
 				BE79FFD619353B1700B306E9 /* libsqlite3.dylib in Frameworks */,
 				BEED09FA19201FCE00FA2193 /* AdSupport.framework in Frameworks */,
 				BEED09FB19201FCE00FA2193 /* CoreData.framework in Frameworks */,
@@ -349,6 +236,9 @@
 		BE1619B918EB762700964404 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE8ED85F1B914F43005D349D /* libJHStandardLib.a */,
+				BE8ED85D1B914F3F005D349D /* libJHStandardLib.a */,
+				BE8ED85B1B914F3A005D349D /* libJHStandardLib.a */,
 				BE79FFD419353B1100B306E9 /* libsqlite3.dylib */,
 				BE161A7B18EB81ED00964404 /* SystemConfiguration.framework */,
 				BE161A7918EB81DF00964404 /* libz.dylib */,
@@ -422,7 +312,6 @@
 		BE1619EA18EB7CAC00964404 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				BE161A3918EB7E2800964404 /* JHiOSAdditions */,
 				BE66AF7A19D340AC00D84484 /* UIImageView+JHExtras-SDWebImage.h */,
 				BE66AF7B19D340AC00D84484 /* UIImageView+JHExtras-SDWebImage.m */,
 			);
@@ -477,93 +366,6 @@
 			path = "UIView-Positioning";
 			sourceTree = "<group>";
 		};
-		BE161A3918EB7E2800964404 /* JHiOSAdditions */ = {
-			isa = PBXGroup;
-			children = (
-				BE66AF4C19D33FDD00D84484 /* Forms */,
-				BE161A3A18EB7E2800964404 /* Categories */,
-				BE161A4C18EB7E2800964404 /* Helpers */,
-				BE161A4F18EB7E2800964404 /* JHiOSAdditions.h */,
-				BE66AF7519D3405D00D84484 /* TableViewCells */,
-				BE161A5018EB7E2800964404 /* UI */,
-				BE161A6118EB7E2800964404 /* Utility */,
-			);
-			path = JHiOSAdditions;
-			sourceTree = "<group>";
-		};
-		BE161A3A18EB7E2800964404 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				BE161A3B18EB7E2800964404 /* JHExtras.h */,
-				BE161A3C18EB7E2800964404 /* NSDate+JHExtras.h */,
-				BE161A3D18EB7E2800964404 /* NSDate+JHExtras.m */,
-				BE161A3E18EB7E2800964404 /* NSMutableArray+JHExtras.h */,
-				BE161A3F18EB7E2800964404 /* NSMutableArray+JHExtras.m */,
-				BE161A4018EB7E2800964404 /* NSObject+JHExtras.h */,
-				BE161A4118EB7E2800964404 /* NSObject+JHExtras.m */,
-				BE161A4218EB7E2800964404 /* NSString+JHExtras.h */,
-				BE161A4318EB7E2800964404 /* NSString+JHExtras.m */,
-				BE79FFD719353B4F00B306E9 /* NSUserDefaults+JHExtras.h */,
-				BE79FFD819353B4F00B306E9 /* NSUserDefaults+JHExtras.m */,
-				BE66AF6919D3400D00D84484 /* UIApplication+JHExtras.h */,
-				BE66AF6A19D3400D00D84484 /* UIApplication+JHExtras.m */,
-				BE161A4418EB7E2800964404 /* UIBarButtonItem+JHExtras.h */,
-				BE161A4518EB7E2800964404 /* UIBarButtonItem+JHExtras.m */,
-				BE66AF6D19D3402800D84484 /* UICollectionView+JHExtras.h */,
-				BE66AF6E19D3402800D84484 /* UICollectionView+JHExtras.m */,
-				BEB6FEE9199020C900663C87 /* UICollectionViewCell+JHExtras.h */,
-				BEB6FEEA199020C900663C87 /* UICollectionViewCell+JHExtras.m */,
-				BE161A4618EB7E2800964404 /* UIColor+JHExtras.h */,
-				BE161A4718EB7E2800964404 /* UIColor+JHExtras.m */,
-				BE161A4818EB7E2800964404 /* UIImage+JHExtras.h */,
-				BE161A4918EB7E2800964404 /* UIImage+JHExtras.m */,
-				BE161A4A18EB7E2800964404 /* UITableView+JHExtras.h */,
-				BE161A4B18EB7E2800964404 /* UITableView+JHExtras.m */,
-				BEB6FEE61990207500663C87 /* UITableViewCell+JHExtras.h */,
-				BEB6FEE71990207500663C87 /* UITableViewCell+JHExtras.m */,
-				BE66AF7119D3403E00D84484 /* UIView+JHExtras.h */,
-				BE66AF7219D3403E00D84484 /* UIView+JHExtras.m */,
-			);
-			path = Categories;
-			sourceTree = "<group>";
-		};
-		BE161A4C18EB7E2800964404 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				BE79FFD019353ABE00B306E9 /* GAHelper.h */,
-				BE79FFD119353ABE00B306E9 /* GAHelper.m */,
-				BE74D54A18EF6D8F00CA6BFA /* JHMath.h */,
-				BE74D54B18EF6D8F00CA6BFA /* JHMath.m */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		BE161A5018EB7E2800964404 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				BE161A5318EB7E2800964404 /* JHSlideViewController.h */,
-				BE161A5418EB7E2800964404 /* JHSlideViewController.m */,
-				BE79FFDB19353D0800B306E9 /* JHCollectionViewController.h */,
-				BE79FFDC19353D0800B306E9 /* JHCollectionViewController.m */,
-				BE161A5518EB7E2800964404 /* JHTableViewController.h */,
-				BE161A5618EB7E2800964404 /* JHTableViewController.m */,
-				BE161A5718EB7E2800964404 /* JHViewController.h */,
-				BE161A5818EB7E2800964404 /* JHViewController.m */,
-				BE161A5918EB7E2800964404 /* PRPAlertView.h */,
-				BE161A5A18EB7E2800964404 /* PRPAlertView.m */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
-		BE161A6118EB7E2800964404 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				BE161A6218EB7E2800964404 /* JHBeSocial.h */,
-				BE161A6318EB7E2800964404 /* JHBeSocial.m */,
-			);
-			path = Utility;
-			sourceTree = "<group>";
-		};
 		BE34BF5018F3D7C0001AE3EF /* CompactConstraint */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,36 +376,6 @@
 				BE34BF5518F3D7C0001AE3EF /* UIView+CompactConstraint.m */,
 			);
 			path = CompactConstraint;
-			sourceTree = "<group>";
-		};
-		BE66AF4C19D33FDD00D84484 /* Forms */ = {
-			isa = PBXGroup;
-			children = (
-				BE66AF4D19D33FDD00D84484 /* JHFormCell.h */,
-				BE66AF4E19D33FDD00D84484 /* JHFormCell.m */,
-				BE66AF4F19D33FDD00D84484 /* JHFormDateCell.h */,
-				BE66AF5019D33FDD00D84484 /* JHFormDateCell.m */,
-				BE66AF5119D33FDD00D84484 /* JHFormField.h */,
-				BE66AF5219D33FDD00D84484 /* JHFormField.m */,
-				BE66AF5319D33FDD00D84484 /* JHFormOptionsCell.h */,
-				BE66AF5419D33FDD00D84484 /* JHFormOptionsCell.m */,
-				BE66AF5519D33FDD00D84484 /* JHFormSwitchCell.h */,
-				BE66AF5619D33FDD00D84484 /* JHFormSwitchCell.m */,
-				BE66AF5719D33FDD00D84484 /* JHFormTextCell.h */,
-				BE66AF5819D33FDD00D84484 /* JHFormTextCell.m */,
-				BE66AF5919D33FDD00D84484 /* JHFormViewController.h */,
-				BE66AF5A19D33FDD00D84484 /* JHFormViewController.m */,
-			);
-			path = Forms;
-			sourceTree = "<group>";
-		};
-		BE66AF7519D3405D00D84484 /* TableViewCells */ = {
-			isa = PBXGroup;
-			children = (
-				BE66AF7619D3405D00D84484 /* JHSwitchCell.h */,
-				BE66AF7719D3405D00D84484 /* JHSwitchCell.m */,
-			);
-			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		BE6B812C19157BC6003FD600 /* Resources */ = {
@@ -865,52 +637,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEB6FEEB199020C900663C87 /* UICollectionViewCell+JHExtras.m in Sources */,
-				BE66AF7819D3405D00D84484 /* JHSwitchCell.m in Sources */,
 				BE1619CB18EB762700964404 /* AppDelegate.m in Sources */,
-				BE66AF6319D33FDD00D84484 /* JHFormSwitchCell.m in Sources */,
-				BE161A6418EB7E2800964404 /* NSDate+JHExtras.m in Sources */,
 				BE5F8F3119155556001EEF1D /* JHDataSource.m in Sources */,
 				BE469AD8199F023E0001800D /* JHModel.m in Sources */,
 				BE161A2718EB7E1800964404 /* NGAParallaxMotion.m in Sources */,
-				BE161A6518EB7E2800964404 /* NSMutableArray+JHExtras.m in Sources */,
-				BE161A6718EB7E2800964404 /* NSString+JHExtras.m in Sources */,
-				BE66AF5D19D33FDD00D84484 /* JHFormDateCell.m in Sources */,
 				BED723AC1907A80A0022F10A /* UIFont+App.m in Sources */,
-				BE79FFD219353ABE00B306E9 /* GAHelper.m in Sources */,
-				BE66AF7319D3403E00D84484 /* UIView+JHExtras.m in Sources */,
-				BE161A7018EB7E2800964404 /* PRPAlertView.m in Sources */,
 				BE34BF5618F3D7C0001AE3EF /* NSLayoutConstraint+CompactConstraint.m in Sources */,
-				BE161A6A18EB7E2800964404 /* UIImage+JHExtras.m in Sources */,
-				BE161A6E18EB7E2800964404 /* JHTableViewController.m in Sources */,
-				BE66AF6F19D3402800D84484 /* UICollectionView+JHExtras.m in Sources */,
 				BE1619C718EB762700964404 /* main.m in Sources */,
-				BE79FFDD19353D0800B306E9 /* JHCollectionViewController.m in Sources */,
-				BE66AF6719D33FDD00D84484 /* JHFormViewController.m in Sources */,
-				BE161A6D18EB7E2800964404 /* JHSlideViewController.m in Sources */,
-				BEB6FEE81990207500663C87 /* UITableViewCell+JHExtras.m in Sources */,
 				BE34BF5718F3D7C0001AE3EF /* UIView+CompactConstraint.m in Sources */,
-				BE161A6818EB7E2800964404 /* UIBarButtonItem+JHExtras.m in Sources */,
-				BE161A6B18EB7E2800964404 /* UITableView+JHExtras.m in Sources */,
 				BE66AF7C19D340AC00D84484 /* UIImageView+JHExtras-SDWebImage.m in Sources */,
-				BE66AF5B19D33FDD00D84484 /* JHFormCell.m in Sources */,
 				BE1619F018EB7D0F00964404 /* Constants.m in Sources */,
-				BE161A6918EB7E2800964404 /* UIColor+JHExtras.m in Sources */,
-				BE79FFD919353B4F00B306E9 /* NSUserDefaults+JHExtras.m in Sources */,
-				BE74D54C18EF6D8F00CA6BFA /* JHMath.m in Sources */,
-				BE161A7418EB7E2800964404 /* JHBeSocial.m in Sources */,
 				BED723A91907A76A0022F10A /* UIColor+App.m in Sources */,
-				BE66AF6B19D3400D00D84484 /* UIApplication+JHExtras.m in Sources */,
 				BE469ADD199F029D0001800D /* AutoCoding.m in Sources */,
-				BE161A6618EB7E2800964404 /* NSObject+JHExtras.m in Sources */,
 				BE161A7F18EBCB9200964404 /* CompressingLogFileManager.m in Sources */,
 				BE161A3818EB7E1800964404 /* UIView+Positioning.m in Sources */,
-				BE161A6F18EB7E2800964404 /* JHViewController.m in Sources */,
 				BE161A2318EB7E1800964404 /* CCActionSheet.m in Sources */,
 				BE161A2418EB7E1800964404 /* DDProgressView.m in Sources */,
-				BE66AF6119D33FDD00D84484 /* JHFormOptionsCell.m in Sources */,
-				BE66AF6519D33FDD00D84484 /* JHFormTextCell.m in Sources */,
-				BE66AF5F19D33FDD00D84484 /* JHFormField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -929,51 +671,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEED09CC19201FCE00FA2193 /* AppDelegate.m in Sources */,
-				BE66AF6C19D3400D00D84484 /* UIApplication+JHExtras.m in Sources */,
-				BEED09CF19201FCE00FA2193 /* NSDate+JHExtras.m in Sources */,
 				BEED09D119201FCE00FA2193 /* JHDataSource.m in Sources */,
 				BEED09D319201FCE00FA2193 /* NGAParallaxMotion.m in Sources */,
-				BEED09D519201FCE00FA2193 /* NSMutableArray+JHExtras.m in Sources */,
-				BEED09D619201FCE00FA2193 /* NSString+JHExtras.m in Sources */,
 				BEED09D719201FCE00FA2193 /* UIFont+App.m in Sources */,
-				BE79FFD319353ABE00B306E9 /* GAHelper.m in Sources */,
-				BEED09D919201FCE00FA2193 /* PRPAlertView.m in Sources */,
-				BE66AF6419D33FDD00D84484 /* JHFormSwitchCell.m in Sources */,
 				BEED09DA19201FCE00FA2193 /* NSLayoutConstraint+CompactConstraint.m in Sources */,
-				BE66AF7419D3403E00D84484 /* UIView+JHExtras.m in Sources */,
-				BEED09DB19201FCE00FA2193 /* UIImage+JHExtras.m in Sources */,
 				BE469AD9199F023E0001800D /* JHModel.m in Sources */,
-				BE66AF7919D3405D00D84484 /* JHSwitchCell.m in Sources */,
-				BEED09DC19201FCE00FA2193 /* JHTableViewController.m in Sources */,
 				BEED09DD19201FCE00FA2193 /* main.m in Sources */,
-				BE66AF5C19D33FDD00D84484 /* JHFormCell.m in Sources */,
-				BE66AF6619D33FDD00D84484 /* JHFormTextCell.m in Sources */,
-				BE79FFDE19353D0800B306E9 /* JHCollectionViewController.m in Sources */,
-				BEED09DF19201FCE00FA2193 /* JHSlideViewController.m in Sources */,
 				BEED09E019201FCE00FA2193 /* UIView+CompactConstraint.m in Sources */,
-				BEED09E219201FCE00FA2193 /* UIBarButtonItem+JHExtras.m in Sources */,
-				BEED09E319201FCE00FA2193 /* UITableView+JHExtras.m in Sources */,
 				BE469ADE199F029D0001800D /* AutoCoding.m in Sources */,
-				BE66AF5E19D33FDD00D84484 /* JHFormDateCell.m in Sources */,
 				BEED09E819201FCE00FA2193 /* Constants.m in Sources */,
-				BEED09E919201FCE00FA2193 /* UIColor+JHExtras.m in Sources */,
-				BE79FFDA19353B4F00B306E9 /* NSUserDefaults+JHExtras.m in Sources */,
-				BEA190321AF153F10063E3ED /* UICollectionViewCell+JHExtras.m in Sources */,
-				BEED09EA19201FCE00FA2193 /* JHMath.m in Sources */,
-				BEED09EB19201FCE00FA2193 /* JHBeSocial.m in Sources */,
 				BEED09EC19201FCE00FA2193 /* UIColor+App.m in Sources */,
-				BE66AF6819D33FDD00D84484 /* JHFormViewController.m in Sources */,
-				BE66AF6219D33FDD00D84484 /* JHFormOptionsCell.m in Sources */,
 				BE66AF7D19D340AC00D84484 /* UIImageView+JHExtras-SDWebImage.m in Sources */,
-				BEED09F019201FCE00FA2193 /* NSObject+JHExtras.m in Sources */,
-				BEA190331AF153F50063E3ED /* UITableViewCell+JHExtras.m in Sources */,
 				BEED09F119201FCE00FA2193 /* CompressingLogFileManager.m in Sources */,
 				BEED09F219201FCE00FA2193 /* UIView+Positioning.m in Sources */,
-				BEED09F319201FCE00FA2193 /* JHViewController.m in Sources */,
 				BEED09F419201FCE00FA2193 /* CCActionSheet.m in Sources */,
 				BEED09F519201FCE00FA2193 /* DDProgressView.m in Sources */,
-				BE66AF6019D33FDD00D84484 /* JHFormField.m in Sources */,
-				BE66AF7019D3402800D84484 /* UICollectionView+JHExtras.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1088,7 +800,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "App/App-Prefix.pch";
 				INFOPLIST_FILE = "App/App-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/joshhudnall/Dropbox/Documents/JHStandardLib/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1103,7 +818,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "App/App-Prefix.pch";
 				INFOPLIST_FILE = "App/App-Info.plist";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/joshhudnall/Dropbox/Documents/JHStandardLib/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1126,6 +844,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "AppTests/AppTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/joshhudnall/Dropbox/Documents/JHStandardLib/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -1145,6 +867,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "App/App-Prefix.pch";
 				INFOPLIST_FILE = "AppTests/AppTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/joshhudnall/Dropbox/Documents/JHStandardLib/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -1164,6 +890,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/App/3rdParty/GoogleAnalytics",
 					"$(PROJECT_DIR)/App/3rdParty/GA",
+					"/Users/joshhudnall/Dropbox/Documents/JHStandardLib/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "${TARGET_NAME}";
 				WRAPPER_EXTENSION = app;
@@ -1183,6 +910,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/App/3rdParty/GoogleAnalytics",
 					"$(PROJECT_DIR)/App/3rdParty/GA",
+					"/Users/joshhudnall/Dropbox/Documents/JHStandardLib/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "${TARGET_NAME}";
 				WRAPPER_EXTENSION = app;
