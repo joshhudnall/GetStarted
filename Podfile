@@ -1,18 +1,20 @@
 source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
 
 platform :ios, '7.0'
 
 link_with 'GetStarted', 'GetStartedDev', 'AppTests'
 
 pod 'AFNetworking'
-pod 'GoogleAnalytics-iOS-SDK'
+pod 'GoogleAnalytics'
 pod 'CocoaLumberjack'
 pod 'SVProgressHUD'
-pod 'Facebook-iOS-SDK'
+pod 'FBSDKCoreKit'
 pod 'TMCache'
 pod 'HockeySDK', '~> 3.5.4'
 pod 'PureLayout'
 pod 'SDWebImage', '~>3.6'
+pod 'ChameleonFramework'
 
 #pod 'Realm'
 #pod 'Realm/Headers'

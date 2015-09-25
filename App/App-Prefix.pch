@@ -22,7 +22,7 @@
     #import <SVProgressHUD/SVProgressHUD.h>
     #import <AFNetworking/AFNetworking.h>
     #import <PureLayout/PureLayout.h>
-    #import <GoogleAnalytics-iOS-SDK/GAI.h>
+    #import <GoogleAnalytics/GAI.h>
     #import "UIView+Positioning.h"
     #import "UIImageView+WebCache.h"
     #import "CompactConstraint.h"
